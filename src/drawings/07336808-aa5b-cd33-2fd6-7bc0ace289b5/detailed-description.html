@@ -1,0 +1,326 @@
+<p>
+  <span data-role="tag" data-value="07336808-aa5b-cd33-2fd6-7bc0ace289b5" id="id662ec8ed-7ab4-0307-0844-312fea76a8ad" data-type="figure">Figure 8</span> illustrates an 
+  <span data-role="tag" data-value="9ef85bc6-8057-2f72-80b7-a7215ac03b80" id="id22b79482-6809-90a9-6a71-4d8076d9fa12" data-type="drawingObject">exemplary system 700</span> for performing 
+  <span data-role="tag" data-value="c6f279c4-6fcd-aac5-1385-8c1095e954a6" id="idc9976ed6-3cc0-2592-40f0-333e6cc6e6d9" data-type="term">autonomous path navigation</span> using 
+  <span data-role="tag" data-value="72303528-19b2-21ed-f524-57488fc7e72d" id="id9c6c2341-d0b9-76f5-ce2b-5d0cc838e662" data-type="term">deep neural networks</span>, according to one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id4ee880d8-27d6-38a0-3254-65cead034af3" data-type="term">embodiment</span>. As shown, the 
+  <span data-role="tag" data-value="9ef85bc6-8057-2f72-80b7-a7215ac03b80" id="id641a6d95-1e3e-c22e-4f7b-6a20837c8c0b" data-type="drawingObject">exemplary system 700</span> includes a 
+  <span data-role="tag" data-value="9cfa5a38-d0c9-4f41-e059-0eff6804c3f4" id="id6a80e790-fd09-7f42-2066-13f31ecadcc1" data-type="drawingObject">camera module 804</span> in communication with a 
+  <span data-role="tag" data-value="60e5a232-ef97-10bf-d401-ef7270b597cc" id="idf48ab4c4-2dca-4eeb-4a24-5cf795c23119" data-type="drawingObject">TrailNet DNN module 806</span>, an 
+  <span data-role="tag" data-value="49a11268-c1f2-2dc2-1a89-ed599822f73f" id="id2981b9f4-a48d-a554-6a68-cbd49d19c0b1" data-type="drawingObject">object detection DNN module 808</span>, and an 
+  <span data-role="tag" data-value="21356c3b-7e26-ba3b-ff66-a0f1fd4eac52" id="iddfa3654f-aa94-a3ef-8298-7203454aaa80" data-type="drawingObject">obstacle detector module 810</span>. In one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id7b518ef0-aebb-8a3a-6143-3688bf72c67d" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="9cfa5a38-d0c9-4f41-e059-0eff6804c3f4" id="idf088aebd-d9bf-8477-327e-f9714f507342" data-type="drawingObject">camera module 804</span> may provide 
+  <span data-role="tag" data-value="96b50ccc-e96e-f549-8bfd-ef96babfdc08" id="idea197563-c03d-79fd-2693-6fb052adad4f" data-type="term">visualization data</span> (e.g., 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="idb98c03b8-f0bf-e7e1-0c52-e4ecd09c86c3" data-type="term">image data</span>, 
+  <span data-role="tag" data-value="573d42e8-a56d-ff7c-d6ce-85242c175353" id="idba91110e-2af5-2d9f-c003-8ff362707efb" data-type="term">radar data</span>, 
+  <span data-role="tag" data-value="7148fe92-2062-5cc1-632b-0b96de0a75dc" id="idc2f38ea4-8b82-fe53-2eef-7fcc16064d90" data-type="term">depth data</span>, 
+  <span data-role="tag" data-value="f49a20a2-20b5-d8c9-8a36-482dd1912295" id="id0ad06ef7-3265-48a8-00b0-7e20e9be6296" data-type="term">lidar data</span>, 
+  <span data-role="tag" data-value="bca18bdc-218d-ecbf-e866-eb5ddf821c63" id="id62d1a1a8-66f7-85ff-9bdc-a278cf616735" data-type="term">infrared data</span>, 
+  <span data-role="tag" data-value="2ced0804-7e50-0847-7d2e-d5b442488972" id="id8b711401-cdc2-6599-a564-9510a8c7fc36" data-type="term">sonar data</span>, etc.) to the 
+  <span data-role="tag" data-value="60e5a232-ef97-10bf-d401-ef7270b597cc" id="ida57dcf10-3180-c0e3-f7cc-3bb8580b235c" data-type="drawingObject">TrailNet DNN module 806</span>, the 
+  <span data-role="tag" data-value="49a11268-c1f2-2dc2-1a89-ed599822f73f" id="id16729745-4f85-9f79-98ad-113e60edd120" data-type="drawingObject">object detection DNN module 808</span>, and the 
+  <span data-role="tag" data-value="21356c3b-7e26-ba3b-ff66-a0f1fd4eac52" id="id7d04b86d-782a-36ab-ea65-f1412113f0cb" data-type="drawingObject">obstacle detector module 810</span>. In another 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="idce4483b1-6edb-5806-db44-3e764b46f1bc" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="2af9c079-bd10-3497-7028-4d8a5c4d1632" id="id90a3bb79-1a04-4ccc-f3fe-51aa1b9ecc6c" data-type="term">camera module</span> may manage one or more cameras of a 
+  <span data-role="tag" data-value="0576d307-662d-fdbd-9540-5e067353d7e4" id="id5dca4068-91d3-93aa-321d-33cc3a18e701" data-type="term">variety</span> of different 
+  <span data-role="tag" data-value="95c9f24d-bfc3-1fde-cce6-f0607448c4d4" id="idf7eaa25c-0801-836f-614c-28fcf40db555" data-type="term">types</span> within a 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id45736921-2d42-a6cf-6266-d6049ffc2578" data-type="term">vehicle</span>.&nbsp;
+</p>
+<p></p>
+<p>Additionally, in one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="ida2a836ca-4103-59e4-4e9e-c782d99dec89" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="60e5a232-ef97-10bf-d401-ef7270b597cc" id="id00f80329-d26f-a0fe-8582-b79c746fd290" data-type="drawingObject">TrailNet DNN module 806</span> may receive 
+  <span data-role="tag" data-value="96b50ccc-e96e-f549-8bfd-ef96babfdc08" id="id0b629bfe-bd6f-7bd4-54ab-3a451fa75704" data-type="term">visualization data</span> from the 
+  <span data-role="tag" data-value="9cfa5a38-d0c9-4f41-e059-0eff6804c3f4" id="id74604d9c-3782-0b26-d183-9ec925eaab7a" data-type="drawingObject">camera module 804</span>, and may 
+  <span data-role="tag" data-value="b1d033d4-b6c1-a436-6328-2fe056859f55" id="ide5f87cd8-ec44-348b-63a6-523b75645cf0" data-type="term">output</span>
+  <span data-role="tag" data-value="e35f635c-8585-f8e1-564c-76a26b491b74" id="id90f70a72-0d7d-9a0e-48c0-0665617fed4b" data-type="term">vehicle location information</span>. For 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id0432e2a6-7148-7442-b7e2-4cf1de2275d9" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="60e5a232-ef97-10bf-d401-ef7270b597cc" id="id4c5011fb-0769-2f44-5f10-9b11b2d11daa" data-type="drawingObject">TrailNet DNN module 806</span> may 
+  <span data-role="tag" data-value="b1d033d4-b6c1-a436-6328-2fe056859f55" id="id3458a300-0f50-ee34-700f-055cb6e3bf11" data-type="term">output</span>
+  <span data-role="tag" data-value="4ba8ea30-36fb-6314-956b-aa091e07c815" id="id0aa94467-e287-5eee-050f-62327a2c6d06" data-type="term">three numbers</span> that indicate the 
+  <span data-role="tag" data-value="6b6d7f98-e95b-8bfb-25e6-c258e364e7e8" id="ida100f169-910c-7980-8486-1b4793fef44c" data-type="term">orientation</span> of the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id2b4df282-b776-e1ac-5c28-32305277e8be" data-type="term">vehicle</span> with respect to the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="id6a9bebf3-4a83-71f4-1639-a64bca64dc33" data-type="term">path</span>, and 
+  <span data-role="tag" data-value="b60eb0ea-b28d-c24b-f265-7cf3eb2d0dd0" id="id081528ba-5196-4e22-893d-d39779283fb4" data-type="term">three numbers output</span> by the 
+  <span data-role="tag" data-value="d39f2da2-2387-f89f-650b-5697200627a1" id="idc1da7893-362b-808e-01cd-e77a11f3574e" data-type="term">DNN</span> that indicate the 
+  <span data-role="tag" data-value="906a3598-6521-b6ba-a8f0-414d270845b5" id="id5c6a86d2-41b2-83e5-3d89-ebdb195bfe7d" data-type="term">lateral position</span> of the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="idde421c0d-3ab1-6afb-3e52-c1bbc52853c4" data-type="term">vehicle</span> with respect to the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="idd2eca6a6-9c38-4d7e-674e-a5a3a8de319b" data-type="term">path</span>.&nbsp;
+</p>
+<p></p>
+<p>Further, in one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="ida3c0df12-1e59-a4c2-8038-3d7c279b753d" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="49a11268-c1f2-2dc2-1a89-ed599822f73f" id="id74f93139-0ece-c3dd-3076-263a87f6742d" data-type="drawingObject">object detection DNN module 808</span> may receive 
+  <span data-role="tag" data-value="96b50ccc-e96e-f549-8bfd-ef96babfdc08" id="id7f5c8271-58b5-0649-084c-6659142a3242" data-type="term">visualization data</span> from the 
+  <span data-role="tag" data-value="9cfa5a38-d0c9-4f41-e059-0eff6804c3f4" id="idaa1a6927-2824-e6a9-0c83-a8d015f8517a" data-type="drawingObject">camera module 804</span>, and may 
+  <span data-role="tag" data-value="b1d033d4-b6c1-a436-6328-2fe056859f55" id="id00f4a776-f050-3fd8-8782-88303c352e59" data-type="term">output</span> an 
+  <span data-role="tag" data-value="86ee989f-1690-0ae3-f01a-7d0d222187c6" id="id6b8fa526-1f68-7021-5714-dc036266cf94" data-type="term">indication</span> as to whether a 
+  <span data-role="tag" data-value="7c1c1063-8dfe-bd58-c37c-11390eddca62" id="idc688dee4-76f3-44a0-2c4a-50b4f219a1f0" data-type="term">person</span> or 
+  <span data-role="tag" data-value="b185396c-c8ac-53d5-e0ce-0fe781456fca" id="id11901ecc-5432-729c-4f8f-051663f494ad" data-type="term">large animal</span> is present within the 
+  <span data-role="tag" data-value="96b50ccc-e96e-f549-8bfd-ef96babfdc08" id="id52c9e407-c741-7c76-aac5-4db8297fd858" data-type="term">visualization data</span> (e.g., utilizing a 
+  <span data-role="tag" data-value="d39f2da2-2387-f89f-650b-5697200627a1" id="id91877c47-fe62-790f-a2d0-310195f068e4" data-type="term">DNN</span> such as a 
+  <span data-role="tag" data-value="815f121b-2434-d7f7-c2f0-89db4ae64164" id="iddcfd64a2-4d95-3afa-4aef-21fb51cb35b6" data-type="term">YOLO DNN</span>, etc.). In another 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="iddfb5025e-e7c4-7eea-dae1-3d16b4e52aaa" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="21356c3b-7e26-ba3b-ff66-a0f1fd4eac52" id="id27fa6249-e254-bd49-013e-a6c8ff25f77c" data-type="drawingObject">obstacle detector module 810</span> may receive 
+  <span data-role="tag" data-value="96b50ccc-e96e-f549-8bfd-ef96babfdc08" id="id92719814-a988-82bf-e665-50d52f3d3cf1" data-type="term">visualization data</span> from the 
+  <span data-role="tag" data-value="9cfa5a38-d0c9-4f41-e059-0eff6804c3f4" id="idff4381bd-f7fb-f9a9-ea78-ef2a00f45c6a" data-type="drawingObject">camera module 804</span>, and may 
+  <span data-role="tag" data-value="b1d033d4-b6c1-a436-6328-2fe056859f55" id="ida854e2d2-319b-bf6d-6529-f19691c81737" data-type="term">output</span> a set of 
+  <span data-role="tag" data-value="c8b9b7a6-a122-bf6e-8744-64ac96816722" id="id578dc789-a51f-abc1-bc33-4149736c7eec" data-type="term">weights</span> indicating a 
+  <span data-role="tag" data-value="0991e522-a278-3303-e853-a191f4b047c2" id="idb4c1d097-ee93-b39a-1ef2-b9c7e667a45d" data-type="term">likelihood</span> of 
+  <span data-role="tag" data-value="53cce9c6-4203-1129-b4da-bf17b24cd05c" id="idd4a3d111-265e-9035-7f43-108e8068a12d" data-type="term">obstacles</span> at 
+  <span data-role="tag" data-value="1d5c4363-5da4-10b8-f883-b55af5dededd" id="id44eb8f78-d5a5-e428-26ab-4eae1ca5f0bf" data-type="term">various locations and distances</span> (e.g., utilizing 
+  <span data-role="tag" data-value="2fec2e1e-d4e1-caa4-e571-4acb78683bb4" id="idd4004693-24a9-fa20-73a2-9ca0ffd3a0da" data-type="term">simultaneous location and mapping</span> (
+  <span data-role="tag" data-value="df89e0d3-6e5b-9d7b-9256-d9dc22838f51" id="idc1d5b445-09c7-9237-7fa8-9dc6ecb24b6c" data-type="term">SLAM</span>), etc.). In this way, the 
+  <span data-role="tag" data-value="21356c3b-7e26-ba3b-ff66-a0f1fd4eac52" id="id55e04764-a68c-194f-4193-1757fc1ad218" data-type="drawingObject">obstacle detector module 810</span> may identify a 
+  <span data-role="tag" data-value="5e934428-5cf7-257d-4c46-49d9c503fe3e" id="id2ab30100-ffbc-1904-bc9f-8c4eef009366" data-type="term">location</span> of a 
+  <span data-role="tag" data-value="63c9f2d9-2b2c-f4a5-7365-3605b31f4e4a" id="id95c4d34d-975c-5614-3e34-e81aee385bd2" data-type="term">camera</span> within a 
+  <span data-role="tag" data-value="2a8e9a1a-b592-c565-a7d4-756bab23305c" id="id9ed8801e-015a-9929-2810-67e179e21b52" data-type="term">scene</span>, and may provide 
+  <span data-role="tag" data-value="f2a6d199-a820-1178-8339-8cf9b6a4ba95" id="id232bd5bb-352f-7d22-030f-c203c6c2297d" data-type="term">information</span> about a 
+  <span data-role="tag" data-value="ddbb2a58-4153-d3de-1cec-b3ebdd5d9693" id="id00d7a3b7-924c-72d1-452a-45bdf7760180" data-type="term">relative location</span> of 
+  <span data-role="tag" data-value="6d3e6d2b-1f10-0575-5c59-b999383ceca3" id="ida3b1fc74-62b9-8025-d1d4-10fedd6a0191" data-type="term">static objects</span> within the 
+  <span data-role="tag" data-value="2a8e9a1a-b592-c565-a7d4-756bab23305c" id="id8fc49041-6128-3cb5-825f-f52458db4836" data-type="term">scene</span>.&nbsp;
+</p>
+<p></p>
+<p>Further still, the 
+  <span data-role="tag" data-value="9ef85bc6-8057-2f72-80b7-a7215ac03b80" id="id6816be4e-0662-4edb-129b-79c3a869d544" data-type="drawingObject">exemplary system 700</span> includes a 
+  <span data-role="tag" data-value="984229bd-109b-344b-559b-3843b0dbbb90" id="ideab2bfe7-8ee7-5560-6e74-ac600100e675" data-type="drawingObject">controller module 812</span>. In one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="idf56ba3f9-71f9-5a1a-c887-154d527a2185" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="984229bd-109b-344b-559b-3843b0dbbb90" id="id0cbcd169-2c76-101c-ba19-211d8d814250" data-type="drawingObject">controller module 812</span> may receive 
+  <span data-role="tag" data-value="e35f635c-8585-f8e1-564c-76a26b491b74" id="id713fceb6-0f91-b0f2-40f4-77b66c83a1d5" data-type="term">vehicle location information</span> from the 
+  <span data-role="tag" data-value="60e5a232-ef97-10bf-d401-ef7270b597cc" id="id5fa646d9-3de1-b5d8-5506-b5477bc7b427" data-type="drawingObject">TrailNet DNN module 806</span> (e.g., representing the 
+  <span data-role="tag" data-value="e1fd0606-a096-a5c6-7b92-adf87cf0af8f" id="idc23dbdbc-a625-866e-9890-37ae61f0ecad" data-type="term">vehicle's</span>
+  <span data-role="tag" data-value="e22eaa75-068b-2263-6783-8226c4ba1e4e" id="id5b3c9ee9-edef-627a-09d2-d933f5aeb8dd" data-type="term">path orientation</span> and 
+  <span data-role="tag" data-value="906a3598-6521-b6ba-a8f0-414d270845b5" id="idc1a09edc-8e80-9fb8-b668-e7d8e82b874e" data-type="term">lateral position</span>), and may create 
+  <span data-role="tag" data-value="e21c6fb9-2b50-8ed0-e72b-810b9c9ca30a" id="idf5fd8d71-ce62-abb6-8ea9-e8891ca8eb45" data-type="term">steering directions</span> (e.g., a 
+  <span data-role="tag" data-value="9eb89067-d21e-6e95-ae2f-97287319a71f" id="id589d8625-2edf-fa2a-515f-d596ef7c6ce1" data-type="term">steering angle</span> for the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id5c80f54a-c41a-7331-ea5d-a748962f8689" data-type="term">vehicle</span>, etc.), utilizing the 
+  <span data-role="tag" data-value="e35f635c-8585-f8e1-564c-76a26b491b74" id="idf16a4101-ffce-7c4c-5b92-8780d0d56322" data-type="term">vehicle location information</span>.&nbsp;
+</p>
+<p></p>
+<p>Also, the 
+  <span data-role="tag" data-value="9ef85bc6-8057-2f72-80b7-a7215ac03b80" id="idbc691314-1be4-8c36-46d9-52f93d74c6be" data-type="drawingObject">exemplary system 700</span> includes a 
+  <span data-role="tag" data-value="452335e7-a74b-86f2-d6da-da527c4cf1a7" id="id38b73619-aef5-de8c-33a7-44ae0d6c1939" data-type="drawingObject">communication module 814</span>. The 
+  <span data-role="tag" data-value="452335e7-a74b-86f2-d6da-da527c4cf1a7" id="ide8171a2f-9b46-a884-8271-ccdeee5b1d91" data-type="drawingObject">communication module 814</span> may receive the 
+  <span data-role="tag" data-value="e21c6fb9-2b50-8ed0-e72b-810b9c9ca30a" id="id5e82e377-efdf-4ff6-795e-3d0aa63d5b6f" data-type="term">steering directions</span> in a 
+  <span data-role="tag" data-value="d2a8d4f0-9489-4144-e09b-59cd3ceafa8f" id="idfdca40e8-02d4-bf08-a39b-5b1838f825aa" data-type="term">first format</span> (e.g., a 
+  <span data-role="tag" data-value="ccf5a05b-1ae4-4320-83ca-d192e428b565" id="id3706fc3c-7428-a3cd-2768-73c147734d06" data-type="term">ROS protocol</span>, etc.) from the 
+  <span data-role="tag" data-value="984229bd-109b-344b-559b-3843b0dbbb90" id="id0278f091-c8b5-59f2-b722-571650ba894d" data-type="drawingObject">controller module 812</span>, and may convert then to 
+  <span data-role="tag" data-value="f641cb4f-275c-36c1-c975-27677ab5cd49" id="id12e40f2e-68d4-8a26-5443-a995b221a594" data-type="term">messages</span> in a 
+  <span data-role="tag" data-value="30a24338-a448-754e-2209-76ae6ebad040" id="idf1fe8f42-b033-8831-144b-cb0f53ac4ee5" data-type="term">second format</span> (e.g., an 
+  <span data-role="tag" data-value="6fe381be-67e0-3b2d-eaa6-914ae835dfb6" id="id520df758-b3fb-0b67-44e5-3279c6246843" data-type="term">MAV protocol</span>, etc.). The 
+  <span data-role="tag" data-value="452335e7-a74b-86f2-d6da-da527c4cf1a7" id="id42b9d2d3-98af-eda3-0642-f1ae902dc2cd" data-type="drawingObject">communication module 814</span> may then broadcast the 
+  <span data-role="tag" data-value="a0124257-f4db-be78-055c-c091ffed0ed1" id="ida85357ca-005e-8f78-ef5d-1489063e3e89" data-type="term">converted messages</span> in the 
+  <span data-role="tag" data-value="30a24338-a448-754e-2209-76ae6ebad040" id="id0bb02d33-1ac8-d966-5d22-d291f584756d" data-type="term">second format</span> to a 
+  <span data-role="tag" data-value="f2da163d-8fb6-fe4b-8a00-3c29c01cabe8" id="id34bee290-8e89-b6d0-8bbf-28f4de88b698" data-type="drawingObject">vehicle systems module 818</span>, utilizing a 
+  <span data-role="tag" data-value="772304e6-05e5-3bf1-08a2-b5c76994ebbf" id="ida57a258d-3c74-6753-3d8a-dd0df14e9fa0" data-type="term">communication protocol</span> 816.&nbsp;
+</p>
+<p></p>
+<p>In 
+  <span data-role="tag" data-value="5624e7fb-beac-47d9-437f-91b92e001693" id="id5823ff1c-11b1-d9c3-035c-cf787ee7351a" data-type="term">addition</span>, in one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id6bf51ab9-3b01-33dc-3c4a-48e89dcbfbef" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="f2da163d-8fb6-fe4b-8a00-3c29c01cabe8" id="id830fa5d6-cfb9-6bb4-bdc0-441c803542fc" data-type="drawingObject">vehicle systems module 818</span> may receive the 
+  <span data-role="tag" data-value="a0124257-f4db-be78-055c-c091ffed0ed1" id="idb071c912-6f83-44ae-5c72-2b86ea0cb4c0" data-type="term">converted messages</span>, and may use 
+  <span data-role="tag" data-value="747f3232-28d9-89d3-4f00-0a3dc586fc47" id="idbd2607cd-63f7-2564-b516-bb9a3131e3d4" data-type="term">such messages</span> to control one or more physical components of the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id493deff8-0912-e5af-b808-a40804442301" data-type="term">vehicle</span> (e.g., in 
+  <span data-role="tag" data-value="cd5945ba-7bc0-1aac-5870-e6ae8b1d5337" id="id0ee8e6cc-e5ca-da67-3859-69aad32913f2" data-type="term">order</span> to control 
+  <span data-role="tag" data-value="f11fc8c9-0a25-3a7a-96d8-4d0159ef2021" id="id2442ae32-3ff0-24ca-e0fc-1267f338c4c3" data-type="term">movement</span> of the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="idc2201fe3-f0b1-7c1d-7b52-ce2d7c73b064" data-type="term">vehicle</span>, etc.). In this way, the 
+  <span data-role="tag" data-value="984229bd-109b-344b-559b-3843b0dbbb90" id="idd7832987-7d3a-5054-9ac7-80e9222e78f9" data-type="drawingObject">controller module 812</span> may compute 
+  <span data-role="tag" data-value="e21c6fb9-2b50-8ed0-e72b-810b9c9ca30a" id="id41becb62-dd34-6d36-1ffb-9d3057b7b40a" data-type="term">steering directions</span> and send the 
+  <span data-role="tag" data-value="e21c6fb9-2b50-8ed0-e72b-810b9c9ca30a" id="idccd1f3b9-6c23-2f82-0989-ab5cfab75218" data-type="term">steering directions</span> to the 
+  <span data-role="tag" data-value="452335e7-a74b-86f2-d6da-da527c4cf1a7" id="idc13e10a4-1295-d2a0-9b54-35e9f63420d0" data-type="drawingObject">communication module 814</span>, which may convert the 
+  <span data-role="tag" data-value="ce854320-cfac-92a2-376c-07410157f629" id="idaaa35907-47dd-0178-77df-46b77326eb54" data-type="term">directions</span> to a different format and send them to the 
+  <span data-role="tag" data-value="f2da163d-8fb6-fe4b-8a00-3c29c01cabe8" id="ide8ad2b7b-ade0-a338-4209-15c23c08460d" data-type="drawingObject">vehicle systems module 818</span> for 
+  <span data-role="tag" data-value="16a2662d-2f24-4586-b0c4-fdb4a1adcb15" id="idae788c6e-f06f-a0cb-e7d0-03c11b2a2eff" data-type="term">implementation</span> at the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id08aab510-8de5-29a8-62c4-e736e4d5e7aa" data-type="term">vehicle</span>.&nbsp;
+</p>
+<p></p>
+<p>Further, the 
+  <span data-role="tag" data-value="9ef85bc6-8057-2f72-80b7-a7215ac03b80" id="id4bd0c5d3-7085-1209-82dd-a0646b69c05b" data-type="drawingObject">exemplary system 700</span> includes a 
+  <span data-role="tag" data-value="1638a1bb-7019-9b84-6e3e-6079a2a4447b" id="id7e19108c-9c3b-fd7c-cc2e-7f5e80aec3dd" data-type="drawingObject">manual input device module 820</span>. The 
+  <span data-role="tag" data-value="1638a1bb-7019-9b84-6e3e-6079a2a4447b" id="ide877e45e-3099-948e-37f2-f7a5ce5497a8" data-type="drawingObject">manual input device module 820</span> may receive 
+  <span data-role="tag" data-value="426337ef-efb5-758a-f40d-071035061851" id="idf611867d-4d14-6a84-127c-0b838dad8e75" data-type="term">input</span> from a 
+  <span data-role="tag" data-value="307546f9-39dd-9ac4-221c-8897b3efd935" id="ida71bd4ff-e26e-d2a5-36f1-46f499a90998" data-type="term">user</span> (e.g., a 
+  <span data-role="tag" data-value="9f24335b-6136-dddb-39d7-ddcfd2b29707" id="id84a9107f-7284-e393-9d40-90d5df63adee" data-type="term">startup indicator</span>, a 
+  <span data-role="tag" data-value="35b54133-b3cd-8e59-c89a-fd0f9ea1abca" id="id49a7750f-88ad-8a32-48a8-b461500bc17b" data-type="term">kill switch selection</span>, a 
+  <span data-role="tag" data-value="fd740d73-cb74-8fac-dc28-52bfb09d4b61" id="id071351c0-779d-ef52-ad4b-80157aba747a" data-type="term">manual override selection</span>, etc.), and may send 
+  <span data-role="tag" data-value="0f6acbed-8fab-a247-eaf6-bc762cb7c851" id="ida2cb6fb0-0799-d902-d93c-9575161edbea" data-type="term">such information</span> to the 
+  <span data-role="tag" data-value="984229bd-109b-344b-559b-3843b0dbbb90" id="id6705beb4-0a5b-050d-545c-5ba1a9e8e67b" data-type="drawingObject">controller module 812</span>. In this way, 
+  <span data-role="tag" data-value="f0ab7097-c99f-63a1-c608-84174cd4a252" id="id250989a6-873e-e714-91a1-25742fec99e5" data-type="term">manual user input</span> may be provided to the 
+  <span data-role="tag" data-value="9ef85bc6-8057-2f72-80b7-a7215ac03b80" id="idb7dc7ba9-b31b-c867-2eaf-4a3d28d38fbd" data-type="drawingObject">exemplary system 700</span>.&nbsp;
+</p>
+<p></p>
+<p>Further still, the 
+  <span data-role="tag" data-value="9cfa5a38-d0c9-4f41-e059-0eff6804c3f4" id="ide298b618-8550-8a9f-f6c4-6c6921fcd21a" data-type="drawingObject">camera module 804</span>, the 
+  <span data-role="tag" data-value="60e5a232-ef97-10bf-d401-ef7270b597cc" id="id7e5d151b-2754-ef77-c2e6-96561e1aa9e5" data-type="drawingObject">TrailNet DNN module 806</span>, the 
+  <span data-role="tag" data-value="49a11268-c1f2-2dc2-1a89-ed599822f73f" id="id4043b640-8cb3-0cee-6ad1-8aba4cafefcf" data-type="drawingObject">object detection DNN module 808</span>, the 
+  <span data-role="tag" data-value="21356c3b-7e26-ba3b-ff66-a0f1fd4eac52" id="id875e74e9-c5f3-2184-f853-95e28992efc4" data-type="drawingObject">obstacle detector module 810</span>, the 
+  <span data-role="tag" data-value="868b7205-27d5-e33d-5e1c-e4ab73c96b7c" id="id4143bbcf-8ad8-8ced-e06a-58be54ad02f2" data-type="term">controller module</span>, the 
+  <span data-role="tag" data-value="452335e7-a74b-86f2-d6da-da527c4cf1a7" id="ide4872f62-ac03-c6d0-7fa6-a2e9c65cca74" data-type="drawingObject">communication module 814</span>, and the 
+  <span data-role="tag" data-value="1638a1bb-7019-9b84-6e3e-6079a2a4447b" id="id88dc3b83-f8bc-4d15-70e6-1c61362acc49" data-type="drawingObject">manual input device module 820</span> are all implemented within a single 
+  <span data-role="tag" data-value="c6a2c276-b623-a3ad-0259-a3f47e4cb683" id="id8f2c8ca6-0c69-c1ab-e532-7d537c09b6d4" data-type="drawingObject">processor 802</span>. Communication between 
+  <span data-role="tag" data-value="e5a9856d-7fd7-9d66-be4e-1a95e40ff994" id="ided8109b3-c87d-0d75-1f25-e978f2a0f68c" data-type="term">such modules</span> may be made using a 
+  <span data-role="tag" data-value="397e8a0b-9476-4ae4-7fcb-1afb667c61f5" id="id934501d3-859c-6831-3109-2ac5d2e1fcea" data-type="term">predetermined protocol</span> (e.g., a 
+  <span data-role="tag" data-value="ccf5a05b-1ae4-4320-83ca-d192e428b565" id="id4a0195c1-ef6d-e45d-8ac3-0056f81f965e" data-type="term">ROS protocol</span>, etc.). The 
+  <span data-role="tag" data-value="f2da163d-8fb6-fe4b-8a00-3c29c01cabe8" id="idc14f4763-7ccf-19af-ce36-fc983780cfcf" data-type="drawingObject">vehicle systems module 818</span> is implemented within 
+  <span data-role="tag" data-value="a39a6827-7e10-55c8-2e04-64c57a271acd" id="id6746b462-9ebe-87a1-6cac-0b0082fc7850" data-type="drawingObject">control hardware 816</span> of the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="idfe090605-bae1-6b2b-6452-7324928a7e2f" data-type="term">vehicle</span> that is separate from the 
+  <span data-role="tag" data-value="c6a2c276-b623-a3ad-0259-a3f47e4cb683" id="idd9745923-7a82-b956-cbaf-b9c22d95c9ef" data-type="drawingObject">processor 802</span>.&nbsp;
+</p>
+<p></p>
+<p>
+  <span data-role="tag" data-value="48f818e3-9272-64a8-c3e3-873e4afc830e" id="id5e705083-da55-7d53-7111-47733b7d546e" data-type="term">Low-Flying Autonomous MAV Trail Navigation Using Deep Neural Networks</span> for 
+  <span data-role="tag" data-value="f8ec1eb0-bed2-6135-bcd7-46cde780c7fe" id="id7878e80f-e20b-96d5-c39b-960288ba3001" data-type="term">environmental awareness</span>&nbsp;
+</p>
+<p></p>
+<p>Introduction&nbsp;</p>
+<p></p>
+<p>In one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id2b464a6f-95a6-e1e7-1c19-ec9ce2959f2f" data-type="term">embodiment</span>, autonomously following a 
+  <span data-role="tag" data-value="87b5a7f9-26ec-f801-08d3-9db062fc471f" id="ida389dbc5-3e15-80f3-3164-30a4a908004f" data-type="term">man-made trail</span> in the 
+  <span data-role="tag" data-value="888e4fe1-c556-e91d-5dda-dd10009909c6" id="idda994708-a054-de0b-4e07-13b6168a262b" data-type="term">forest</span> is a 
+  <span data-role="tag" data-value="650823c5-0a7e-2bc5-7706-9dd1b0f9861c" id="id5c862def-5bd6-74c8-8255-82938ea25477" data-type="term">challenging problem</span> for 
+  <span data-role="tag" data-value="6f4bab84-b566-993f-d75b-c5760145cee2" id="id23049058-71dc-2df9-e3ae-8e723b04b33a" data-type="term">robotic systems</span>. 
+  <span data-role="tag" data-value="ce092be5-ccfc-d87d-d47b-77e6990824af" id="idc534b1d1-7c74-bde4-882a-73d7579215fa" data-type="term">Applications</span> for 
+  <span data-role="tag" data-value="cf6057ef-1f8f-0029-2893-cce593d206c7" id="id231a4886-0681-28f5-b41e-ad8014078d2d" data-type="term">such a capability</span>
+  <span data-role="tag" data-value="3991c347-7c5f-6f63-4ee6-606b014b1c17" id="idab21ac77-77db-8006-5703-d09d8fbbe2d8" data-type="term">include</span>, among 
+  <span data-role="tag" data-value="0bc5c5d3-7793-a075-a07a-4bf1ce6cb88b" id="id3a2638ae-977d-bda3-205c-efc6de94682c" data-type="term">others</span>, 
+  <span data-role="tag" data-value="f974f99f-3e80-84c3-d886-770c1dba7d9f" id="id19868161-d332-1708-70c8-2f9de9b096ed" data-type="term">search-and-rescue</span>, 
+  <span data-role="tag" data-value="a89d865a-652d-ff8d-d442-acae6b315f92" id="ide284942a-b0aa-991b-ab9a-a1171effb931" data-type="term">environmental mapping</span>, 
+  <span data-role="tag" data-value="27139115-ed25-9f17-4aed-0193f1a7fbbd" id="id9baf39e1-1e10-9768-ce28-1e4c0ec095d1" data-type="term">wilderness monitoring</span>, and 
+  <span data-role="tag" data-value="203fff9f-e25f-668a-0f13-9f7922945e48" id="id4ec51dd6-e299-1300-59b6-4cf179c827a2" data-type="term">personal videography</span>. 
+  <span data-role="tag" data-value="27ab3988-41c1-3f80-cab2-2a9fb7e9f26f" id="id8131ea15-4b58-bea1-c122-7166541ea347" data-type="term">Micro aerial vehicles</span> (
+  <span data-role="tag" data-value="52a23607-62ef-467e-3215-9b82b0b75332" id="id4b6a5147-1273-5078-bb92-e07117b3a5ba" data-type="term">MAVs</span>) offer a 
+  <span data-role="tag" data-value="e3e24f7a-49ae-4fe0-f060-ff725ae4dbce" id="id2c4cc601-0656-cec8-e099-fa51e127d8c4" data-type="term">number</span> of 
+  <span data-role="tag" data-value="3ebb6d96-95df-bdaa-742e-aec8cb4a9d57" id="id8c6c0d6a-aa2b-7ee1-067b-277207640680" data-type="term">advantages</span> for solving this 
+  <span data-role="tag" data-value="e2a5980e-54f7-74cf-c24d-79b2385ad641" id="id319cb6d8-8a81-11b5-fd90-bbbb4ebeb267" data-type="term">problem</span>: they are not limited by the 
+  <span data-role="tag" data-value="26a7a0a8-1897-ed75-4ad0-ba98703c6008" id="ide5662d72-51a9-4294-d4e9-3cdc0762c862" data-type="term">difficulty or traversability</span> of the 
+  <span data-role="tag" data-value="24b1c6c0-830f-10b4-bc5f-79bdd0926b85" id="id41fd6fc9-1a79-9808-a649-b4ebbf4e195e" data-type="term">terrain</span>, they are capable of 
+  <span data-role="tag" data-value="3cf3f921-7fc6-806a-70bd-4a61eaefe417" id="idedaf2ac2-c8fe-f31d-0243-0f780df7e2f0" data-type="term">high speeds</span>, and they have the ability to quickly 
+  <span data-role="tag" data-value="6ee54969-0a86-c1ca-26e7-bbf250ed015e" id="id4baad4c1-287b-6093-2128-733a49682377" data-type="term">switch</span> from 
+  <span data-role="tag" data-value="df416ea1-f40b-67f6-5fcc-25a24978d388" id="idf0d442de-17ee-67bc-2bdf-e1bda68e7e26" data-type="term">one trail</span> to another by flying through or over the 
+  <span data-role="tag" data-value="888e4fe1-c556-e91d-5dda-dd10009909c6" id="id3fad1a2d-0143-d02d-040a-fe704939c394" data-type="term">forest</span>.&nbsp;
+</p>
+<p></p>
+<p>In 
+  <span data-role="tag" data-value="cd5945ba-7bc0-1aac-5870-e6ae8b1d5337" id="idac239593-6f81-bc93-b930-605c29076de3" data-type="term">order</span> for a 
+  <span data-role="tag" data-value="5adf7f1f-603a-6fa4-777e-c8c4059a841a" id="id5e4a1319-ad05-a4e6-95b1-34cf6ebcdc97" data-type="term">complete MAV system</span> to follow a 
+  <span data-role="tag" data-value="8f6b1f57-254f-a2ed-a647-13ab5c2e5a52" id="id01450675-8afa-833c-cbbc-0f79240c4814" data-type="term">trail</span>, it may not only detect the 
+  <span data-role="tag" data-value="8f6b1f57-254f-a2ed-a647-13ab5c2e5a52" id="id97c3588a-36cb-96b6-a5cf-ff577d583b08" data-type="term">trail</span> in 
+  <span data-role="tag" data-value="cd5945ba-7bc0-1aac-5870-e6ae8b1d5337" id="id80943b14-aa81-3ced-3020-f27c54ed5c16" data-type="term">order</span> to determine 
+  <span data-role="tag" data-value="7d6810bb-ccaa-0d76-364d-49d78e793383" id="ide1bd45c0-a9aa-4e74-8231-7ae413508563" data-type="term">its steering commands</span>, but it also may be aware of 
+  <span data-role="tag" data-value="013aa80e-b717-d6a6-c656-53b8219541d7" id="id970695b5-e100-f08f-44ad-e29d1c5721e0" data-type="term">its surroundings</span>. An MAV that lacks 
+  <span data-role="tag" data-value="cf6057ef-1f8f-0029-2893-cce593d206c7" id="id49228ccc-5855-b34a-59a3-b719e556e98a" data-type="term">such a capability</span> is in 
+  <span data-role="tag" data-value="54e6a8ea-a804-766e-31ec-8fb77abc6886" id="idc5a8fcab-38b1-8ee7-ae77-2e45bf610c19" data-type="term">danger</span> of colliding with 
+  <span data-role="tag" data-value="f905f856-caf5-91d2-2b33-f8cbaef86501" id="ide4636dfa-5bdf-55d8-9787-6e62c8e1bfd9" data-type="term">overhanging branches</span> or, even worse, with 
+  <span data-role="tag" data-value="930d047a-ada6-9010-ed39-86dcb16fae53" id="id5ae4c026-7d9f-b052-4533-11a09823da46" data-type="term">people or pets</span> using the 
+  <span data-role="tag" data-value="8f6b1f57-254f-a2ed-a647-13ab5c2e5a52" id="ide10788fe-e6cc-24bc-ad63-b91b90781bd6" data-type="term">trail</span>. 
+  <span data-role="tag" data-value="f8ec1eb0-bed2-6135-bcd7-46cde780c7fe" id="idbc4e2896-27fd-49b6-24d2-41f03f4d321f" data-type="term">Environmental awareness</span> is therefore one component for 
+  <span data-role="tag" data-value="3894978e-378c-6c9b-1c9f-da9f8124ce0a" id="id2e0f6a72-1380-a5ea-b66f-ab3ddb70481c" data-type="term">trail-following robots</span>, particularly for 
+  <span data-role="tag" data-value="9c8bb2c8-7157-08db-7251-df6799941bfe" id="id9c9541bf-baae-ea65-5f98-717461cc7f63" data-type="term">low-flying MAVs</span>.&nbsp;
+</p>
+<p></p>
+<p>In one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="idbed63f17-8692-6bd3-d3a9-16020f347f6f" data-type="term">embodiment</span>, an 
+  <span data-role="tag" data-value="39a382cf-b252-40f9-ca6e-4a12d4db9e28" id="id8eca5556-e441-162d-71c7-a404dac4cee4" data-type="term">MAV system</span> is provided for 
+  <span data-role="tag" data-value="e1412166-f586-2e4d-88a7-c793f1e600f8" id="id4d7d5a7b-241a-e251-a6b9-2007264b422b" data-type="term">autonomous trail</span> following. The 
+  <span data-role="tag" data-value="4a3e9ab1-08b8-3d2a-4992-840109800e38" id="idd5b52a22-84d6-083d-e18e-97432a9bb634" data-type="term">system</span> may use a 
+  <span data-role="tag" data-value="64e10b5d-f6e2-574a-c77b-f467f4873079" id="id7d00e596-5bea-e761-6440-97254c4ce4f0" data-type="term">deep neural network</span> (
+  <span data-role="tag" data-value="d39f2da2-2387-f89f-650b-5697200627a1" id="iddab0c347-6ff2-835d-73c3-da4e2adfb412" data-type="term">DNN</span>) (called TrailNet in this 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id4ab71df1-2f33-ef25-b0a6-08eda134cdf2" data-type="term">example</span>) for determining the MAV's 
+  <span data-role="tag" data-value="e97e5c72-9b7c-556f-7501-0cd97b04adf8" id="id44e11333-5e0c-8fdb-0b8b-a07103672448" data-type="term">view orientation</span> and 
+  <span data-role="tag" data-value="34c33195-4834-bc8f-5222-95fd49d2b07b" id="id921fcb30-9c64-d0c2-e0ff-cf3371bc32ad" data-type="term">lateral offset</span> within the 
+  <span data-role="tag" data-value="8f6b1f57-254f-a2ed-a647-13ab5c2e5a52" id="idbb99ef4a-d686-8031-ebd2-9c3d1fe46cdb" data-type="term">trail</span>. The 
+  <span data-role="tag" data-value="bda471dc-1b9c-523b-6354-15d79a877517" id="id27b87137-cc19-0c72-b043-2f621057daab" data-type="term">computed pose</span> may then be used for 
+  <span data-role="tag" data-value="90ac1792-9522-530e-a04a-23b787be1c05" id="id8b56b9e0-36c4-959f-c4fd-bb6676db68dc" data-type="term">continuous control</span> to allow the MAV to fly over 
+  <span data-role="tag" data-value="a90f2b93-b3f9-8fb6-2018-4542f41a0a37" id="id555d4844-9250-6ca6-d900-bd07e400d311" data-type="term">forest trails</span>. In 
+  <span data-role="tag" data-value="5624e7fb-beac-47d9-437f-91b92e001693" id="idbc6988f2-d1db-2fc1-1074-fb2d23efd7ae" data-type="term">addition</span>, 
+  <span data-role="tag" data-value="78185c16-74eb-a49f-6d7d-c9f3527a7fab" id="idc741541a-784d-29e3-c4f7-85d207e66911" data-type="term">vision modules</span> for 
+  <span data-role="tag" data-value="f8ec1eb0-bed2-6135-bcd7-46cde780c7fe" id="ide2be799b-c719-8171-f3ee-a9241ddbcadd" data-type="term">environmental awareness</span> may enable the MAV to detect and avoid 
+  <span data-role="tag" data-value="0b479d1c-a241-9f79-90f3-d0e364496b73" id="id8ca639c0-0f7b-1ddc-fd66-e55491a72424" data-type="term">people and pets</span> on the 
+  <span data-role="tag" data-value="8f6b1f57-254f-a2ed-a647-13ab5c2e5a52" id="id5963fbaa-179f-1e06-3b8e-3c3c31500941" data-type="term">trail</span>, as well as to estimate 
+  <span data-role="tag" data-value="81d6140f-5638-a8e2-c7be-55187b4b15b7" id="id48150c86-3b84-0a15-19c5-b2085f40f0ac" data-type="term">depth</span> in 
+  <span data-role="tag" data-value="8f027358-92e6-ede8-05d4-5d611363d587" id="id299ba4f5-7579-9925-951e-a9b768d3a2d5" data-type="term">front</span> of the 
+  <span data-role="tag" data-value="f03c4f25-4630-e94c-3c4b-5397c27d1e22" id="id8fa6cc50-3c4d-dce6-f682-1548cadc3e83" data-type="term">robot</span> for the 
+  <span data-role="tag" data-value="97e65896-e677-2afd-dbd8-cc1fc299afe6" id="idac6fb5d1-04ef-26fb-6464-5ec8450c32d6" data-type="term">purpose</span> of reactively avoiding 
+  <span data-role="tag" data-value="53cce9c6-4203-1129-b4da-bf17b24cd05c" id="id7b57bac4-0a2b-6e7e-828e-cb49e00986a6" data-type="term">obstacles</span>. All 
+  <span data-role="tag" data-value="31f00430-0d86-0103-ceb5-1f4690ceb404" id="idfde9bfde-783c-68d2-3a84-fa0ca986014b" data-type="term">subsystems</span> may run simultaneously in 
+  <span data-role="tag" data-value="12c53118-8962-593f-683e-a75be50c70db" id="id628fe1fa-b76d-34d3-1952-f00cb0cc4a0f" data-type="term">real time</span> on 
+  <span data-role="tag" data-value="085844c4-81c3-16d3-0d41-8d027422ed49" id="id1b90f8ce-1ef7-cfc8-6b03-71b581a787c3" data-type="term">board</span> the MAV using a 
+  <span data-role="tag" data-value="13bc136c-9d77-10b2-07fd-2f8b686cda19" id="id987c3e7e-77ef-9f64-c448-8ee8173672a1" data-type="term">standalone computing device</span>. 
+  <span data-role="tag" data-value="6043a521-aca1-6c47-c87a-4547419cd023" id="id5072be87-15a9-6906-fdec-faa9e3e3ca9a" data-type="term">On-board processing</span> may be used to ensure the 
+  <span data-role="tag" data-value="ffe8e368-747f-b398-1276-9a6a5c0de181" id="id114b2cef-de83-8dd1-3068-1759b21b7a0d" data-type="term">safety</span> of this 
+  <span data-role="tag" data-value="209f630b-c901-46d6-bdb5-c0c4b8fd300a" id="id143c8467-55ce-38d7-d9cb-8107ee09d683" data-type="term">mission-critical system</span>.&nbsp;
+</p>
+<p></p>
+<p>In one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="idd985d685-c13b-ecdc-0d1f-d375a83a26d7" data-type="term">embodiment</span>, a 
+  <span data-role="tag" data-value="5f1f905b-e92c-200a-7b77-c300926063a0" id="ide941aca7-93b5-7ab9-bb6c-b3fb74e5cbc2" data-type="term">hardware/software system</span> may be implemented for 
+  <span data-role="tag" data-value="f03d1685-2764-7cda-4283-1fb1933ad185" id="id11816193-b797-1a5f-1560-8dd014544ab3" data-type="term">environmentally aware autonomous trail navigation</span> using 
+  <span data-role="tag" data-value="4166b5ff-8f0f-496b-a374-527ca0350bc4" id="idda43ac8e-bc0d-7974-51a8-768098909b52" data-type="term">DNNs</span> that may run in 
+  <span data-role="tag" data-value="12c53118-8962-593f-683e-a75be50c70db" id="iddbf258ed-237f-a0c5-840c-a1c189bb0e77" data-type="term">real time</span> on 
+  <span data-role="tag" data-value="085844c4-81c3-16d3-0d41-8d027422ed49" id="id3699c350-5ccb-fa9f-bd6c-9b96e6622b02" data-type="term">board</span> an MAV.&nbsp;
+</p>
+<p></p>
+<p>In another 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="idcfebc8f9-db37-98b3-d9fa-c74926f8e45b" data-type="term">embodiment</span>, a 
+  <span data-role="tag" data-value="eecb8f3f-897b-f209-9e98-6f7654ad69f4" id="id6c537b83-9e2f-23da-a69e-a9ee5d4dec57" data-type="term">DNN architecture</span> may be implemented for 
+  <span data-role="tag" data-value="9feac86e-b687-33d3-8ad1-d038e5bfde57" id="id8471f61d-7d81-6050-e817-85238672d2dc" data-type="term">trail detection</span> with 
+  <span data-role="tag" data-value="5a8af347-6c40-3d87-ff96-ccb324756977" id="id3eb00504-8e96-018c-4830-8fc8832f081a" data-type="term">improved accuracy</span> and 
+  <span data-role="tag" data-value="40892cd9-a2ab-551a-5103-7bdb3aeb894f" id="idc45f21e0-e8d7-8b15-997f-6bdb344f9e16" data-type="term">computational efficiency</span> via a 
+  <span data-role="tag" data-value="5ae3267e-7b69-54a4-8bb4-157939afdf95" id="idda12a2d3-d5b6-ee82-462f-5a50d01a87cd" data-type="term">less confident classification scheme</span> for 
+  <span data-role="tag" data-value="a0debf4c-cd67-845b-dcdf-220c3987b6e0" id="idd1d70654-e794-5ae5-3f54-4d7fa55056d8" data-type="term">more stable control</span> as well as additional categories for estimating both 
+  <span data-role="tag" data-value="e97e5c72-9b7c-556f-7501-0cd97b04adf8" id="id4bd489b7-533a-c23f-7d82-42726f8b1702" data-type="term">view orientation</span> and 
+  <span data-role="tag" data-value="34c33195-4834-bc8f-5222-95fd49d2b07b" id="idca5d763b-b2c4-fe37-a82b-59d8a07e05b1" data-type="term">lateral offset</span>.&nbsp;
+</p>
+<p></p>
+<p>In 
+  <span data-role="tag" data-value="9751cb33-7e0d-24d7-0d3f-76da2902a89d" id="id5d28d915-027a-c6ac-0f22-6a26d57e2390" data-type="term">yet another embodiment</span>, a 
+  <span data-role="tag" data-value="6ff819d4-85f8-62e1-6a89-5c344704f55d" id="id5311bf1b-7622-a59f-9419-e31876063762" data-type="term">methodology</span> for retraining a 
+  <span data-role="tag" data-value="d39f2da2-2387-f89f-650b-5697200627a1" id="id8c53863c-82de-27f4-f74d-605528a7a583" data-type="term">DNN</span> may be implemented with 6 categories (for 
+  <span data-role="tag" data-value="e97e5c72-9b7c-556f-7501-0cd97b04adf8" id="idf6ec758b-09d2-96c1-95ed-64320b8280ee" data-type="term">view orientation</span> and 
+  <span data-role="tag" data-value="34c33195-4834-bc8f-5222-95fd49d2b07b" id="id7a1d754a-9627-1614-c8d7-bb5166bc457a" data-type="term">lateral offset</span>) by 
+  <span data-role="tag" data-value="66ef2b7b-45d0-6117-4d4f-ddf096aced86" id="id1eb95e7c-bf38-1934-60ac-2c42669efca6" data-type="term">transfer learning</span> from a 
+  <span data-role="tag" data-value="a48c8fb3-1e8f-e1ab-ca14-7ce9943a2249" id="id63f3a9e8-d955-7a58-77d5-e61656b77ea4" data-type="term">network</span> with 
+  <span data-role="tag" data-value="0a1bf5f8-1795-4556-26db-6930d8877127" id="ideaf46da1-a3c0-e04a-00b2-8685c2ab78ae" data-type="term">3 categories</span> (
+  <span data-role="tag" data-value="6b6d7f98-e95b-8bfb-25e6-c258e364e7e8" id="id1770d130-5b4f-fef3-32af-5627fb057fff" data-type="term">orientation</span> only).&nbsp;
+</p>
+<p></p>
+<p>
+  <span data-role="tag" data-value="b5981f4f-4d6d-0d7b-7e5f-cbcc59d20d80" id="ide49a7389-4d91-aec8-af95-b55a1bc2010d" data-type="term">System Description</span>
+</p>
+<p></p>
+<p>To ensure a robust and 
+  <span data-role="tag" data-value="3fd4aad1-dfdc-d7be-7d31-9a09820b3ce1" id="idf32204c3-eb30-557e-e259-8f61810f1e5b" data-type="term">flexible platform</span> for 
+  <span data-role="tag" data-value="5ecacf28-a39a-bb4c-a4db-4e692da32482" id="id1f6e35d1-0316-a8c2-9f94-733751d0c734" data-type="term">forest flight experiments</span>, 
+  <span data-role="tag" data-value="314680c7-c446-53db-c692-a3703e0f1d2b" id="id2b665884-cd2c-8198-569c-660791a4affa" data-type="term">inexpensive off-the-shelf components</span> may be used. One exemplary 
+  <span data-role="tag" data-value="148eb84b-e1d1-db19-8405-a2dd47354a24" id="idd2ff0c12-5a40-7d11-510f-3510d5fde212" data-type="term">hardware</span> setup may 
+  <span data-role="tag" data-value="3991c347-7c5f-6f63-4ee6-606b014b1c17" id="ide6ee134b-c1c5-924c-78af-8f088a8b876d" data-type="term">include</span> a 
+  <span data-role="tag" data-value="6f545755-ac45-6285-44f0-90711e6bac3d" id="id4fea1ccc-f3ce-fe39-4cc8-46610ac359ef" data-type="term">quadcopter or drone</span> with 
+  <span data-role="tag" data-value="7f0ea28f-33dc-a131-9747-a0d979baff09" id="id2cc80255-284b-b2bd-a5ac-b6a8bbaf48d9" data-type="term">autopilot software</span>, an 
+  <span data-role="tag" data-value="671807ce-f7c6-6f22-2a9b-4918fef63796" id="id3d9ab2b9-2110-f2f9-6956-be5fce613a00" data-type="term">integrated computing device</span>, and a 
+  <span data-role="tag" data-value="d4a04a2c-7f8a-a401-0bfd-6b751b38bb94" id="idbbc41596-5367-7d05-b187-b4c746068858" data-type="term">carrier board</span>. The 
+  <span data-role="tag" data-value="1b1e655c-eb99-62fe-5cfd-60788c36fffa" id="id1b7e558e-852b-67fa-8ed9-1994dbfa5a55" data-type="term">vision processing</span> may use a 
+  <span data-role="tag" data-value="d4e69bd0-0052-7624-eb74-6fec4a76d3fd" id="id4d035eb1-a2ba-30c3-458a-a6eb51d757b0" data-type="term">forward-facing camera</span>. All 
+  <span data-role="tag" data-value="1de1a4f7-6bf7-458a-e76a-ac29b15a1bda" id="id9d831a76-1b7d-cf85-cb91-a7e59fa687d0" data-type="term">processing</span> may be done on the 
+  <span data-role="tag" data-value="671807ce-f7c6-6f22-2a9b-4918fef63796" id="idaacb0332-72bd-46f8-19e0-3f5979dea7d0" data-type="term">integrated computing device</span>.&nbsp;
+</p>
+<p></p>
+<p>The MAV may be equipped with a 
+  <span data-role="tag" data-value="10dc4100-0dbf-7225-d5a2-8bb6643c682c" id="id2172dde9-c5d0-fcc5-d036-da089d25098a" data-type="term">downward-facing</span>, 
+  <span data-role="tag" data-value="6d0db855-4577-d1d7-4609-b2238a8ca68f" id="id0fe8628c-e83a-c8da-da74-4f5299929541" data-type="term">high framerate optical flow sensor</span> with 
+  <span data-role="tag" data-value="ea549d5c-f6c9-27b7-482d-b14cf1426f4a" id="id5bbfba76-1a4a-3ce8-b4d5-ab8828a8bf72" data-type="term">sonar and lidar</span>. Developed the 
+  <span data-role="tag" data-value="b0124c8d-598c-f2d2-988f-ab7ffed17562" id="idbfc14649-d217-93c7-72e6-2e75a764876f" data-type="term">flow sensor</span> may provide 
+  <span data-role="tag" data-value="beefb705-48be-8836-3df9-d6dc46515fbb" id="id5d888572-bcf1-6e5f-40dc-477e0b330192" data-type="term">reliable metric position</span> and 
+  <span data-role="tag" data-value="af4fade3-d862-debf-bc22-002ae3eae396" id="id7624bbf7-abf5-bf26-57f7-1edec8591863" data-type="term">attitude estimation</span> by computing 
+  <span data-role="tag" data-value="d12b5ce7-efb0-8589-9c11-d14687cf2a14" id="id658bd1cf-2385-bd46-81c5-085e0da9c9c0" data-type="term">2D optical flow</span> on the 
+  <span data-role="tag" data-value="69c1eaa6-5a8f-1a04-3c58-05c7cd4ba391" id="idb8ca7d48-a255-0609-2e46-0ce4e2f74ea7" data-type="term">ground</span>, then using 
+  <span data-role="tag" data-value="0519c5f8-c4ad-0fec-89e5-4afe31cf04bf" id="idea221193-8928-63ad-47d5-ed80da40a24c" data-type="term">ground distance measurements and gyro readings</span> to compute 
+  <span data-role="tag" data-value="171e7120-333c-debe-ea65-48e1c87c5038" id="id15d47546-7622-44ec-6a7a-7b35f8077a65" data-type="term">vehicle ground speed</span>. Once computed, this 
+  <span data-role="tag" data-value="3119aa5e-cb73-e752-1a06-69f36e0e8a6b" id="id5db6c968-ce25-afa1-6f4f-f6107e6923a3" data-type="term">speed</span> may be sent to an 
+  <span data-role="tag" data-value="69535378-3ef1-1d68-e27c-cda40b194613" id="idc80ef315-25bc-53d1-bb41-6d6dc5317f08" data-type="term">extended Kalman filter</span> (EKF) running on flight controller 
+  <span data-role="tag" data-value="148eb84b-e1d1-db19-8405-a2dd47354a24" id="id3e862677-8ac7-418d-54e2-dd0b8cc730e4" data-type="term">hardware</span> to be fused with 
+  <span data-role="tag" data-value="9f42d85a-3f85-e29e-0bb4-c91a837f5e6c" id="id5c7c7800-0c45-a49b-1c58-1366e6cb5091" data-type="term">other sensor measurements</span> (e.g., IMU) for 
+  <span data-role="tag" data-value="9337cf61-8f7d-0189-7cbe-336928e5ab3b" id="idbcd86ed4-0749-aee7-d782-284687e221ae" data-type="term">even more precise state estimation</span>
+</p>

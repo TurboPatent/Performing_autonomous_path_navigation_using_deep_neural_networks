@@ -1,0 +1,335 @@
+<p>
+  <span data-role="tag" data-value="67320a85-f4d2-e1f8-e519-76a7497ef126" id="id1e0adc0c-8700-1e86-aefb-5ee3c634e41a" data-type="figure">Figure 7</span> illustrates an 
+  <span data-role="tag" data-value="9ef85bc6-8057-2f72-80b7-a7215ac03b80" id="idf059f5c3-5a11-2bf1-582e-de02596623a5" data-type="drawingObject">exemplary system 700</span> in which the 
+  <span data-role="tag" data-value="be76c8e7-1267-a5f0-8294-8762f78f0c49" id="id3f25b106-cc50-c2a1-fd36-3edae0b6e795" data-type="term">various architecture and/or functionality</span> of the 
+  <span data-role="tag" data-value="2f9ec666-b804-1e79-0d5d-85429c1349b8" id="id7e882317-2345-143b-c5d3-1ab2f98c56b3" data-type="term">various previous embodiments</span> may be implemented. The 
+  <span data-role="tag" data-value="9ef85bc6-8057-2f72-80b7-a7215ac03b80" id="id0684ef39-8a77-9752-a138-439814f0b7b5" data-type="drawingObject">exemplary system 700</span> may be configured to implement the 
+  <span data-role="tag" data-value="4b09bf94-0ed6-b86a-b419-85f1e2aece55" id="id4fde598a-2a14-8232-9123-e6d63d19b069" data-type="drawingObject">method for performing autonomous path navigation using deep neural networks 100</span>&nbsp;shown in 
+  <span data-role="tag" data-value="1b1f2cb1-9a38-4107-07d0-db6d8206248e" id="id0b1875a4-0d0b-fdb1-e226-24c85e79fd57" data-type="figure">Figure 1</span>.&nbsp;
+</p>
+<p></p>
+<p>As shown, an 
+  <span data-role="tag" data-value="9ef85bc6-8057-2f72-80b7-a7215ac03b80" id="idc42da63d-7614-7917-4f3d-8d571617fdcb" data-type="drawingObject">exemplary system 700</span> is provided including 
+  <span data-role="tag" data-value="1633fb30-6c16-9dad-5b86-5d782cec0131" id="id7e7680c7-aa55-a0ef-447f-e03f261e43b5" data-type="term">at least one central processing unit</span> 602 that is connected to a 
+  <span data-role="tag" data-value="be2d31bd-de7f-4108-d780-a8ede80788b4" id="id500ac952-cb33-01cf-02f2-22e42f204161" data-type="term">communication bus</span>
+  <span data-role="tag" data-value="f71c252f-dc81-411d-89c2-aab559170a2c" id="id623e719d-25d8-4bec-9d6a-db8cdb49bbdc" data-type="drawingObject" data-broken="true">712 (deleted)</span>. The 
+  <span data-role="tag" data-value="be2d31bd-de7f-4108-d780-a8ede80788b4" id="idb89bccc9-6ece-8eb4-4514-972b569dfbe9" data-type="term">communication bus</span>
+  <span data-role="tag" data-value="f71c252f-dc81-411d-89c2-aab559170a2c" id="id69b6286e-2444-b684-1be8-8f786189c5ce" data-type="drawingObject" data-broken="true">712 (deleted)</span> may be implemented using any 
+  <span data-role="tag" data-value="f7591199-c974-f49d-55ad-d84dee03a66e" id="id7311a191-cf4d-ae71-713d-85f312c37d22" data-type="term">suitable protocol</span>, such as PCI (
+  <span data-role="tag" data-value="4d88d92c-5988-e4c1-861e-c37707081835" id="ida6658fea-0ec9-9571-d3c1-8313f9dee338" data-type="term">Peripheral Component Interconnect</span>), 
+  <span data-role="tag" data-value="1298d6cf-d788-11c7-4162-7aae14d7cc49" id="id4912586d-0a8f-ff6a-61ad-b267537dd4f4" data-type="term">PCI-Express</span>, AGP (
+  <span data-role="tag" data-value="69f9ee9b-a63b-04d5-5912-eb11a445c224" id="id03a55f3d-4624-4e82-58e3-99978e32ac86" data-type="term">Accelerated Graphics Port</span>), 
+  <span data-role="tag" data-value="2edd6f31-6ade-80ce-67f7-7ff388f4d971" id="id499c3443-9b4f-c795-b45d-9e597d0b92fe" data-type="term">HyperTransport</span>, or any 
+  <span data-role="tag" data-value="948141c5-7bf6-aca6-383d-507e46e2b725" id="id999d3449-914d-5004-5170-8232743b1b13" data-type="term">other bus</span> or 
+  <span data-role="tag" data-value="04760114-c5ed-5579-ca6c-902ba7e9d8ff" id="id0d4d0af2-436d-6ca9-db2a-b27b8b7f04e0" data-type="term">point-to-point communication protocol(s)</span>. The 
+  <span data-role="tag" data-value="9ef85bc6-8057-2f72-80b7-a7215ac03b80" id="idcd7e3583-381d-d622-44ab-c4f18726ccd4" data-type="drawingObject">exemplary system 700</span> also includes a 
+  <span data-role="tag" data-value="181f7a56-1505-bd1d-6625-f5b05f749d75" id="id89c397cf-78f4-4780-9800-9eb969be2421" data-type="drawingObject">main memory 702</span>. 
+  <span data-role="tag" data-value="21f309f9-47ff-4944-0162-cf788a17d8ca" id="idc4477261-47cc-3495-70e7-b00c22cdc4ae" data-type="term">Control logic</span> (
+  <span data-role="tag" data-value="a98945bd-49c3-3a5b-61f7-5b32a9d62661" id="idd843caaa-3310-b452-e587-433615c3b721" data-type="term">software</span>) and 
+  <span data-role="tag" data-value="a4092958-3200-972e-22d0-ff600e42aea9" id="iddaa70ad0-fd80-94ad-2714-85ec36200d3f" data-type="term">data</span> are stored in the 
+  <span data-role="tag" data-value="181f7a56-1505-bd1d-6625-f5b05f749d75" id="id49510ba4-a007-52ce-04ae-b5775b213e44" data-type="drawingObject">main memory 702</span> which may take the 
+  <span data-role="tag" data-value="7e1160c6-f036-820e-34ac-4488dc96ec0d" id="id8dbc6100-a223-a318-af75-01816fef082e" data-type="term">form</span> of 
+  <span data-role="tag" data-value="b312bda4-7d36-cafa-b4d9-94cd512a664f" id="id036f480e-45e2-1347-207b-19cc8b40023d" data-type="term">random access memory</span> (RAM).&nbsp;
+</p>
+<p></p>
+<p>The 
+  <span data-role="tag" data-value="9ef85bc6-8057-2f72-80b7-a7215ac03b80" id="id01d8e7b9-3261-de78-fd85-67b4582d44be" data-type="drawingObject">exemplary system 700</span> also includes 
+  <span data-role="tag" data-value="d0cc660d-0676-ecf0-8f4a-6154eced60c7" id="id92be0e89-c41d-066a-233d-b414e7c9baaa" data-type="drawingObject">input devices 708</span>, the 
+  <span data-role="tag" data-value="dd95509a-81c4-d91e-4f5e-8584d9b28208" id="id6466cd1f-0eca-65a8-332c-168d8cb0a751" data-type="term">parallel processing system</span> 606, and 
+  <span data-role="tag" data-value="77e369fe-643a-c4d8-557f-dd807a7340b5" id="id9969c92c-e4ed-becc-975d-3efac44a3876" data-type="drawingObject">display devices 706</span>, i.e. a 
+  <span data-role="tag" data-value="06098a48-2e85-5b08-aaec-d62cadfa763c" id="ida20029fb-e903-462e-835e-4fd58780b17e" data-type="term">conventional CRT</span> (
+  <span data-role="tag" data-value="777dff20-d7e9-6ef7-a7b0-bc0c85a9ac2d" id="id9b3c39b6-939b-c9fe-819c-8e875cf4b88a" data-type="term">cathode ray tube</span>), LCD (
+  <span data-role="tag" data-value="277be870-02d6-590b-647c-539248e4b0b1" id="iddbdc7549-9205-a8b1-23e9-888551a29fed" data-type="term">liquid crystal display</span>), LED (
+  <span data-role="tag" data-value="c27e7080-a633-bd8a-582a-4ab1d5dabd81" id="id609ab44c-1961-d8e8-1119-adbdc6b5e237" data-type="term">light emitting diode</span>), 
+  <span data-role="tag" data-value="add752d0-dafb-2988-27ec-aa80ebe359a6" id="idadbb76f7-500a-a228-38bf-dabf4c3a7863" data-type="term">plasma display</span> or the like. 
+  <span data-role="tag" data-value="52870d9d-2b53-2731-05fc-dfc818cfd88f" id="id8e59da9d-43dd-7edd-96fb-f351ccef379d" data-type="term">User input</span> may be received from the 
+  <span data-role="tag" data-value="d0cc660d-0676-ecf0-8f4a-6154eced60c7" id="id8597e704-8503-3991-4044-a19ce89a2296" data-type="drawingObject">input devices 708</span>, e.g., 
+  <span data-role="tag" data-value="233f0b45-f0c9-70b8-8e31-a1fef0bcd8f5" id="idbbec06dd-d62e-7a1e-f9bb-a583b1af58b6" data-type="term">keyboard, mouse, touchpad, microphone</span>, and the like. Each of the 
+  <span data-role="tag" data-value="5939b4da-68de-7ae5-b5fe-dd8171b6ac3e" id="id28870416-a6ca-827b-cbd6-4a8f87153e85" data-type="term">foregoing modules and/or devices</span> may even be situated on a single semiconductor platform to 
+  <span data-role="tag" data-value="7e1160c6-f036-820e-34ac-4488dc96ec0d" id="id85713c8d-2a4a-a961-a828-fd1b6b9f7fa7" data-type="term">form</span> the 
+  <span data-role="tag" data-value="9ef85bc6-8057-2f72-80b7-a7215ac03b80" id="iddf4afba1-ecf0-f2b5-6f2d-e212af0d0834" data-type="drawingObject">exemplary system 700</span>. Alternately, the 
+  <span data-role="tag" data-value="2c1ecb23-4ecc-3b51-38a4-54c46c3e9ffd" id="id1a59f1b1-e9eb-75eb-b9d6-a9a75c0b8393" data-type="term">various modules</span> may also be situated separately or in 
+  <span data-role="tag" data-value="96a2bc1c-c3eb-4d12-f694-c645540d829e" id="id8095dd99-3c40-3954-dada-4414472d5714" data-type="term">various combinations</span> of 
+  <span data-role="tag" data-value="33b01b5a-c931-453e-da3c-50517cd87607" id="id196914cf-1d15-fa67-9275-baf9dd3bfcea" data-type="term">semiconductor platforms</span> per the 
+  <span data-role="tag" data-value="35657c05-ecfe-4262-2e4e-fe546b33e6c1" id="id69f60ae2-e880-37d7-0599-44e5210bb6af" data-type="term">desires</span> of the 
+  <span data-role="tag" data-value="307546f9-39dd-9ac4-221c-8897b3efd935" id="idd823ec29-d296-bfd6-f222-7d7c88098a6c" data-type="term">user</span>.&nbsp;
+</p>
+<p></p>
+<p>Further, the 
+  <span data-role="tag" data-value="9ef85bc6-8057-2f72-80b7-a7215ac03b80" id="idebc03d48-3384-033a-7710-d1ac5eb4fdbc" data-type="drawingObject">exemplary system 700</span> may be coupled to a 
+  <span data-role="tag" data-value="a48c8fb3-1e8f-e1ab-ca14-7ce9943a2249" id="id597c8581-edc6-8e9a-09f1-966b73a949ee" data-type="term">network</span> (e.g., a 
+  <span data-role="tag" data-value="6be1028b-caac-2fee-d856-bbc7d6ae6e46" id="idde05cafd-0e67-a8fc-3c27-8ba78c5aef92" data-type="term">telecommunications network</span>, 
+  <span data-role="tag" data-value="0f1a70f4-7cd1-62b9-00ac-403278d0809b" id="id3919511d-0f11-b9f6-288b-30e5f82aada1" data-type="term">local area network</span> (LAN), 
+  <span data-role="tag" data-value="e8ea6717-3e44-2d2a-d261-ccea8d97dba9" id="id040f331a-a83e-848c-11d7-8799646c212d" data-type="term">wireless network</span>, 
+  <span data-role="tag" data-value="f78a8b89-d139-6d28-e6d2-40c343009542" id="idbe530e74-2487-5168-6197-77e3a7590de8" data-type="term">wide area network</span> (WAN) such as the 
+  <span data-role="tag" data-value="7f0a93e9-c9ca-9087-e293-1268e61ba216" id="idf4381788-26df-a43a-5093-74c947a2e43f" data-type="term">internet</span>, 
+  <span data-role="tag" data-value="2287fe3c-00bd-0b46-fae2-bd61cd2d7ea2" id="id8dd0f6fe-b978-c0e1-8559-db5aba05d7be" data-type="term">peer-to-peer network</span>, 
+  <span data-role="tag" data-value="42157c32-81c7-2455-8cf2-ad8b30847a23" id="id06b78a3a-1e8e-443e-1cce-b45f9e1cbb8c" data-type="term">cable network</span>, or the like) through a 
+  <span data-role="tag" data-value="07557465-a062-bc23-6eea-34805a2106f0" id="id27816c2e-4150-621c-c659-8cd458be2a77" data-type="drawingObject">network interface 704</span> for 
+  <span data-role="tag" data-value="15002a8e-6544-38e2-0d39-4b992da7d2bf" id="idec0d6fa6-d258-f7cc-45b0-90cffa71e7e8" data-type="term">communication purposes</span>.&nbsp;
+</p>
+<p></p>
+<p>The 
+  <span data-role="tag" data-value="9ef85bc6-8057-2f72-80b7-a7215ac03b80" id="id6123535a-af3c-df75-c677-5b9027a7cbe7" data-type="drawingObject">exemplary system 700</span> may also 
+  <span data-role="tag" data-value="3991c347-7c5f-6f63-4ee6-606b014b1c17" id="id658ef825-b472-c855-1225-4c58cfc298f4" data-type="term">include</span> a 
+  <span data-role="tag" data-value="839f970a-c41a-08b0-ab4c-5e855990b01e" id="idcefc0d87-d7fb-9dad-7a2c-8fb6abc5fb55" data-type="term">secondary storage</span> (not shown). The 
+  <span data-role="tag" data-value="839f970a-c41a-08b0-ab4c-5e855990b01e" id="id60890c0c-4f3e-565f-4025-09e12f9889fb" data-type="term">secondary storage</span>
+  <span data-role="tag" data-value="969c98c7-6517-ef62-90ce-149f667e00a8" id="id411e18a4-965e-39e9-4e68-8c1529b712aa" data-type="drawingObject" data-broken="true">608 (deleted)</span> includes, for 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id014ced0a-ba30-4ad3-c390-c70b86aaa25e" data-type="term">example</span>, a 
+  <span data-role="tag" data-value="42daa3e7-b316-6a12-d381-4916fac3ff1b" id="idd3572944-773f-262f-b79d-d08208eb274f" data-type="term">hard disk drive</span> and/or a 
+  <span data-role="tag" data-value="23427043-baed-3872-0f0e-3db3e9f4e3b3" id="id8c1df767-1dfd-8855-8686-1c11391627a5" data-type="term">removable storage drive</span>, representing a 
+  <span data-role="tag" data-value="0758abe2-1522-c8c7-91c3-d87b632fbc4b" id="id2d4dee27-0e80-19a2-614b-fde19dc1797b" data-type="term">floppy disk drive</span>, a 
+  <span data-role="tag" data-value="629119ae-14b6-71df-01c3-aafa04a02709" id="id86f9b033-6dba-c095-d0c0-768de47cabba" data-type="term">magnetic tape drive</span>, a 
+  <span data-role="tag" data-value="480aa731-0dec-b00b-f744-8f04ea8315bb" id="id65cd1753-8b3c-3fa0-881c-acc75d64afd2" data-type="term">compact disk drive</span>, 
+  <span data-role="tag" data-value="3d85cba6-ad78-547c-c75b-d820bc91484e" id="id085d777f-5602-09f2-39c3-2edc1f70879b" data-type="term">digital versatile disk</span> (DVD) drive, 
+  <span data-role="tag" data-value="b8778824-5d9c-7653-962f-9dc41113a1f7" id="id9ae97fd6-d0e7-bdcd-6171-aec10c290e8c" data-type="term">recording device</span>, 
+  <span data-role="tag" data-value="4c355277-3a1b-c41c-0fa7-576ce13d891e" id="id3002abf7-e5e2-1b8d-5674-bd97af08ef98" data-type="term">universal serial bus</span> (USB) flash 
+  <span data-role="tag" data-value="e45a81cd-8393-e8b5-54dd-f25dc8d8f372" id="idcb4750cc-9c07-aff8-2ae9-4a2f75a4c470" data-type="term">memory</span>. The 
+  <span data-role="tag" data-value="23427043-baed-3872-0f0e-3db3e9f4e3b3" id="id6f053691-5289-10dd-6d2b-7dcd8a30ef8b" data-type="term">removable storage drive</span> reads 
+  <span data-role="tag" data-value="a6e3b899-2aef-63ef-8f84-7207015056e6" id="id49fc1dfe-ed1a-0761-b79b-cafc205e560e" data-type="term">from and/or writes</span> to a 
+  <span data-role="tag" data-value="462f9053-a0b4-30f3-7bf3-4eb327a3945f" id="id8c31ca72-41c4-8d01-233c-ceff954b20be" data-type="term">removable storage unit</span> in a 
+  <span data-role="tag" data-value="2366900f-fbe4-05b0-699c-6c508c34fc23" id="id895085dc-104c-d825-1db1-86a2e13843cb" data-type="term">well-known manner</span>.&nbsp;
+</p>
+<p></p>
+<p>Computer 
+  <span data-role="tag" data-value="3117ff74-8875-97e9-0738-43d6e9a953ca" id="id401d5937-0cda-9fcb-9588-3677013302dd" data-type="term">programs</span>, or 
+  <span data-role="tag" data-value="7a58cfbb-8916-116a-4a53-248ee7fe6063" id="idbece1f67-a0f1-4558-3552-185938782819" data-type="term">computer control logic algorithms</span>, may be stored in the 
+  <span data-role="tag" data-value="181f7a56-1505-bd1d-6625-f5b05f749d75" id="id8c265481-9746-fdf4-202f-7ca98879208c" data-type="drawingObject">main memory 702</span> and/or the 
+  <span data-role="tag" data-value="839f970a-c41a-08b0-ab4c-5e855990b01e" id="id65accb12-d265-ff79-0ac3-34c11aee3e37" data-type="term">secondary storage</span>. 
+  <span data-role="tag" data-value="965206c8-5d04-361a-436c-22d7d90b010a" id="idb4ac5c3c-b699-d8aa-81eb-006093d4ff7d" data-type="term">Such computer programs</span>, when executed, enable the 
+  <span data-role="tag" data-value="9ef85bc6-8057-2f72-80b7-a7215ac03b80" id="id9f75d441-5cd8-f3bf-f920-8187f79e3db1" data-type="drawingObject">exemplary system 700</span> to perform 
+  <span data-role="tag" data-value="36f6ae4b-90ff-ef42-fa34-37db89471c6a" id="id55045e25-1a67-69e2-54b2-ac8e4d145c01" data-type="term">various functions</span>. The 
+  <span data-role="tag" data-value="181f7a56-1505-bd1d-6625-f5b05f749d75" id="idc0f671ff-cc72-d938-bee7-ec1951f83155" data-type="drawingObject">main memory 702</span>, the 
+  <span data-role="tag" data-value="37387cc4-ba8d-e591-0c1a-d898dbedb200" id="idbeccc077-5ef6-e287-8e83-21560185d65a" data-type="term">storage</span>, and/or any 
+  <span data-role="tag" data-value="3f894043-7426-17d1-2004-17f2b988eb65" id="id707985b4-48f8-86fb-6188-f3442891972e" data-type="term">other storage</span> are 
+  <span data-role="tag" data-value="a9a2816e-eb0c-6e79-aba8-bf08a2e30cb7" id="id828d9737-cde9-b8b0-9f68-8412dcf6d063" data-type="term">possible examples</span> of 
+  <span data-role="tag" data-value="718d7020-acc4-866b-e6c2-e53c14aaa09d" id="idb346d06d-1ef9-7dba-d353-d62206ffb1fe" data-type="term">computer-readable media</span>.&nbsp;
+</p>
+<p></p>
+<p>The 
+  <span data-role="tag" data-value="91fd113d-3c36-2546-aeae-d5cbd2640aa3" id="ida8c799de-f407-74ad-dfa5-be11950c1711" data-type="term">architecture and/or functionality</span> of the 
+  <span data-role="tag" data-value="dc0683cc-2821-002e-3d34-c691c0d79e2b" id="idbd871e1a-0ca9-826e-6e0c-63d6785d159b" data-type="term">various previous figures</span> may be implemented in the 
+  <span data-role="tag" data-value="1436e562-21d8-4e4c-086a-7692971b100f" id="id0620a5a1-2b5e-0127-2db5-e4cfda579e1a" data-type="term">context</span> of a 
+  <span data-role="tag" data-value="5a62e62d-32fb-8ec3-7ceb-9dd1f5540469" id="idfbfb87d2-5fea-2b3f-2d33-8b79119a555a" data-type="term">general computer system</span>, a 
+  <span data-role="tag" data-value="fe251354-fb33-73c1-82ac-725773295f52" id="id45255eb1-d492-61ca-097a-18d6c1fbaa86" data-type="term">circuit board system</span>, a 
+  <span data-role="tag" data-value="f22cc462-beca-2d82-af79-1791f7bec83c" id="id9d175f8f-0730-e782-6b1f-d12ae1b8d737" data-type="term">game console system</span> dedicated for 
+  <span data-role="tag" data-value="a93e1691-81b9-1136-781b-cd03c6c20017" id="id84a45d45-0852-2610-ab64-879168033f01" data-type="term">entertainment purposes</span>, an 
+  <span data-role="tag" data-value="188f4277-f34e-fa3d-e939-c52896d88746" id="id4a978ea9-77ed-6eae-7715-0ddff20f2182" data-type="term">application-specific system</span>, and/or any 
+  <span data-role="tag" data-value="5513f564-78de-a099-fda6-57dd67b27d7d" id="idfdcd032e-f03e-7b04-f6c2-935b1d11fc09" data-type="term">other desired system</span>. For 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id92cb1311-9005-ef63-c4c1-406dc02b44af" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="9ef85bc6-8057-2f72-80b7-a7215ac03b80" id="id93191727-08f9-3fd9-e35c-83c9471c8adf" data-type="drawingObject">exemplary system 700</span> may take the 
+  <span data-role="tag" data-value="7e1160c6-f036-820e-34ac-4488dc96ec0d" id="id152b1cb3-f039-95e8-304e-72a6c913dd8c" data-type="term">form</span> of a 
+  <span data-role="tag" data-value="b4492d5f-d8ea-263a-49cf-c6f743815ba2" id="ide911ef1f-b9e9-e427-a8e9-a1292693e0c5" data-type="term">desktop computer</span>, a 
+  <span data-role="tag" data-value="348ea607-d289-92ff-051f-8f24032953f4" id="id5b9b64e3-2148-f328-75fe-fca3d21aa108" data-type="term">laptop computer</span>, a 
+  <span data-role="tag" data-value="7435b1ae-57ca-e1b4-4124-91c12d3a2d8c" id="idbaa7b61f-92af-b3da-1af3-97d665ccaf2b" data-type="term">tablet computer</span>, 
+  <span data-role="tag" data-value="35d54f51-2bf0-93f9-2934-67eddf62a6fc" id="ida9a7aafb-26f6-6103-bb1e-2f59190493e4" data-type="term">servers</span>, 
+  <span data-role="tag" data-value="810f37ef-e087-4891-d4ba-0ebb75f47754" id="id49674f8d-20c6-4e89-a3ef-ba227b0f6d3f" data-type="term">supercomputers</span>, a 
+  <span data-role="tag" data-value="8335a699-6bb9-d4b2-d0f5-de4a4337f89e" id="idfebe5987-ba8b-5144-c9dd-a34b7ec0d7f9" data-type="term">smart-phone (e.g.</span>, a 
+  <span data-role="tag" data-value="7d8c3d7f-215c-2a12-3c04-9405a6e9e8a3" id="id20398fbf-acec-77fc-207a-80fc96a5b657" data-type="term">wireless, hand-held device</span>), 
+  <span data-role="tag" data-value="74c30ad1-5926-acd8-5322-9182c20f4acc" id="id9e40b443-0d59-b8c9-c26c-51ed9bc55069" data-type="term">personal digital assistant</span> (PDA), a 
+  <span data-role="tag" data-value="2a15d7a1-4e44-0a25-bfa6-3699901d66a2" id="id470bdc78-b577-56df-42bb-a47345e760f6" data-type="term">digital camera</span>, a 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="ide7bc6054-f312-eb6b-bc4f-e0c89f92d267" data-type="term">vehicle</span>, a 
+  <span data-role="tag" data-value="f73dbd7d-72f4-bea0-9263-d08190f248c0" id="idbeb341e9-4e77-eb73-03af-3c9c6b122a13" data-type="term">head</span> mounted display, a 
+  <span data-role="tag" data-value="e8929e54-fd10-d5b4-5871-d9f5963cbc7c" id="id9c75e03a-b281-9eb7-066b-cd1f91f46b2b" data-type="term">hand-held electronic device</span>, a 
+  <span data-role="tag" data-value="96b52312-a45f-a1a3-4d17-647bde42f793" id="idf0cace59-923b-4bf8-5210-568bb45e491c" data-type="term">mobile phone device</span>, a 
+  <span data-role="tag" data-value="875486b2-21a1-1000-5942-2892e476580a" id="idc872bb2e-cdce-dd11-7f83-8b9292f506ce" data-type="term">television</span>, 
+  <span data-role="tag" data-value="73b17c7f-1be0-4cc0-4c7d-17904b73e635" id="id515a11da-90d3-98a8-4202-7e6efed5e666" data-type="term">workstation</span>, 
+  <span data-role="tag" data-value="41477c67-fc8c-3312-3c46-7068a0b3ca0d" id="id5789f3b1-01ea-9dcd-ec26-a2f1b32dc99d" data-type="term">game consoles</span>, 
+  <span data-role="tag" data-value="a593c8aa-5db4-eb30-f839-c00a746eb6fa" id="id1d935c0b-98be-d37b-d408-dcf8e022f487" data-type="term">embedded system</span>, and/or any 
+  <span data-role="tag" data-value="2579e8b1-4cfe-874e-521f-9ef1eacadc16" id="id3816b709-8a88-e5e4-662a-1937ce17e6cb" data-type="term">other type</span> of 
+  <span data-role="tag" data-value="67db7d1d-0a01-f1f2-d765-9007c4713283" id="idc73164f3-c256-91cc-3a0b-0e92fefef102" data-type="term">logic</span>.&nbsp;
+</p>
+<p></p>
+<p>While 
+  <span data-role="tag" data-value="211e7fc4-d488-eb27-d74d-746b1d4065a7" id="ida5dd7b86-dcc1-8e17-5840-1e37d821049b" data-type="term">various embodiments</span> have been 
+  <span data-role="tag" data-value="ad113ecd-fd74-aa08-6447-eee4f79f355d" id="id56afe1e0-791f-1051-77bd-ac0874e3c681" data-type="term">described above</span>, it should be understood that they have been presented by way of 
+  <span data-role="tag" data-value="44b7e629-e727-1526-0dba-bb46a0fa91c8" id="idca0e38e0-ea83-1779-1487-67a559314cd5" data-type="term">example only</span>, and not 
+  <span data-role="tag" data-value="0f9f47db-3602-bfc6-6b6c-9970c2b1d0fd" id="id66f4ac46-9b85-b29e-1b29-c4b5d7b17c1f" data-type="term">limitation</span>. Thus, the 
+  <span data-role="tag" data-value="c89d8277-10c7-669c-ab94-c5fd898da5ba" id="id231325f4-8847-1cef-bbbd-4fb7d024ff4c" data-type="term">breadth and scope</span> of a 
+  <span data-role="tag" data-value="101a0405-ef46-6282-e983-029d6f1d3544" id="id808fadc9-0c53-8d30-161b-25dc23439f06" data-type="term">preferred embodiment</span> should not be limited by any of the above-described exemplary embodiments, but should be defined only in accordance with the 
+  <span data-role="tag" data-value="a2622907-332f-0116-7d06-ad776ba0c9b7" id="id8dcfe678-2063-2842-d85a-3cdddd2a818e" data-type="term">following claims</span> and 
+  <span data-role="tag" data-value="d267ac04-1c71-3960-8d4d-b4968e2747ea" id="id29be949d-86ff-e204-44f9-68fa5bd06958" data-type="term">their equivalents</span>.&nbsp;
+</p>
+<p></p>
+<p>
+  <span data-role="tag" data-value="dfabc40e-8e48-5f55-f953-5b003be917d2" id="id8d96c13a-8697-dcf7-a6e0-d03559565c5b" data-type="term">Machine Learning</span>
+</p>
+<p></p>
+<p>
+  <span data-role="tag" data-value="72303528-19b2-21ed-f524-57488fc7e72d" id="id68ceef57-ff4f-4433-87ff-c1daa4bc12b0" data-type="term">deep neural networks</span> (
+  <span data-role="tag" data-value="4166b5ff-8f0f-496b-a374-527ca0350bc4" id="idd742be80-5202-d67e-9a38-c892ac50c430" data-type="term">DNNs</span>) developed on 
+  <span data-role="tag" data-value="435fdba0-80e5-6e76-2bbe-3f104fcbcae4" id="id7770b942-20b3-8fac-b020-e7b6aa7712a9" data-type="term">processors</span>, such as the 
+  <span data-role="tag" data-value="16b5d8a5-6546-d84d-f870-6e19b3d7bc86" id="idbb96c200-6e0b-29e1-7342-1410cc4b4148" data-type="drawingObject">PPU 202</span> have been used for 
+  <span data-role="tag" data-value="a9df9661-3e8d-3e9c-e0a4-3e91be88421e" id="id369ae824-136c-3677-89fd-3919b09ef0ec" data-type="term">diverse use cases</span>, from 
+  <span data-role="tag" data-value="345cbab7-c403-702f-ed34-cae72662110c" id="id0bce74c6-6ad6-0116-41e1-ee5b1397a796" data-type="term">self-driving cars</span> to 
+  <span data-role="tag" data-value="fd291f18-e3a0-04d3-c00b-1b3fff542af9" id="id7baf0feb-0378-7837-9371-82b1e1c60913" data-type="term">faster drug development</span>, from 
+  <span data-role="tag" data-value="bae988ba-b716-78c2-1e45-ec9a5301a1bd" id="idfd9e4eda-0c5f-27b7-d6c8-96ef3bfc2502" data-type="term">automatic image captioning</span> in 
+  <span data-role="tag" data-value="fa8e5a8e-fc3c-7902-4c19-ed7b40f1130a" id="id89da79a6-df70-2ff9-21aa-17460dd29f00" data-type="term">online image databases</span> to 
+  <span data-role="tag" data-value="175e458e-5955-1f67-9dd5-322ddcda424d" id="ide4e49e94-2e93-2898-c4c1-0c1502876272" data-type="term">smart real-time language translation</span> in 
+  <span data-role="tag" data-value="70b8b997-d16d-f081-8076-7a6f5d73bfb8" id="idff3c06d3-e2e5-e64a-1573-3e858a1fc1fe" data-type="term">video chat applications</span>. 
+  <span data-role="tag" data-value="bcf310fc-de6c-5214-2357-edaa79289f20" id="id59afe067-2e91-21e5-4887-0eae2f6e9bab" data-type="term">Deep learning</span> is a 
+  <span data-role="tag" data-value="041840e4-dc61-9faa-2680-ac776b00da34" id="id3f8172b8-6ae3-c18e-fb77-ce73bf5afc91" data-type="term">technique</span> that models the 
+  <span data-role="tag" data-value="9d89bdb2-99ae-236a-99c1-731cb1f096f9" id="ide103c3b2-d59c-332a-481f-c96416221e35" data-type="term">neural learning process</span> of the 
+  <span data-role="tag" data-value="d8193d7e-cce7-0f0d-3761-93bb7fe8c8b6" id="iddd187088-4ba9-4891-6643-010cf5911429" data-type="term">human brain</span>, continually learning, continually getting smarter, and delivering 
+  <span data-role="tag" data-value="0a7be0f6-a138-d913-250c-1a61332b39ff" id="id05e1581c-8488-2e15-8beb-202e9c939643" data-type="term">more accurate results</span> more quickly over 
+  <span data-role="tag" data-value="38f63620-a410-6495-ad8e-711d491df2fa" id="id106bd224-d387-2d03-9fd4-a9d34e500e28" data-type="term">time</span>. A 
+  <span data-role="tag" data-value="8908fff4-1b4c-6721-fe3f-6bd26b053260" id="id93a9a3bd-b3ba-ec62-ffb1-4bac34beeab9" data-type="term">child</span> is initially taught by an 
+  <span data-role="tag" data-value="04a57e90-701e-2987-b8c7-bc6c1b8c0d91" id="id07fa42cb-9e6d-35f4-a442-9cc4a7797e64" data-type="term">adult</span> to correctly identify and classify 
+  <span data-role="tag" data-value="2e0302f8-2b96-94ef-9e1c-de3e469959c9" id="id0b7f5dc2-8d0b-2af4-49fa-bccbba6412c6" data-type="term">various shapes</span>, eventually being able to identify 
+  <span data-role="tag" data-value="cb29cb5b-1fc0-608d-0f45-aa2a70ae5fea" id="iddec7b6f1-5082-1c51-e64d-5ff365cd5067" data-type="term">shapes</span> without any 
+  <span data-role="tag" data-value="03cd68cc-bced-319b-b71f-8872069a3d5d" id="id2f9ce9f2-cbe9-b9b2-e3fb-93c6cf92e78e" data-type="term">coaching</span>. Similarly, a 
+  <span data-role="tag" data-value="bcf310fc-de6c-5214-2357-edaa79289f20" id="id76316862-3d9a-bf03-9c27-1331d88c7537" data-type="term">deep learning</span> or 
+  <span data-role="tag" data-value="8cfc7e1f-7a40-ec52-7f88-5a0c2b58e47f" id="id88cc1e84-9b08-2376-9e4d-cf4569d74e55" data-type="term">neural learning system</span> needs to be trained in 
+  <span data-role="tag" data-value="1330027e-eb24-c40b-0e29-83ebe63357ba" id="id15397648-e27b-4c61-a8ef-d4f947358aa8" data-type="term">object recognition</span> and 
+  <span data-role="tag" data-value="f495920d-b63d-1ebc-4867-34de5f6a8ed4" id="id6009d7fe-9298-9144-bbc2-30ea2b7a7d93" data-type="term">classification</span> for it get smarter and more efficient at identifying 
+  <span data-role="tag" data-value="7b2512ff-c7f3-6015-c0ca-4b57acb950b3" id="id45907a04-fcf8-b02e-9bd3-439a00570126" data-type="term">basic objects</span>, 
+  <span data-role="tag" data-value="bd5d3b67-b050-9540-5c30-5ac16747c2a7" id="idd294e639-6e6e-48ce-a123-81eed8a9d0db" data-type="term">occluded objects</span>, etc., while also assigning 
+  <span data-role="tag" data-value="1436e562-21d8-4e4c-086a-7692971b100f" id="id4fb953d7-49a1-ae16-4965-7864a13d460b" data-type="term">context</span> to 
+  <span data-role="tag" data-value="ae63d29a-be7c-1a1c-a703-925e2e5ddc3e" id="id7dfe6708-9a13-a018-db83-338dedac21d9" data-type="term">objects</span>.&nbsp;
+</p>
+<p></p>
+<p>At the 
+  <span data-role="tag" data-value="4ae792f5-d63a-096e-339c-2cf614f1f0fb" id="id500c9002-0c0a-8af0-47dc-7cf09d4e62d6" data-type="term">simplest level</span>, 
+  <span data-role="tag" data-value="f16964e8-5974-f99a-9a95-49f44aa7bd0b" id="id322d239a-4d78-3ce6-da50-fce099aa1b7d" data-type="term">neurons</span> in the 
+  <span data-role="tag" data-value="b5dfbca5-d1da-04c6-902a-7cfa8d536b60" id="iddd8f9a2e-1531-1dbf-082f-b07e4b502b6e" data-type="term">human brain look</span> at 
+  <span data-role="tag" data-value="b6f706fa-cd8d-a30c-e20d-26c0af70a257" id="id1cb6827d-97c5-e4e9-4639-88931188cec6" data-type="term">various inputs</span> that are received, 
+  <span data-role="tag" data-value="c2140c50-dfdd-2129-c06c-8a8f00695f91" id="id320114de-268a-db00-a829-12fa2cbec646" data-type="term">importance levels</span> are assigned to each of these 
+  <span data-role="tag" data-value="da4a0e97-a9de-c107-e04b-3e6b96016b9f" id="idbe44f069-136c-9549-85a9-a2b7d53d3fec" data-type="term">inputs</span>, and 
+  <span data-role="tag" data-value="b1d033d4-b6c1-a436-6328-2fe056859f55" id="id40c62c96-78ef-58db-c4ea-480cc64b6692" data-type="term">output</span> is passed on to 
+  <span data-role="tag" data-value="7097408e-ef20-447c-22b2-a61b780b7df5" id="id4f144699-5876-b547-528d-f930aa82551c" data-type="term">other neurons</span> to act upon. An 
+  <span data-role="tag" data-value="52d377b3-afa3-0466-771b-f360c69eb892" id="id4bd05c77-856d-0200-d4a6-58b888a823d7" data-type="term">artificial neuron or perceptron</span> is the 
+  <span data-role="tag" data-value="0c71938c-f316-9616-bb71-05fb92521e69" id="id802a6de9-61e3-e9d8-16f2-d3662c47283b" data-type="term">most basic model</span> of a 
+  <span data-role="tag" data-value="dca231d5-23df-b6b0-1ae8-1e5d6cb8bd47" id="id830e0c9e-e043-b64c-0af9-3bc601db9c7e" data-type="term">neural network</span>. In one 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id76f2bd04-60d9-6693-96e9-26a9f5c466cf" data-type="term">example</span>, a 
+  <span data-role="tag" data-value="34611669-90cd-6d9c-fba5-b4adbd8e35fa" id="idad32efe0-49a8-6dea-0f06-bcbca6ae90b6" data-type="term">perceptron</span> may receive one or more 
+  <span data-role="tag" data-value="da4a0e97-a9de-c107-e04b-3e6b96016b9f" id="id6fb35b3d-457b-5511-c416-567dce0964d1" data-type="term">inputs</span> that represent 
+  <span data-role="tag" data-value="ebb009c0-b0fd-59f5-c85b-a4cdb0a9fe53" id="id05244ede-9fb1-25e7-4610-26fa10127bf3" data-type="term">various features</span> of an 
+  <span data-role="tag" data-value="532a72b3-e5ae-62ee-a009-bb0b1f93d47f" id="idcbce917e-1353-cde0-095c-545ab3da3ca1" data-type="term">object</span> that the 
+  <span data-role="tag" data-value="34611669-90cd-6d9c-fba5-b4adbd8e35fa" id="id5962ba9d-5fd6-9788-7b43-38b2f7fe5ea5" data-type="term">perceptron</span> is being trained to recognize and classify, and each of these 
+  <span data-role="tag" data-value="836f34a5-439f-0587-7401-df7292c0ff91" id="idbae0311a-248e-e3a2-8a9f-5c68d47e39f3" data-type="term">features</span> is assigned a 
+  <span data-role="tag" data-value="a9ba9c07-d016-468b-e7f6-b3dcda426593" id="ide7be1725-e088-72e5-2c71-08084d28fd58" data-type="term">certain weight</span> based on the 
+  <span data-role="tag" data-value="1cd67d46-88da-a88e-2047-ca631a5a619b" id="idc66d8816-355a-1dc3-86dd-b736094d240d" data-type="term">importance</span> of that 
+  <span data-role="tag" data-value="6052c76c-e46f-c54e-6006-455cf89205f1" id="idbc3f57a4-fba9-39dd-0c7a-a9175c8d2cbc" data-type="term">feature</span> in defining the 
+  <span data-role="tag" data-value="9cdf8be0-ba4c-36a6-77e0-3af04ffdbf1c" id="id42829eeb-75cd-6c44-0103-22bfd7c95dd4" data-type="term">shape</span> of an 
+  <span data-role="tag" data-value="532a72b3-e5ae-62ee-a009-bb0b1f93d47f" id="id91f648ec-8f36-48d3-c8b4-0143d00f896d" data-type="term">object</span>.&nbsp;
+</p>
+<p></p>
+<p>A 
+  <span data-role="tag" data-value="64e10b5d-f6e2-574a-c77b-f467f4873079" id="id71f64506-b313-7e28-3be6-068455227803" data-type="term">deep neural network</span> (
+  <span data-role="tag" data-value="d39f2da2-2387-f89f-650b-5697200627a1" id="id8ce7bb43-6243-6433-8eac-c14fa8c4b460" data-type="term">DNN</span>) 
+  <span data-role="tag" data-value="b5c97dc3-65d0-c391-d729-a6f8d8cd82e5" id="id431cf507-1827-7651-34b4-0532f1def5a5" data-type="term">model</span> includes 
+  <span data-role="tag" data-value="9a6c381e-72c4-48fd-9f75-0100e787f1dd" id="id83d87d08-9361-3b1b-43e4-1ecd3f3a7554" data-type="term">multiple layers</span> of 
+  <span data-role="tag" data-value="f76b240d-2fac-4efb-0cce-91e9acd5cb9e" id="id08a8bb71-6293-211e-c22b-32ec08705415" data-type="term">many connected perceptrons</span> (e.g., 
+  <span data-role="tag" data-value="7a25b560-6460-f64b-ec89-2412499515c1" id="id4aea3478-c7e3-f19f-8e62-4b6cced865ba" data-type="term">nodes</span>) that can be trained with 
+  <span data-role="tag" data-value="b0881e65-6f31-dc7f-e469-e61e1aeadfe6" id="idb4b3748a-d866-7e06-93da-6a287f6a3b93" data-type="term">enormous amounts</span> of 
+  <span data-role="tag" data-value="ee7e6c6f-1973-ade2-7dfd-f45d18a964f3" id="id544c9a48-630e-1972-f177-89969c79afab" data-type="term">input data</span> to quickly solve 
+  <span data-role="tag" data-value="64b6ff4f-adf1-548f-6cec-5494631ca57e" id="id3e4e2b76-6b6d-7c1c-42fb-cdbf68c26f6b" data-type="term">complex problems</span> with 
+  <span data-role="tag" data-value="8ba7436c-7aba-b266-4c10-2782aa47e981" id="id08ecb131-197f-1567-461e-13458e600d9d" data-type="term">high accuracy</span>. In one 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id787ca9c7-8600-0cef-7708-9be97acf14d8" data-type="term">example</span>, a 
+  <span data-role="tag" data-value="914531f5-bd9e-4812-f3ee-9c685162d59b" id="ide554c92e-f916-6325-bb64-923a2542cc8d" data-type="term">first layer</span> of the 
+  <span data-role="tag" data-value="ac1739b9-3d9c-16b7-dc60-23dbb0d5b10a" id="idd1202d2e-df4e-4664-dbb4-73557cb42e00" data-type="term">DLL model</span> breaks down an 
+  <span data-role="tag" data-value="5500a372-b17c-f213-2dc6-27a78594de14" id="id6f0bc9eb-c7c1-451a-e218-e5f3cc6f9aea" data-type="term">input image</span> of an 
+  <span data-role="tag" data-value="03e06872-f530-3de9-994b-95aab4edf542" id="id4c654892-0736-7b18-a38f-d155c451798a" data-type="term">automobile</span> into 
+  <span data-role="tag" data-value="d65f6694-2aac-fba0-b74d-ca563be39563" id="idfb225965-ad32-13ed-0f25-82c7bd70997a" data-type="term">various sections</span> and looks for 
+  <span data-role="tag" data-value="5da55ad1-f59b-63e4-5697-17723b8ef422" id="ide3e83270-dd45-d08f-8987-a1dbcd49c831" data-type="term">basic patterns</span> such as 
+  <span data-role="tag" data-value="e48d048a-d545-a269-5840-44d72beef3ca" id="ide67848ba-bd43-f8d5-2a40-a85c7c1fd739" data-type="term">lines and angles</span>. The 
+  <span data-role="tag" data-value="8dedb263-ed17-7076-acd7-ca99ae73a3d7" id="id746c7429-3762-5088-7dff-d55bc5830e10" data-type="term">second layer</span> assembles the 
+  <span data-role="tag" data-value="a167458c-f907-dfa2-2e51-077dd35498f9" id="id41d14431-dfe1-f69e-a799-7f221c39583b" data-type="term">lines</span> to look for 
+  <span data-role="tag" data-value="c3e78fb5-9e7f-60d5-ff52-060111808d5e" id="ide249c7df-187d-93d6-e292-40ce4432bfcb" data-type="term">higher level patterns</span> such as 
+  <span data-role="tag" data-value="64612528-abc5-f12d-2430-ac6677dddc1a" id="idb0b15ed2-6bd0-254a-4a63-6d1a41cf3203" data-type="term">wheels</span>, 
+  <span data-role="tag" data-value="5af1f076-1890-6aa1-d14d-a6b09a4b737f" id="ide187ba86-f3b4-8a55-9f1a-565e93ac3a2a" data-type="term">windshields</span>, and 
+  <span data-role="tag" data-value="5f9d3a04-bb50-601b-0ebf-ae01f180be9e" id="id81f08acc-db41-0ab5-d7a8-6bb95df62124" data-type="term">mirrors</span>. The 
+  <span data-role="tag" data-value="1c92014d-39ad-5cbe-ca45-eee6874f193d" id="id5ea80de9-70d5-555c-0291-7563c756ff17" data-type="term">next layer</span> identifies the 
+  <span data-role="tag" data-value="34dbac66-cb28-d5ac-b9ab-a0f4978ca9ae" id="id2584acde-14a9-58ec-29ee-374c85677d62" data-type="term">type</span> of 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id34186b79-acde-4399-db7c-7f4008a03240" data-type="term">vehicle</span>, and the 
+  <span data-role="tag" data-value="9e28b72f-63ea-4a07-300d-07c818b8b730" id="id645b08a1-8d22-7b1e-5a07-8bbc16bb6f6e" data-type="term">final few layers</span> generate a 
+  <span data-role="tag" data-value="58c7dc5b-8aff-26ce-91f7-8cdc0f030dc8" id="id4199624c-163e-b145-228f-6814ba80e9de" data-type="term">label</span> for the 
+  <span data-role="tag" data-value="5500a372-b17c-f213-2dc6-27a78594de14" id="idc102b5ae-cb64-1ece-1a87-249d62dfb160" data-type="term">input image</span>, identifying the 
+  <span data-role="tag" data-value="b5c97dc3-65d0-c391-d729-a6f8d8cd82e5" id="id3606b41b-b2c5-1708-4f57-8124f87e559c" data-type="term">model</span> of a 
+  <span data-role="tag" data-value="11b0a991-fca3-1bbc-1098-9801243bbdf6" id="idf4834c10-bee4-4477-94b0-b1452db43102" data-type="term">specific automobile brand</span>.&nbsp;
+</p>
+<p></p>
+<p>Once the 
+  <span data-role="tag" data-value="d39f2da2-2387-f89f-650b-5697200627a1" id="id95c3362f-510c-f9f7-72ce-c66eeb1b2756" data-type="term">DNN</span> is trained, the 
+  <span data-role="tag" data-value="d39f2da2-2387-f89f-650b-5697200627a1" id="id672f380f-6147-4801-b79c-d44cc735469b" data-type="term">DNN</span> can be deployed and used to identify and classify 
+  <span data-role="tag" data-value="5e496562-fd33-c36d-06a9-577651166b0d" id="id3d68da09-3b1d-983f-daf0-83d88295929a" data-type="term">objects or patterns</span> in a 
+  <span data-role="tag" data-value="0c15c805-2cc0-8647-d847-3b2fe4a8ffdf" id="id48b92e24-9658-2739-3749-0dc08b7315ba" data-type="term">process</span> known as 
+  <span data-role="tag" data-value="d6a8e1ed-3af3-11cb-d476-283a03358e8c" id="id30b4e7cf-94f4-5e63-aa5e-110d8f701af1" data-type="term">inference</span>. 
+  <span data-role="tag" data-value="9b8ff111-457b-734a-60da-bce25a8b2183" id="idd5f44a53-e10d-3243-769d-0f540356e087" data-type="term">Examples</span> of 
+  <span data-role="tag" data-value="d6a8e1ed-3af3-11cb-d476-283a03358e8c" id="id75b6cc74-2c05-d95f-df7c-218fc41dfc7b" data-type="term">inference</span> (the 
+  <span data-role="tag" data-value="0c15c805-2cc0-8647-d847-3b2fe4a8ffdf" id="id385accd4-e146-556d-8feb-47f53034d060" data-type="term">process</span> through which a 
+  <span data-role="tag" data-value="d39f2da2-2387-f89f-650b-5697200627a1" id="id7fa1574a-8cc0-3dc9-b68f-d9abba848b08" data-type="term">DNN</span> extracts 
+  <span data-role="tag" data-value="361706cb-a16a-8edc-467e-38a9ef6dc471" id="idc63eef7f-c44c-0084-acec-63d708b28e29" data-type="term">useful information</span> from a 
+  <span data-role="tag" data-value="b455e460-9726-f8c6-2fca-666475e7d0b3" id="ida35af657-314a-fef0-6cb1-c69ce25d20ed" data-type="term">given input</span>) 
+  <span data-role="tag" data-value="3991c347-7c5f-6f63-4ee6-606b014b1c17" id="id957d7274-e763-314f-085d-d83d9a00a78f" data-type="term">include</span> identifying 
+  <span data-role="tag" data-value="ed89aa74-fcf2-c7e9-367d-96df327037f8" id="id8e70f118-2306-0ddb-0157-37d21ac76a6a" data-type="term">handwritten numbers</span> on 
+  <span data-role="tag" data-value="01634476-d447-65c5-3c3e-7d0ca2ff61d4" id="id1606a21e-8250-0ff8-1d8f-9ccf8e8e9d49" data-type="term">checks</span> deposited into 
+  <span data-role="tag" data-value="3ee9b807-23bb-1740-f569-89f6ced924c0" id="idb5e0c665-64de-4f68-e81c-5dc0da427397" data-type="term">ATM machines</span>, identifying 
+  <span data-role="tag" data-value="3bf0338d-9bdd-d363-4691-62e30e933aa7" id="idd513a21e-0d27-b47c-6f0d-c2833aa192d9" data-type="term">images</span> of 
+  <span data-role="tag" data-value="4177230b-09fb-6b9c-2a12-664d49e97594" id="idd1e711be-de67-3eee-5c1d-1bf355352111" data-type="term">friends</span> in 
+  <span data-role="tag" data-value="71519478-83e4-9029-8786-49581367ba78" id="id8872049b-2c3f-9c59-ba14-d8613afca51a" data-type="term">photos</span>, delivering 
+  <span data-role="tag" data-value="87813852-09e8-4d9a-512b-24691e854c0d" id="id9749bfcb-df38-2e49-8297-bfc5d7edce6a" data-type="term">movie recommendations</span> to 
+  <span data-role="tag" data-value="f72e86a6-fd9a-d70d-4514-64b7b0ec97ad" id="id56e8c56d-1e22-4e80-0b2f-61b264962471" data-type="term">over fifty million users</span>, identifying and classifying different 
+  <span data-role="tag" data-value="95c9f24d-bfc3-1fde-cce6-f0607448c4d4" id="idd7bd3249-9b0c-c591-2cc1-0bd8be331f58" data-type="term">types</span> of 
+  <span data-role="tag" data-value="73316875-d032-34bd-eed6-7c337eb54625" id="id456f4b58-fbc1-a5cd-8dfc-7e843b83f7ad" data-type="term">automobiles</span>, 
+  <span data-role="tag" data-value="711af873-f12e-fcc5-e922-d9396a60b629" id="id27942ddd-4ead-42f0-924e-c462dc7bb654" data-type="term">pedestrians</span>, and 
+  <span data-role="tag" data-value="9260e0e4-43bc-fe79-4730-0225b88c7f84" id="id7843f71a-799b-ba43-3325-ff6677ae712d" data-type="term">road hazards</span> in 
+  <span data-role="tag" data-value="e1ecfcf8-1943-f2aa-274a-632adddbaba5" id="id9cff5d14-b909-8258-7252-022ee0abf312" data-type="term">driverless cars</span>, or translating 
+  <span data-role="tag" data-value="16eef124-bfe8-eb33-8958-685bdc88bb6c" id="id38dce6fd-e7e7-f8ff-ae64-49acc2f9509d" data-type="term">human speech</span> in 
+  <span data-role="tag" data-value="aea59a80-ffad-c635-8bcd-fdac0f7c6d10" id="idf2778f50-e6c0-99e2-86b1-d2fa0a677619" data-type="term">real-time</span>.&nbsp;
+</p>
+<p></p>
+<p>During 
+  <span data-role="tag" data-value="b8ba56c8-b777-5cd9-4047-de96b535f5f4" id="id7f2c863f-fdc4-262a-7064-70444314d510" data-type="term">training, data flows</span> through the 
+  <span data-role="tag" data-value="d39f2da2-2387-f89f-650b-5697200627a1" id="id263a2690-829c-661b-9060-0a262a665c89" data-type="term">DNN</span> in a 
+  <span data-role="tag" data-value="a68d8205-a59c-41e1-5df7-7c361173d5fa" id="idcdfcbbd3-b1f0-6a94-fb20-6e7de269aaa8" data-type="term">forward propagation phase</span> until a 
+  <span data-role="tag" data-value="280dd243-9e22-a98d-e287-126215486cd1" id="id59de2193-14f9-eaad-56e7-eb049a576dec" data-type="term">prediction</span> is produced that indicates a 
+  <span data-role="tag" data-value="58c7dc5b-8aff-26ce-91f7-8cdc0f030dc8" id="idd35c7569-bc57-516a-1b96-083bc41f00d9" data-type="term">label</span> corresponding to the 
+  <span data-role="tag" data-value="426337ef-efb5-758a-f40d-071035061851" id="idc40a4fb8-2d57-5121-634b-2ec19f9cd5ad" data-type="term">input</span>. If the 
+  <span data-role="tag" data-value="dca231d5-23df-b6b0-1ae8-1e5d6cb8bd47" id="id884e0957-c8b0-7252-1056-d662adb74b04" data-type="term">neural network</span> does not correctly 
+  <span data-role="tag" data-value="58c7dc5b-8aff-26ce-91f7-8cdc0f030dc8" id="ida51e56b5-d9bf-419b-7b57-97a93c415da9" data-type="term">label</span> the 
+  <span data-role="tag" data-value="426337ef-efb5-758a-f40d-071035061851" id="id8d6f52e6-58eb-56ad-9d39-625b38328070" data-type="term">input</span>, then 
+  <span data-role="tag" data-value="f773441a-9fc6-37c5-1e2e-4a38990e3d84" id="idbdaf2319-3616-a63d-8a48-740bbba2c389" data-type="term">errors</span> between the 
+  <span data-role="tag" data-value="700b3b6b-6af5-ac76-2f30-81296f670f8d" id="idc79bed2e-2f22-1dd8-b82f-e5dbe4763f06" data-type="term">correct label</span> and the 
+  <span data-role="tag" data-value="e45c85f5-2b14-4f21-a786-33fb9bd13364" id="id2909fce8-eaec-65b7-1093-f7b3aee21fd6" data-type="term">predicted label</span> are analyzed, and the 
+  <span data-role="tag" data-value="c8b9b7a6-a122-bf6e-8744-64ac96816722" id="idfb7e2dd6-6e13-96e0-dca6-9b6359cbb44a" data-type="term">weights</span> are adjusted for each 
+  <span data-role="tag" data-value="6052c76c-e46f-c54e-6006-455cf89205f1" id="id0bc48cfd-a98f-0e4a-99c3-397bcab9047e" data-type="term">feature</span> during a 
+  <span data-role="tag" data-value="24889d66-1407-9437-9a83-24fdfbf64f6a" id="id8102517c-6a8f-111c-3efb-41831560391c" data-type="term">backward propagation phase</span> until the 
+  <span data-role="tag" data-value="38e9afe3-44fe-c4cb-0e78-9c61620623f0" id="id195646fc-d194-cf2b-a1cb-e5aa2f3b5f02" data-type="term">DNN correctly labels</span> the 
+  <span data-role="tag" data-value="426337ef-efb5-758a-f40d-071035061851" id="iddec0a531-81c9-b78c-4500-705cc718ff77" data-type="term">input</span> and 
+  <span data-role="tag" data-value="f1623dbd-b5b8-793c-6234-9e617d2a734c" id="id4f30319c-26b2-373d-3e0e-2782803bdad4" data-type="term">other inputs</span> in a 
+  <span data-role="tag" data-value="523ea8ae-aee7-722c-3361-06a87ebc2fcc" id="id2a2de31f-370e-dac6-ad0b-e10621e2656c" data-type="term">training dataset</span>. 
+  <span data-role="tag" data-value="d4776d69-aa6e-816a-22ff-9ddeae0aa8bd" id="id48a8e9d1-da2d-1e2f-66a4-66fd6ce357ae" data-type="term">Training complex neural networks</span> requires 
+  <span data-role="tag" data-value="8d63c86c-ff5f-2ddd-900f-9864385ae013" id="id2ecce8c0-62ee-ca0b-a776-5240b821226c" data-type="term">massive amounts</span> of 
+  <span data-role="tag" data-value="4abce7da-d142-55eb-9ea5-0457e9382020" id="idbd6ac256-c4ea-1234-1bd4-8bafb22e7af6" data-type="term">parallel computing performance</span>, including 
+  <span data-role="tag" data-value="30200e09-e19b-424d-4607-16b4a07b3f73" id="idc06888c0-d1f0-200c-ac29-95b2cff767e2" data-type="term">floating-point multiplications and additions</span> that are supported by the 
+  <span data-role="tag" data-value="16b5d8a5-6546-d84d-f870-6e19b3d7bc86" id="ida2f58855-3959-2ad4-e6a0-36c3fae215fc" data-type="drawingObject">PPU 202</span>. 
+  <span data-role="tag" data-value="67ca1ee5-2c7f-85e0-8092-5fcd4c9fe35b" id="id5a912f70-ebc6-547f-b0fc-78aa203aa079" data-type="term">Inferencing</span> is less compute-intensive than 
+  <span data-role="tag" data-value="b8cc382f-7e3e-f818-76f5-0876a2e7fdb2" id="id8b8dd289-0db4-2305-9d0e-e6081ec8fef6" data-type="term">training</span>, being a 
+  <span data-role="tag" data-value="d342fd44-be41-6ac4-49dc-f255980ad705" id="id4f592165-6b3b-1fe3-8235-3352caeea763" data-type="term">latency-sensitive process</span> where a 
+  <span data-role="tag" data-value="ad83f7fb-839f-07f6-8028-e8db6881f7c1" id="id21e94ad9-4edf-ddb6-3721-1e4cdc739bbf" data-type="term">trained neural network</span> is applied to 
+  <span data-role="tag" data-value="74e5957c-800c-c611-cc73-f1a6d8931445" id="id3cf92de4-4f6c-b1af-1ed8-e057904dfad4" data-type="term">new inputs</span> it has not seen before to 
+  <span data-role="tag" data-value="b704d351-e5c4-ad3d-e2a0-40e476867462" id="id2bb18000-6d69-f014-3ccc-2bae96545350" data-type="term">classify images</span>, 
+  <span data-role="tag" data-value="d8fd81ff-3278-b809-5c1c-b4946aa21955" id="idb9df280e-f3ca-e0ab-e340-85710017c3b7" data-type="term">translate speech</span>, and 
+  <span data-role="tag" data-value="2ffa1064-f7cf-2e9b-ffde-c9afe249d266" id="id0fca9524-b200-3ddd-bc8a-18db24a2effa" data-type="term">generally infer new information</span>.&nbsp;
+</p>
+<p></p>
+<p>Neural networks rely heavily on 
+  <span data-role="tag" data-value="2fad0916-621b-5147-4f54-7e8c264d35c1" id="idcf93e0f6-1f7b-0974-bcb0-cc35211e30db" data-type="term">matrix math operations</span>, and 
+  <span data-role="tag" data-value="e77ebd42-f1a8-0bd5-0640-78304f51571f" id="idfd526a6b-e6a5-bd4c-79a9-267ae300029f" data-type="term">complex multi-layered networks</span> require 
+  <span data-role="tag" data-value="0ab799fc-7460-966b-c9c0-8b3197fd7156" id="ide936296c-1ca1-5680-b456-df855d0f560e" data-type="term">tremendous amounts</span> of 
+  <span data-role="tag" data-value="3fce5b18-50a7-5503-195c-9f5cf68799bd" id="idda2ac10f-09f2-f48d-0fa7-e6946685a4dc" data-type="term">floating-point performance and bandwidth</span> for both 
+  <span data-role="tag" data-value="6b5661a9-9402-2dfe-6a89-b94000326fd8" id="id3b9c7ef3-acd9-5914-cce0-d3205db81f14" data-type="term">efficiency and speed</span>. With 
+  <span data-role="tag" data-value="447e1c8c-c93c-78ea-5735-7d49a79f6622" id="id299c103b-58be-de19-5f0d-b8b6eb5ccdb2" data-type="term">thousands</span> of 
+  <span data-role="tag" data-value="1de1a4f7-6bf7-458a-e76a-ac29b15a1bda" id="id21f2f9b3-d62c-a0d0-6d6a-49cf25fa3f65" data-type="term">processing</span> cores, optimized for 
+  <span data-role="tag" data-value="2fad0916-621b-5147-4f54-7e8c264d35c1" id="id2a735148-f124-df88-a91a-41b45cd26436" data-type="term">matrix math operations</span>, and delivering 
+  <span data-role="tag" data-value="83637209-e34d-10f3-1e58-cf96e5cad256" id="id4b9930f6-5c2f-8710-c1a3-da91779b05d0" data-type="term">tens</span> to 
+  <span data-role="tag" data-value="1e2613fc-86e2-3ff3-ef9e-a7f7aba99eb9" id="id46a2572a-dfd3-41b9-a999-0b6f726e5d1d" data-type="term">hundreds</span> of 
+  <span data-role="tag" data-value="b7afc4d4-9419-7b88-5e2f-1d37c576f12d" id="idee7f94a8-0cee-ea02-d470-c922e516ca5b" data-type="term">TFLOPS</span> of 
+  <span data-role="tag" data-value="00604c6b-fa0d-0803-6c94-9a71816718f0" id="idc9bd2873-c4bf-45c1-d58a-a79f61e4d425" data-type="term">performance</span>, the 
+  <span data-role="tag" data-value="16b5d8a5-6546-d84d-f870-6e19b3d7bc86" id="idc370dbe9-7937-df53-7afd-beb1cac27005" data-type="drawingObject">PPU 202</span> is a 
+  <span data-role="tag" data-value="91599d95-031a-0299-657f-4c428d49d703" id="id3d2d5a97-f720-1244-74b0-f469542ea081" data-type="term">computing platform</span> capable of delivering 
+  <span data-role="tag" data-value="00604c6b-fa0d-0803-6c94-9a71816718f0" id="ide1f033a4-6b36-664b-c041-477e60fb95fa" data-type="term">performance</span> required for 
+  <span data-role="tag" data-value="904d3e67-4f51-e73a-b531-4a07d691fdf6" id="idcc1de80e-a6dd-5e1a-0b8e-93bdd0abf418" data-type="term">deep neural network-based artificial intelligence</span> and 
+  <span data-role="tag" data-value="8a6c5954-3f1d-b5bf-518a-379607d65422" id="ide3e68f94-2960-2943-2f1d-80f0ac1955c3" data-type="term">machine learning applications</span>.&nbsp;
+</p>

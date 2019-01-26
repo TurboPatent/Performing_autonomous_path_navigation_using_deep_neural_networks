@@ -1,0 +1,491 @@
+<p>
+  <span data-role="tag" data-value="1b1f2cb1-9a38-4107-07d0-db6d8206248e" id="idd25a3716-778c-9bf8-0313-858921caac6b" data-type="figure">Figure 1</span>&nbsp;illustrates a 
+  <span data-role="tag" data-value="04e96a3b-b223-cb2a-a48b-6a03533fd10a" id="ida4e20ccd-ea41-d94a-6a11-1d6f669b9d2b" data-type="term">flowchart</span> of a 
+  <span data-role="tag" data-value="4b09bf94-0ed6-b86a-b419-85f1e2aece55" id="idc0ea3c22-cd79-4fae-a7cf-3b69ac9b55b2" data-type="drawingObject">method for performing autonomous path navigation using deep neural networks 100</span>&nbsp;for performing 
+  <span data-role="tag" data-value="c6f279c4-6fcd-aac5-1385-8c1095e954a6" id="idadb0bf5a-ae3a-0cc2-0619-3b1e0be84e49" data-type="term">autonomous path navigation</span> using 
+  <span data-role="tag" data-value="72303528-19b2-21ed-f524-57488fc7e72d" id="ida30fa622-1c08-0404-815b-960a6a8c3568" data-type="term">deep neural networks</span>, in accordance with one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="idaa274de0-fff0-2987-b589-a2da18f68b30" data-type="term">embodiment</span>. As shown in 
+  <span data-role="tag" data-value="09851c62-0867-28fa-f1a2-8d3a6abd5084" id="id844123e9-9098-1cbd-54b0-3a12fc21a84d" data-type="term">operation</span> 102, 
+  <span data-role="tag" data-value="447d1225-932f-8405-3436-0ef515f30ef3" id="id1757ccfc-d2f5-64f3-0631-e85dd3486bb5" data-type="drawingObject">image data is received at a deep neural network (DNN) 102</span>. In one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="iddef557d2-1e1d-e8a1-f36e-d333633e6df1" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="id4ac3ba94-7d62-fed9-36cd-4f65d4123081" data-type="term">image data</span> may 
+  <span data-role="tag" data-value="3991c347-7c5f-6f63-4ee6-606b014b1c17" id="ida5f27d22-6228-4436-e227-26e9880a68a3" data-type="term">include</span> a 
+  <span data-role="tag" data-value="d6a04a00-b06e-f9e8-aa4b-bdf5494c2c42" id="ideb16d504-007d-ca45-9cc3-a57e4c593fb7" data-type="term">pictorial image</span>. In another 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id1da244dd-efd8-d351-8477-c4f32f3be813" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="id92ddcd2b-b946-3f06-b8f4-1e98411028f3" data-type="term">image data</span> may 
+  <span data-role="tag" data-value="3991c347-7c5f-6f63-4ee6-606b014b1c17" id="id51997d47-e3c1-f6fd-f51f-428ec2b4b6b5" data-type="term">include</span> a 
+  <span data-role="tag" data-value="43e428f0-2efd-e00f-03fc-25833d13c566" id="id2eae8863-5e57-2fcd-0fa2-a29bed1fbf2e" data-type="term">plurality</span> of 
+  <span data-role="tag" data-value="0afcc19e-487a-a97b-0a33-4d85700325ac" id="id7558e26e-81ef-42cb-8d2d-4c027f301c57" data-type="term">pictorial images</span>. In 
+  <span data-role="tag" data-value="9751cb33-7e0d-24d7-0d3f-76da2902a89d" id="idc49df9c8-184c-9219-5d38-b7f0f4cc57a6" data-type="term">yet another embodiment</span>, the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="ide7e4bbf1-1b69-eb98-16e4-fc5b8256d71c" data-type="term">image data</span> may be derived from 
+  <span data-role="tag" data-value="4d56b3a4-956f-4548-f7e3-7bc577275410" id="id481a26fb-0e30-c2a4-c0f4-a1afdd1159c5" data-type="term">video data</span> (e.g., 
+  <span data-role="tag" data-value="2a7512f0-a93b-a1b8-77e9-f58abc149ca4" id="ide292f36e-a928-92e9-6030-8c09cdb9bbcd" data-type="term">streaming video</span>, etc.).&nbsp;
+</p>
+<p></p>
+<p>Additionally, in one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id8832ee1b-d219-5a74-c29b-d54e1244aa95" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="id393763f9-d27c-74f6-5563-8c910c523f4a" data-type="term">image data</span> may 
+  <span data-role="tag" data-value="3991c347-7c5f-6f63-4ee6-606b014b1c17" id="idd2cbfc68-2792-3eb9-fd14-97d86fe4ec2d" data-type="term">include</span>
+  <span data-role="tag" data-value="478a79b0-f495-267a-7816-499d37ac1e1b" id="id1d85083c-7aff-189b-870a-ae568f1e49f6" data-type="term">optical data</span>, 
+  <span data-role="tag" data-value="bca18bdc-218d-ecbf-e866-eb5ddf821c63" id="id3982b7d8-6a53-2d43-5f77-4888f6994184" data-type="term">infrared data</span>, 
+  <span data-role="tag" data-value="8ec284f6-5150-4e56-af77-bd29004e9d79" id="id3f8886ff-3cd5-2bf2-5954-1d18cadd1e35" data-type="term">light detection</span> and ranging (
+  <span data-role="tag" data-value="74c062c5-e28a-56ea-0f45-ea139af3e96c" id="idc48ce819-0230-38d1-ce0a-69962e8932fb" data-type="term">LIDAR</span>) 
+  <span data-role="tag" data-value="a4092958-3200-972e-22d0-ff600e42aea9" id="idbe88dca1-d2c6-43c0-cb26-40f15f012026" data-type="term">data</span>, 
+  <span data-role="tag" data-value="573d42e8-a56d-ff7c-d6ce-85242c175353" id="id4c317d18-9f42-099d-ac45-3d601b3a8829" data-type="term">radar data</span>, 
+  <span data-role="tag" data-value="7148fe92-2062-5cc1-632b-0b96de0a75dc" id="id84d06b4a-2d28-d8f3-f6be-e7bd50512c06" data-type="term">depth data</span>, 
+  <span data-role="tag" data-value="2ced0804-7e50-0847-7d2e-d5b442488972" id="ida374661b-0c72-27ec-4e1e-198e4eff0985" data-type="term">sonar data</span>, etc. In another 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="idb0ff52c2-1ed6-4ee0-e7e8-0d67956e511c" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="id955cf212-0c19-7382-e8a8-120f83d97ad6" data-type="term">image data</span> may 
+  <span data-role="tag" data-value="3991c347-7c5f-6f63-4ee6-606b014b1c17" id="id6ce944af-9dbe-4cd5-af25-46c9cedd06ec" data-type="term">include</span>
+  <span data-role="tag" data-value="dffab922-cc64-8371-a346-2b82912af3f9" id="id7a042f41-fff3-c6c8-0d0e-a8c70c244d11" data-type="term">stereo image data</span> received from a 
+  <span data-role="tag" data-value="43e428f0-2efd-e00f-03fc-25833d13c566" id="id74c6a251-2234-783d-8723-1407074271d5" data-type="term">plurality</span> of 
+  <span data-role="tag" data-value="4accf67f-e89e-a0ae-4018-d8c62fbf0776" id="idb1bbc6b5-e8e8-29b6-e35f-afc9cdb9e348" data-type="term">imaging devices</span>. In 
+  <span data-role="tag" data-value="9751cb33-7e0d-24d7-0d3f-76da2902a89d" id="idb6618602-0430-3fb3-b944-6706b769bfc4" data-type="term">yet another embodiment</span>, the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="id435bee56-62c2-9b58-a1f7-a8db723fb68f" data-type="term">image data</span> may be received from one or more 
+  <span data-role="tag" data-value="4accf67f-e89e-a0ae-4018-d8c62fbf0776" id="idc2fa9743-963d-8a77-5dfc-58fafe5b1d0c" data-type="term">imaging devices</span>. For 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id69faa1fd-a087-55a9-4af1-cd084b311fbe" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="idfb1b1aea-6dfa-5886-46ab-af4a7273fcf7" data-type="term">image data</span> may be received from a 
+  <span data-role="tag" data-value="988f3b79-f59c-1138-59c1-3cea13834bbe" id="idf8194be0-4685-8b8d-c458-dfd94a589153" data-type="term">digital imaging camera</span>, a 
+  <span data-role="tag" data-value="b7ffc678-e425-c7e5-7245-629e781969fd" id="id0596d5d1-a600-81f4-0e0b-69eb4b6ae55e" data-type="term">radar device</span>, a 
+  <span data-role="tag" data-value="5fb4358a-2005-9474-fe85-c25ac0130c0f" id="idf4585595-c821-944c-2a48-0a8769ddacf7" data-type="term">LIDAR device</span>, an 
+  <span data-role="tag" data-value="819bb63e-6e0e-b8da-4f94-a90298081e6b" id="idee7a0821-74bc-eae1-75c1-7a1499992977" data-type="term">infrared imaging device</span>, a 
+  <span data-role="tag" data-value="717a5cd0-ef49-a8b5-e4b7-02e5737f4dbc" id="id4d46a0a2-b138-d7fe-d7bb-adc357f2cf6b" data-type="term">sonar imaging device</span>, etc.&nbsp;
+</p>
+<p></p>
+<p>Further, in one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="iddba37532-13f9-6f65-cb52-1ab2f9b06e43" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="id9e22274a-c177-b120-6805-32807a2258e2" data-type="term">image data</span> may be received in 
+  <span data-role="tag" data-value="aea59a80-ffad-c635-8bcd-fdac0f7c6d10" id="idf1894910-1ee4-d153-259a-e999da2d0125" data-type="term">real-time</span> from the one or more 
+  <span data-role="tag" data-value="4accf67f-e89e-a0ae-4018-d8c62fbf0776" id="id3fe58d61-f128-8352-3784-92fdfe556e6b" data-type="term">imaging devices</span>. In another 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="idc9dd60ab-2d70-8e1b-4848-52458a710698" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="id618a85bd-753b-3cc8-34ce-5fef4f828b93" data-type="term">image data</span> may be received from one or more 
+  <span data-role="tag" data-value="148eb84b-e1d1-db19-8405-a2dd47354a24" id="id4423ff8b-98a9-e151-f611-d29b669214e7" data-type="term">hardware</span>
+  <span data-role="tag" data-value="4accf67f-e89e-a0ae-4018-d8c62fbf0776" id="id78de4a5a-f630-5336-b7b9-2b64a2be8e03" data-type="term">imaging devices</span>, utilizing 
+  <span data-role="tag" data-value="b59a246e-bcce-7550-beb5-40b34caf7792" id="idcce4ff4d-8e18-484c-8cec-17fbe6196bb1" data-type="term">middleware</span> (e.g., a 
+  <span data-role="tag" data-value="63041033-15a6-844e-42ed-4dbf43d2f28a" id="id55dd5585-42a4-3a1c-c035-a2ccee497117" data-type="term">ROS</span>, etc.). In 
+  <span data-role="tag" data-value="9751cb33-7e0d-24d7-0d3f-76da2902a89d" id="id7b410bfc-2733-7166-b630-9a1d686c8264" data-type="term">yet another embodiment</span>, the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="idca78395f-c3a3-0293-968b-e79d681bfac7" data-type="term">image data</span> may be received at a 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="idbfb2a03b-a6b4-c649-e9c6-7264d49496d1" data-type="term">vehicle</span> that includes the one or more 
+  <span data-role="tag" data-value="4accf67f-e89e-a0ae-4018-d8c62fbf0776" id="id593988dd-b3e9-3440-6071-0609b4393b43" data-type="term">imaging devices</span>. For 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id708b9071-65c5-c091-ff04-f67d5e8d58aa" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id1e0846e7-d0c9-66cc-fe8f-3a5991010293" data-type="term">vehicle</span> may 
+  <span data-role="tag" data-value="3991c347-7c5f-6f63-4ee6-606b014b1c17" id="idbccbe8a6-5b94-4a6a-38d7-a9d97abcd206" data-type="term">include</span> any 
+  <span data-role="tag" data-value="5048beb0-83c9-96a6-0601-1717c55ae4e1" id="idbc33c0cf-ee7f-fc3d-ec0d-923236d25f4d" data-type="term">controlled mobile object</span>, such as an 
+  <span data-role="tag" data-value="03e06872-f530-3de9-994b-95aab4edf542" id="id623da82b-1ce4-0b72-a9ac-357968f8b039" data-type="term">automobile</span>, 
+  <span data-role="tag" data-value="552c0525-e5c8-2340-d7ff-b4aed2ab7a59" id="id77bacc42-4ea8-2359-ffc8-34e86c1ebc27" data-type="term">airplane</span>, 
+  <span data-role="tag" data-value="8ae70953-6f05-f339-33a7-01e4212ddf30" id="id726ae189-7101-1605-ba0b-a80f47ff331d" data-type="term">amphibious vehicle</span> (e.g., a 
+  <span data-role="tag" data-value="b18819e6-ba96-d7a9-cf03-23d2e53ca947" id="id4f7bcc96-2c51-b334-7de5-aace8fe092d8" data-type="term">boat</span>, 
+  <span data-role="tag" data-value="f7849424-94b5-502c-3e2c-bd2844e68ca3" id="idcc2a88b4-e4a4-cd7a-56aa-c433a71e9ff3" data-type="term">hydroplane</span>, etc.) drone, 
+  <span data-role="tag" data-value="ff98ed5c-2d95-b108-e22e-dec631af6e56" id="ide2f549f5-d182-df9d-15fb-ec15477bd2d6" data-type="term">micro aerial vehicle</span> (MAV), 
+  <span data-role="tag" data-value="446b870f-d501-b35f-95e7-a1f7731b6524" id="id3f8d2a70-3186-ac6b-2237-e8abf2d74f19" data-type="term">rover</span>, etc. In another 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="idbb5c6275-110d-ceb4-5366-0e8deb9bb933" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="b59a246e-bcce-7550-beb5-40b34caf7792" id="idbb4b7f38-dbd0-6299-87a3-08a8719edd78" data-type="term">middleware</span> may be running on 
+  <span data-role="tag" data-value="148eb84b-e1d1-db19-8405-a2dd47354a24" id="id170f5c3c-3d3f-2c53-ea4f-9eb77d27fac6" data-type="term">hardware</span> installed within the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="ida510f80f-6e48-f016-5d69-f92fa24de413" data-type="term">vehicle</span>. In 
+  <span data-role="tag" data-value="fc68c3d2-de8f-138e-abf1-79961ecda48f" id="idd3fa2a26-5984-a7f1-eaa7-6a73a67502e6" data-type="term">yet another example</span>, the one or more cameras may be installed within the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id75fc927a-5352-123c-0b8f-842f4d790fa2" data-type="term">vehicle</span>.&nbsp;
+</p>
+<p></p>
+<p>Further still, in one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id48d0ab4d-1320-709a-12a3-b7e4ce7f9491" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="id6cd8f699-8a8e-bf44-90d7-85ce76b0ca4e" data-type="term">image data</span> may indicate a 
+  <span data-role="tag" data-value="9e74ff8e-daba-c6fc-67dc-ccf55dbbd3cd" id="idc94ca5a8-a5b0-cfaf-d402-905d988b5b92" data-type="term">current location</span> of the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id047fac80-5a40-9978-c7b4-360e0627e977" data-type="term">vehicle</span> on a 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="id97986aca-c8fe-2d89-a922-a9749019e0f6" data-type="term">path</span>. For 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="idd13c19ff-fbf2-a8b9-20df-5cb099748b78" data-type="term">example</span>, the one or more 
+  <span data-role="tag" data-value="4accf67f-e89e-a0ae-4018-d8c62fbf0776" id="ida0f36991-fbdb-242c-03b4-e9f0d394af08" data-type="term">imaging devices</span> may be mounted on the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="ide71f143a-6989-066c-543e-60c9bb440b3a" data-type="term">vehicle</span> such that the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="id5165d08c-1d14-f1cf-bc06-22eb83050956" data-type="term">image data</span> created by the one or more 
+  <span data-role="tag" data-value="4accf67f-e89e-a0ae-4018-d8c62fbf0776" id="id038b715c-9f73-895b-2517-9d469794a6ec" data-type="term">imaging devices</span> indicates the 
+  <span data-role="tag" data-value="9e74ff8e-daba-c6fc-67dc-ccf55dbbd3cd" id="idaefa8b52-41f5-5600-94e9-66a50d5f2572" data-type="term">current location</span> of the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id661e0264-1bf7-28d3-4444-d5db172367ec" data-type="term">vehicle</span> on the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="idbc8faf58-9aaa-cd57-e760-b49dc0cb06f5" data-type="term">path</span>. In another 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="idf0dcf706-eaed-3fb1-5e1a-27ff9ce2a695" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="d39f2da2-2387-f89f-650b-5697200627a1" id="idd22305f5-2ad2-ce67-ea43-135c55f3c181" data-type="term">DNN</span> may 
+  <span data-role="tag" data-value="3991c347-7c5f-6f63-4ee6-606b014b1c17" id="idaac4500c-bb10-ce42-5dff-401259d5227e" data-type="term">include</span> a 
+  <span data-role="tag" data-value="d84f7527-29ec-62c7-169c-1c5fc233a049" id="id46e77a12-f9af-ffac-dc67-2b14ce1e8719" data-type="term">supervised classification network</span>.&nbsp;
+</p>
+<p></p>
+<p>For 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id410d130a-ef1a-7f2d-c186-bbc491beb7f6" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="id8dfd9111-3fe6-42a0-b3bf-3a7ca8544b5f" data-type="term">image data</span> may 
+  <span data-role="tag" data-value="3991c347-7c5f-6f63-4ee6-606b014b1c17" id="idc7dd8f8a-127b-cbd6-d94f-1fbee7713185" data-type="term">include</span>
+  <span data-role="tag" data-value="a33ef7c8-d99c-a477-f535-6557d51cc9d4" id="id382347f3-a9ce-a060-41ab-1a086b8079f1" data-type="term">supervised data</span> that is correctly labeled with an 
+  <span data-role="tag" data-value="ca44bfb5-67ef-bdfb-879d-0ac30c752f67" id="id083b0760-3923-c74f-46e0-26691db9e2e9" data-type="term">associated position</span>. In another 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id44719c0c-b5b4-fb03-1d26-579de1334e38" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="d39f2da2-2387-f89f-650b-5697200627a1" id="id63df3c42-7229-19ad-9262-0ce8a367d28c" data-type="term">DNN</span> may be trained with 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="idd835d0eb-5f55-c55c-2262-34d627b6fa56" data-type="term">image data</span> having associated 
+  <span data-role="tag" data-value="9b9e37de-d4c8-2aed-a157-377a9a2cb3e9" id="id5d4dfabd-018f-1cb9-7089-75e00985eafa" data-type="term">correct labels</span>. In another 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id207394cc-f9e6-30af-6d92-8da6a188e71d" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="d39f2da2-2387-f89f-650b-5697200627a1" id="idc0a7a58c-e475-2677-32be-fe8eb820aec7" data-type="term">DNN</span> may implement a 
+  <span data-role="tag" data-value="1f0c6fa4-bcae-ded4-40e1-cc863a964c5f" id="id4bc83e23-d713-d3c3-032d-c9f67a58718f" data-type="term">loss function</span>. For 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="idcd2577b4-be36-4018-2726-a00a1c47f429" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="d39f2da2-2387-f89f-650b-5697200627a1" id="idbabc9ad5-921b-968d-35fa-42c34f26ecdc" data-type="term">DNN</span> may determine a 
+  <span data-role="tag" data-value="58c7dc5b-8aff-26ce-91f7-8cdc0f030dc8" id="id2364a127-84a2-2b68-8a8a-0cf2010ac8b5" data-type="term">label</span> for the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="id8a384df0-2a18-0d59-ee7b-02d9223cd2ca" data-type="term">image data</span>, compare the 
+  <span data-role="tag" data-value="58c7dc5b-8aff-26ce-91f7-8cdc0f030dc8" id="id4a83efd1-a2e2-8079-e475-8d2bcfabea04" data-type="term">label</span> to the 
+  <span data-role="tag" data-value="7e22d3e2-12cf-0d29-1ac0-20fdc840079a" id="idd5942df9-65ab-852f-1b66-8c4bc37a5f59" data-type="term">associated correct label</span> for the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="id105d95b9-f6ea-9436-13e1-26fcdec5aedd" data-type="term">image data</span>, and may compute a difference between the 
+  <span data-role="tag" data-value="c27c6f3c-bd48-43b0-cef2-5224c4b1798f" id="id071c964f-448d-04c8-4ead-f5881e29c675" data-type="term">labels</span>. In another 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="ida336a419-537d-cc2c-4162-c7c380acfe2a" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="d39f2da2-2387-f89f-650b-5697200627a1" id="id441b4f98-f5e6-0294-76ab-73c60f70f340" data-type="term">DNN</span> may be adjusted, based on the difference between the 
+  <span data-role="tag" data-value="c27c6f3c-bd48-43b0-cef2-5224c4b1798f" id="ida9cda2bc-2fd9-232e-4e8a-3e2329cacb65" data-type="term">labels</span>, using back 
+  <span data-role="tag" data-value="d93a588e-2707-afe4-c75e-7fba2ea94d48" id="id77ad4e9f-66f0-6296-36fc-bc8e1379699a" data-type="term">propagation</span>.&nbsp;
+</p>
+<p></p>
+<p>In this way, the 
+  <span data-role="tag" data-value="d39f2da2-2387-f89f-650b-5697200627a1" id="idb4335682-a402-9bec-b143-ed25fee33735" data-type="term">DNN</span> may be more likely to correctly 
+  <span data-role="tag" data-value="ff5bbada-6481-5259-6cc4-8c1831e55db5" id="id9eb50cf1-744e-8042-932f-01335aabfd98" data-type="term">label image data</span> during 
+  <span data-role="tag" data-value="5db1156f-43c2-c0d9-d2ac-dde383bd0c0e" id="idcc17b1e3-7ec4-0386-4ec5-bf3b86c6839b" data-type="term">subsequent iterations</span>.&nbsp;
+</p>
+<p></p>
+<p>Also, as shown in 
+  <span data-role="tag" data-value="09851c62-0867-28fa-f1a2-8d3a6abd5084" id="id5385dd8c-d6b8-c56e-c0e9-8e30c04070b9" data-type="term">operation</span> 104, the 
+  <span data-role="tag" data-value="cf0c0880-a3a1-1e84-934d-2aff91476a78" id="idd26e8760-2310-0cd8-d0f6-e7033d462cbd" data-type="drawingObject">DNN determines both an orientation of a vehicle with respect to a path and a lateral position of the vehicle with respect to the path, utilizing the image data 104</span>. In one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id09e6622b-319d-e3c1-9b44-780d85ae37e4" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="ide8faa31e-c68d-9400-4d3a-468fdac5be30" data-type="term">path</span> may 
+  <span data-role="tag" data-value="3991c347-7c5f-6f63-4ee6-606b014b1c17" id="id240454fd-3413-86e0-065c-5d1f8385fc1a" data-type="term">include</span> any 
+  <span data-role="tag" data-value="f47c1a08-130c-2bcd-833e-29b4ebd36de0" id="idda7e030d-6a58-13d0-a221-4db2a2fefc9f" data-type="term">course</span> that may be identified visually within the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="id51c96671-f067-c3bf-c0a2-96980ff6538c" data-type="term">image data</span>. In another 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id70cbfd78-aa68-825f-54db-9589cd72448a" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="id92f3e4c7-f68b-3f81-897b-7114f96d764c" data-type="term">path</span> may 
+  <span data-role="tag" data-value="3991c347-7c5f-6f63-4ee6-606b014b1c17" id="id6c7b1a2c-9118-e710-2eec-87f97440b87a" data-type="term">include</span> a 
+  <span data-role="tag" data-value="8f6b1f57-254f-a2ed-a647-13ab5c2e5a52" id="id7eb1e0de-b085-c397-b9c3-656922e35532" data-type="term">trail</span>, one or more tracks (e.g., 
+  <span data-role="tag" data-value="5eb98173-7f7e-b8d8-b604-168565baa67b" id="idf104fcbe-9e7c-75a2-dabe-1f59da47fae2" data-type="term">train tracks</span>, 
+  <span data-role="tag" data-value="b2330fb4-d2fc-94b5-b490-57412a4dd50e" id="id5857631b-6efc-31db-44ac-fd6c52d17a94" data-type="term">tire tracks</span>, etc.), one or more power 
+  <span data-role="tag" data-value="a167458c-f907-dfa2-2e51-077dd35498f9" id="id214a048b-d001-d436-60c1-1c5528850441" data-type="term">lines</span>, a 
+  <span data-role="tag" data-value="2e60ee77-0b1b-1dcb-507c-73b9b33f1c7b" id="id42c30db8-36b2-3a6d-564b-f6d000e29c7f" data-type="term">street</span>, a 
+  <span data-role="tag" data-value="0e1d8018-8565-71bd-76b1-ba333bbdeb3d" id="id45ec5254-94ca-a28e-b334-c28b102c9b0a" data-type="term">culvert</span> (e.g., a 
+  <span data-role="tag" data-value="a9f8191e-1e84-f938-ea29-41d2917acc74" id="id52366c7a-1a1a-30ca-6c30-dbb345066512" data-type="term">sewer culvert</span>, etc.), an 
+  <span data-role="tag" data-value="6bf23953-8fb9-15a8-d5ad-657a16170602" id="id0ab78c7e-f6b9-3d1c-b154-ddfcd699db09" data-type="term">urban canyon</span>, etc.&nbsp;
+</p>
+<p></p>
+<p>In 
+  <span data-role="tag" data-value="5624e7fb-beac-47d9-437f-91b92e001693" id="id53cdb075-f878-e9ce-d595-21f668e86de3" data-type="term">addition</span>, in one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="idcc63548c-aebe-632c-43fe-b5054b9faa7a" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="ide1f53ae6-23f2-b490-5497-2f64e5f9760d" data-type="term">vehicle</span> may 
+  <span data-role="tag" data-value="3991c347-7c5f-6f63-4ee6-606b014b1c17" id="id06359ff7-0e91-df66-7ea0-25e2dadccff3" data-type="term">include</span> the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id81360af4-949d-67d6-966c-186a0a9141b3" data-type="term">vehicle</span> running 
+  <span data-role="tag" data-value="b59a246e-bcce-7550-beb5-40b34caf7792" id="id4335ca96-edf6-1b32-3876-6e86808cf7ff" data-type="term">middleware</span> and the one or more 
+  <span data-role="tag" data-value="4accf67f-e89e-a0ae-4018-d8c62fbf0776" id="idf95c3c74-7aae-314d-8984-0c0c68b8c654" data-type="term">imaging devices</span>. In another 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="idb3a85b3e-35f3-bc04-373f-ddb78dcc5e2e" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id3233ebb6-1ed3-7d11-d54d-ad81bf09f5a2" data-type="term">vehicle</span> may currently be in 
+  <span data-role="tag" data-value="91988dae-da22-2805-d0c4-2a14da1644c4" id="id9cf77bf4-8d65-5e4b-d657-8af3270203b8" data-type="term">motion</span> (e.g., along the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="id83a5c602-b6c6-52bf-497a-4a35d13d0e02" data-type="term">path</span>, etc.). In 
+  <span data-role="tag" data-value="9751cb33-7e0d-24d7-0d3f-76da2902a89d" id="idd2de9c20-9537-f1d1-3eb8-8fa5759d0d56" data-type="term">yet another embodiment</span>, the 
+  <span data-role="tag" data-value="6b6d7f98-e95b-8bfb-25e6-c258e364e7e8" id="id942bfb57-dd11-c30c-a3f2-9b3bfe853f57" data-type="term">orientation</span> with respect to the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="idc710eb96-c08d-d296-8b7f-7e408f56e024" data-type="term">path</span> may 
+  <span data-role="tag" data-value="3991c347-7c5f-6f63-4ee6-606b014b1c17" id="id5a0fca92-cfaa-87d4-cbd0-bcb091a19552" data-type="term">include</span> a 
+  <span data-role="tag" data-value="54fecb24-d0e2-6d01-3198-abd9c0a150d7" id="id546629f0-c366-4822-3413-ceac38e38c2a" data-type="term">plurality of probabilities</span>. For 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id177098f3-6aac-5e27-f3ba-69b11f3494f5" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="6b6d7f98-e95b-8bfb-25e6-c258e364e7e8" id="id22e46f0b-f3d9-48d0-0e10-be57872d18c6" data-type="term">orientation</span> with respect to the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="idfe8cb2fb-2014-ea07-95a6-1a006c40bb0a" data-type="term">path</span> may 
+  <span data-role="tag" data-value="3991c347-7c5f-6f63-4ee6-606b014b1c17" id="id1546bb50-28d7-deca-a2e0-ead52150e56c" data-type="term">include</span> a 
+  <span data-role="tag" data-value="6f10b8fc-2dde-b9e7-15d0-12f52b96e1c6" id="id7bf8e354-d5ac-543c-b7a1-7d195454c2d1" data-type="term">probability</span> that a 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id921ce225-cbed-c1e2-f85f-7e8ddadfb6c4" data-type="term">vehicle</span> is currently facing left with respect to the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="id1741a2ac-1483-3975-ac39-e0d63a7d1da9" data-type="term">path</span>, a 
+  <span data-role="tag" data-value="6f10b8fc-2dde-b9e7-15d0-12f52b96e1c6" id="id31571cbe-92de-1887-0a22-aa1f72b6aa79" data-type="term">probability</span> that a 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id3b2f1916-8c7a-5a23-5c21-ce23da2d70b1" data-type="term">vehicle</span> is currently facing right with respect to the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="iddce6b951-97a4-1b30-40d3-edf16908cc8d" data-type="term">path</span>, and a 
+  <span data-role="tag" data-value="6f10b8fc-2dde-b9e7-15d0-12f52b96e1c6" id="ida89694ce-5669-c489-901c-edbfabfa3580" data-type="term">probability</span> that a 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="idf71eb2db-421a-d27d-4d06-e2bd589af981" data-type="term">vehicle</span> is currently facing straight with respect to the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="ideeb4c49e-c87c-112c-0c24-f8d613cfee6d" data-type="term">path</span>. In another 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="idae1de6b0-1e70-2582-c0f4-02de4b1754f7" data-type="term">example</span>, each of the 
+  <span data-role="tag" data-value="43e428f0-2efd-e00f-03fc-25833d13c566" id="id60040afa-87a4-462a-c23c-54b62172e3d9" data-type="term">plurality</span> of 
+  <span data-role="tag" data-value="370ab3a6-30f3-7141-f487-eca09c61b622" id="id001fc1d1-6b6e-fccf-8dac-62dbbdbb1a84" data-type="term">possibilities</span> may be represented numerically, resulting in 
+  <span data-role="tag" data-value="b60eb0ea-b28d-c24b-f265-7cf3eb2d0dd0" id="idb82b51f2-655f-7b31-4208-d0e5dfd655d6" data-type="term">three numbers output</span> by the 
+  <span data-role="tag" data-value="d39f2da2-2387-f89f-650b-5697200627a1" id="id86fb7bbd-8556-a9c8-397a-d190b8bc510c" data-type="term">DNN</span> that indicate the 
+  <span data-role="tag" data-value="6b6d7f98-e95b-8bfb-25e6-c258e364e7e8" id="idb089cd69-79e8-6f6c-c455-720b142dd8ff" data-type="term">orientation</span> with respect to the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="id84812166-7bfa-64ed-2a8a-26fadc0262f9" data-type="term">path</span>.&nbsp;
+</p>
+<p></p>
+<p>Furthermore, in one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id57308889-e9e3-78de-36e9-d2636fef6646" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="906a3598-6521-b6ba-a8f0-414d270845b5" id="idec0461db-b0aa-34bf-cb90-cbf7523bcfe1" data-type="term">lateral position</span> with respect to the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="id59c53448-47e1-2440-cedd-1ce4a439894c" data-type="term">path</span> may 
+  <span data-role="tag" data-value="3991c347-7c5f-6f63-4ee6-606b014b1c17" id="id140b4057-ccb9-d0d6-c765-afa3746df1cc" data-type="term">include</span> a 
+  <span data-role="tag" data-value="54fecb24-d0e2-6d01-3198-abd9c0a150d7" id="id337d2a75-de2c-695b-6249-69fe27f55c39" data-type="term">plurality of probabilities</span>. In another 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="ide17cd107-ee56-f5ca-e3df-9d86ff56c7b2" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="906a3598-6521-b6ba-a8f0-414d270845b5" id="ida5ab7228-0d42-1b53-8e2b-78460c973aff" data-type="term">lateral position</span> with respect to the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="ide5cc745f-11fd-c300-ed02-abd4610c62b8" data-type="term">path</span> may identify a 
+  <span data-role="tag" data-value="6f10b8fc-2dde-b9e7-15d0-12f52b96e1c6" id="idf4907805-e643-a96a-2897-c1e5cc2a97c5" data-type="term">probability</span> of a 
+  <span data-role="tag" data-value="43e428f0-2efd-e00f-03fc-25833d13c566" id="id661a8cae-03bf-4997-24e2-72b460f4a399" data-type="term">plurality</span> of 
+  <span data-role="tag" data-value="aa603e17-db67-3d50-bfb3-374e2ed80541" id="iddbc32cd5-2f03-0f64-df34-8e72c48d3d98" data-type="term">lateral offsets</span> with respect to the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="idf65acead-1bc4-bc5c-90f5-e08b54d12b9c" data-type="term">path</span>
+  <span data-role="tag" data-value="26fc68d0-6e25-4c77-1d4e-ee53f698e9ed" id="idb7ca1cc0-df08-4772-6fff-2f081b5b50e3" data-type="term">center</span>. For 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id6bc1dcf7-ae43-425c-466f-35d9982eaaca" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="906a3598-6521-b6ba-a8f0-414d270845b5" id="id19527301-5a50-4a99-74df-1cc7702299c5" data-type="term">lateral position</span> with respect to the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="id15b4747f-602d-5953-4fef-c0bf8fdb9196" data-type="term">path</span> may 
+  <span data-role="tag" data-value="3991c347-7c5f-6f63-4ee6-606b014b1c17" id="idaff0a19f-e8c1-2ecc-31b4-776072ab8bea" data-type="term">include</span> a 
+  <span data-role="tag" data-value="6f10b8fc-2dde-b9e7-15d0-12f52b96e1c6" id="idaeff3b2c-b780-0e04-1b32-1e5b68b0d7ff" data-type="term">probability</span> that a 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="idedb03cb4-8286-555e-1e1d-c72b38dbc67f" data-type="term">vehicle</span> is currently shifted left with respect to the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="id10fec01e-7db9-6224-9698-e242687ccf98" data-type="term">path</span>, a 
+  <span data-role="tag" data-value="6f10b8fc-2dde-b9e7-15d0-12f52b96e1c6" id="id0cb870e9-0a0e-9f13-5dff-4a6df16c5179" data-type="term">probability</span> that a 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id99730912-3bb8-66de-e20b-9e7d120e1df3" data-type="term">vehicle</span> is currently shifted right with respect to the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="id31771f0f-bc31-6ce4-b7ce-c5bad1d9b401" data-type="term">path</span>, and a 
+  <span data-role="tag" data-value="6f10b8fc-2dde-b9e7-15d0-12f52b96e1c6" id="id86297b85-415d-4ff2-8116-cec850701580" data-type="term">probability</span> that a 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id8ab0a4f6-f9a0-9cfd-cc06-0ead89bf66a1" data-type="term">vehicle</span> is centered with respect to the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="id0c09b085-1070-22a4-196d-3693a1267655" data-type="term">path</span>. In another 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id68e98ae6-dbf9-2124-f1e8-544ff09d89a7" data-type="term">example</span>, each of the 
+  <span data-role="tag" data-value="43e428f0-2efd-e00f-03fc-25833d13c566" id="id0e5ef900-8d5e-87d6-79b7-f9b36c08fc68" data-type="term">plurality</span> of 
+  <span data-role="tag" data-value="370ab3a6-30f3-7141-f487-eca09c61b622" id="id1effcf4c-1583-1152-e98c-74bec43824c1" data-type="term">possibilities</span> may be represented numerically, resulting in 
+  <span data-role="tag" data-value="b60eb0ea-b28d-c24b-f265-7cf3eb2d0dd0" id="ide3c6e482-4b1c-88a5-c4c4-b2a4c5e62373" data-type="term">three numbers output</span> by the 
+  <span data-role="tag" data-value="d39f2da2-2387-f89f-650b-5697200627a1" id="id1124aec9-7e20-d0d9-91a2-3964caa42975" data-type="term">DNN</span> that indicate the 
+  <span data-role="tag" data-value="906a3598-6521-b6ba-a8f0-414d270845b5" id="ideda88268-6188-53a6-3bb4-39d86df2fe40" data-type="term">lateral position</span> with respect to the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="id7179ed91-da87-6d08-1696-ce6e55c282f5" data-type="term">path</span>.&nbsp;
+</p>
+<p></p>
+<p>Further still, in one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id18094e94-64e5-a67d-03dc-967d994023c7" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="6b6d7f98-e95b-8bfb-25e6-c258e364e7e8" id="idd67b458c-2e38-a9bf-6eda-d4fc9d413d74" data-type="term">orientation</span> and 
+  <span data-role="tag" data-value="906a3598-6521-b6ba-a8f0-414d270845b5" id="ide47c3f89-9e1d-f65f-239a-51867eb36c95" data-type="term">lateral position</span> may be determined in 
+  <span data-role="tag" data-value="aea59a80-ffad-c635-8bcd-fdac0f7c6d10" id="id83e229e8-e18e-3d2d-b90e-90f04cead860" data-type="term">real-time</span> within the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id20b18e09-f8c4-760e-32fd-122d265fce48" data-type="term">vehicle</span>. In another 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id9dca15cc-9eab-306b-2990-5a3df6277457" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="idd99be061-8625-68e3-7cc4-ec907fdefd3d" data-type="term">image data</span> may be sent from the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id05c557b8-a45c-fc55-0225-ff2d9408c0f0" data-type="term">vehicle</span> to a 
+  <span data-role="tag" data-value="11b48040-591f-c819-4a8e-9cc79ed679f9" id="id8e38a325-94fc-8112-71b2-19cf804cbe51" data-type="term">remote location</span> (e.g., a 
+  <span data-role="tag" data-value="14dbab96-4e58-fd30-451a-e83a962cfaa9" id="idba737360-ff48-d5e4-b79f-203270749c06" data-type="term">distributed computing environment</span>), and the 
+  <span data-role="tag" data-value="6b6d7f98-e95b-8bfb-25e6-c258e364e7e8" id="idd8672a73-b836-85cd-9979-8fd8a51d62ea" data-type="term">orientation</span> and 
+  <span data-role="tag" data-value="906a3598-6521-b6ba-a8f0-414d270845b5" id="idc2def252-caf0-a160-7839-cba8bed259fd" data-type="term">lateral position</span> may be determined at the 
+  <span data-role="tag" data-value="11b48040-591f-c819-4a8e-9cc79ed679f9" id="idd7e255a1-1288-dadd-1cc4-587bb89c5716" data-type="term">remote location</span>.&nbsp;
+</p>
+<p></p>
+<p>In this way, both 
+  <span data-role="tag" data-value="9a3c130b-407f-4a59-6d01-c54f334bdd05" id="idd4b57e6b-4821-f132-78c8-ed4b31501a5e" data-type="term">rotation and translation data</span> may be determined by the 
+  <span data-role="tag" data-value="d39f2da2-2387-f89f-650b-5697200627a1" id="id8cee040a-e7a5-0835-6ce3-a074a352de5c" data-type="term">DNN</span>, utilizing the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="id20246de6-29cb-84e5-89ae-ffe87080c03a" data-type="term">image data</span>.&nbsp;
+</p>
+<p></p>
+<p>Also, as shown in 
+  <span data-role="tag" data-value="09851c62-0867-28fa-f1a2-8d3a6abd5084" id="id29178076-759a-341c-f864-f30b707a60f0" data-type="term">operation</span> 106, a 
+  <span data-role="tag" data-value="d0f5d791-4d27-11e2-1b8a-439ff339b0fe" id="ida41a0377-6eef-e143-727d-f82f72016bd1" data-type="drawingObject">location of the vehicle is controlled, utilizing the orientation of the vehicle with respect to the path and the lateral position of the vehicle with respect to the path 106</span>. In one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id72073ffd-482a-9f55-28fd-38d0d996c18e" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="6b6d7f98-e95b-8bfb-25e6-c258e364e7e8" id="idc974a39c-e5a3-a69b-5906-e6c51f5cff16" data-type="term">orientation</span> of the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="idc1f210b7-6651-62d3-42df-036d00c25d38" data-type="term">vehicle</span> with respect to the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="idaea21efd-4f0f-94e7-63c1-bd20731d997c" data-type="term">path</span> and the 
+  <span data-role="tag" data-value="906a3598-6521-b6ba-a8f0-414d270845b5" id="id924549b7-35cb-caea-e156-c3ba7b8ac71a" data-type="term">lateral position</span> of the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="idbd47efee-3495-be6f-1aa1-882e45982d1f" data-type="term">vehicle</span> with respect to the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="ide6bc2fa6-88e5-371c-2108-af301af2c7ad" data-type="term">path</span> may be 
+  <span data-role="tag" data-value="bfbb4146-d72b-02d0-f214-650bc9465a27" id="id8ad19e19-2c01-f33a-2b1a-c3ee608f1c69" data-type="term">converted</span> into 
+  <span data-role="tag" data-value="e21c6fb9-2b50-8ed0-e72b-810b9c9ca30a" id="idbd9b21b0-ff25-af7f-5928-ded523ce9f98" data-type="term">steering directions</span>. For 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id26c06f83-ed42-ed16-5dc7-af54e61e0e56" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="40bdde14-1192-024d-d8ea-5361a2ceabbf" id="id065b251d-2f2d-b47e-a68e-26fe2343d965" data-type="term">conversion</span> may be performed by a 
+  <span data-role="tag" data-value="868b7205-27d5-e33d-5e1c-e4ab73c96b7c" id="idfa70f056-13cb-4158-f20e-76f4c967cb8d" data-type="term">controller module</span>. In another 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id12bd0c51-b0a8-a3ea-d3a8-cf22a471edc0" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="e21c6fb9-2b50-8ed0-e72b-810b9c9ca30a" id="id2eb65733-6d9f-b3a0-9ee5-ffe209a5f0fb" data-type="term">steering directions</span> may 
+  <span data-role="tag" data-value="3991c347-7c5f-6f63-4ee6-606b014b1c17" id="id753caf60-8d93-35fb-ef34-e284a37c6c1d" data-type="term">include</span> one or more steering signals (e.g., a 
+  <span data-role="tag" data-value="9eb89067-d21e-6e95-ae2f-97287319a71f" id="id131f1e13-f538-9b15-1277-76b12a69e79c" data-type="term">steering angle</span>, etc.).&nbsp;
+</p>
+<p></p>
+<p>Additionally, in one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="idf7caa63b-55f1-4258-4335-d90d07809d03" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="e21c6fb9-2b50-8ed0-e72b-810b9c9ca30a" id="idb7f8a8e8-66b0-bf36-d26c-33c76ce79d98" data-type="term">steering directions</span> may be 
+  <span data-role="tag" data-value="bfbb4146-d72b-02d0-f214-650bc9465a27" id="id01b032a0-0524-73a3-ce7f-7890d3c9b19b" data-type="term">converted</span> into another 
+  <span data-role="tag" data-value="8b71f49f-890c-c9d2-27b2-b2abebf7609e" id="idbbfdec44-f39b-4191-c567-eadc23f25e7f" data-type="term">protocol</span> to create 
+  <span data-role="tag" data-value="bfbb4146-d72b-02d0-f214-650bc9465a27" id="id723d5953-1145-7e70-c8de-e38a2c169490" data-type="term">converted</span>
+  <span data-role="tag" data-value="e21c6fb9-2b50-8ed0-e72b-810b9c9ca30a" id="id80eb4e8d-cac5-6781-2542-11dfc42c874d" data-type="term">steering directions</span>. For 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id33d52a77-a8b7-6ab2-c78b-f3effc898853" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="e21c6fb9-2b50-8ed0-e72b-810b9c9ca30a" id="idf7216819-25da-dbfb-a15a-a7d574fe9641" data-type="term">steering directions</span> may be 
+  <span data-role="tag" data-value="bfbb4146-d72b-02d0-f214-650bc9465a27" id="idfd748610-7250-8e5b-86bc-c0e28aa5eec0" data-type="term">converted</span> from a 
+  <span data-role="tag" data-value="b59a246e-bcce-7550-beb5-40b34caf7792" id="id0e2da9b4-7d35-329a-55aa-a4751ff20cc6" data-type="term">middleware</span>
+  <span data-role="tag" data-value="8b71f49f-890c-c9d2-27b2-b2abebf7609e" id="idbe552df5-4b77-0fa2-0308-e624e27d43e2" data-type="term">protocol</span> (e.g., a 
+  <span data-role="tag" data-value="ccf5a05b-1ae4-4320-83ca-d192e428b565" id="ida138d487-2a17-2667-88d4-e264002fdb33" data-type="term">ROS protocol</span>, etc.) to a 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id2aded054-ca4b-8e64-850d-80b8ce19b8d2" data-type="term">vehicle</span> control 
+  <span data-role="tag" data-value="8b71f49f-890c-c9d2-27b2-b2abebf7609e" id="id1c021222-13af-c27b-7143-8d6d2353359d" data-type="term">protocol</span>. In another 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id28c49e30-8134-aaa5-cab1-8e069bd14012" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="40bdde14-1192-024d-d8ea-5361a2ceabbf" id="id9d1daae7-c5ee-927b-37c8-4c81214f6f4d" data-type="term">conversion</span> may be performed by a 
+  <span data-role="tag" data-value="08f40851-ea64-58c8-6c52-7ecb1781d983" id="id0c6422ee-9cde-f51f-b598-f38aa6a378ff" data-type="term">communication module</span>.&nbsp;
+</p>
+<p></p>
+<p>Furthermore, in one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id1b2976e0-d1f8-3612-de48-c84845f57f46" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="bfbb4146-d72b-02d0-f214-650bc9465a27" id="id68cb5a17-8283-6f4a-c096-b08875658ae1" data-type="term">converted</span>
+  <span data-role="tag" data-value="e21c6fb9-2b50-8ed0-e72b-810b9c9ca30a" id="idaca09242-ff7e-5ab3-18c3-cad11d8259e6" data-type="term">steering directions</span> may be sent to a 
+  <span data-role="tag" data-value="c5e578cf-df3f-ea52-fcd9-1ecc8b92db9b" id="id81da004c-e23d-b012-9d62-ec81e171fff2" data-type="term">vehicle systems module</span> to control one or more steering mechanisms of the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="idc8d658a8-35a7-beb9-5d0d-db217cde532d" data-type="term">vehicle</span>. For 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id8eec513d-4342-8852-4e05-f55d9394433c" data-type="term">example</span>, the one or more steering mechanisms of the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id0ecc4a04-6afb-0cbc-5252-33de51fac1ca" data-type="term">vehicle</span> may control a 
+  <span data-role="tag" data-value="b911767e-b1d8-0d90-8504-f685fbd9cf1d" id="idc7a046b3-03eb-2e2b-830f-2354407d7da4" data-type="term">direction</span> in which the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id770ecb98-872d-efa9-04ca-99300bdf4e72" data-type="term">vehicle</span> is moving. In another 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id94fee5d5-c4c6-b65a-90fa-04449e2d1ae4" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="bfbb4146-d72b-02d0-f214-650bc9465a27" id="id462926d0-8736-8847-4467-331f75ce4ad1" data-type="term">converted</span>
+  <span data-role="tag" data-value="e21c6fb9-2b50-8ed0-e72b-810b9c9ca30a" id="id044590d6-0aa2-7ca0-df78-da16729edff1" data-type="term">steering directions</span> may be sent to the 
+  <span data-role="tag" data-value="c5e578cf-df3f-ea52-fcd9-1ecc8b92db9b" id="idfdff375f-4080-027b-dbc6-618b10780899" data-type="term">vehicle systems module</span> utilizing a 
+  <span data-role="tag" data-value="772304e6-05e5-3bf1-08a2-b5c76994ebbf" id="id262c428b-895e-6825-ffd2-b4ff292030b2" data-type="term">communication protocol</span>.&nbsp;
+</p>
+<p></p>
+<p>Further still, in one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id3d0b1b51-cd76-6f09-f0b9-d7e90e02d3c5" data-type="term">embodiment</span>, the one or more steering mechanisms may be adjusted, based on the 
+  <span data-role="tag" data-value="bfbb4146-d72b-02d0-f214-650bc9465a27" id="idfc8ed042-2600-dd72-369a-36360b2c636a" data-type="term">converted</span>
+  <span data-role="tag" data-value="e21c6fb9-2b50-8ed0-e72b-810b9c9ca30a" id="idccada84b-8f40-fdf8-36ff-63c502d0f804" data-type="term">steering directions</span>. For 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="idd01d907b-64f6-2bb8-fc02-b58d20fe2b10" data-type="term">example</span>, the one or more steering mechanisms may be adjusted by the 
+  <span data-role="tag" data-value="c5e578cf-df3f-ea52-fcd9-1ecc8b92db9b" id="idd79c3664-b504-436d-8c8f-dc411c9307c0" data-type="term">vehicle systems module</span> to move the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="ide48a6b24-05f7-383a-56a9-008ae09cf7fc" data-type="term">vehicle</span> laterally to the 
+  <span data-role="tag" data-value="26fc68d0-6e25-4c77-1d4e-ee53f698e9ed" id="idbb0a0b53-d4fb-604a-5c6f-4ec9027b3750" data-type="term">center</span> of the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="ida362b882-8e75-df23-e403-b1b711d9ff13" data-type="term">path</span>. In another 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id32cdb1ae-557c-fcaa-88e2-838cd738dc89" data-type="term">example</span>, the one or more steering mechanisms may be adjusted to move the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id9e546a47-887c-98d6-aedd-f280d0fb8715" data-type="term">vehicle</span> so that the 
+  <span data-role="tag" data-value="6b6d7f98-e95b-8bfb-25e6-c258e364e7e8" id="id51e8399d-c1a8-b117-3f6f-4554880046bd" data-type="term">orientation</span> of the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="idba571ac3-1f0d-5681-1264-a97db8bf33de" data-type="term">vehicle</span> is straight with respect to the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="id740fb4f7-0eb1-afb0-2141-c9c33cea14eb" data-type="term">path</span>. In another 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id4ba4f867-0f75-00a0-7784-de1cba6352ab" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id6633b39c-8167-143d-0916-e1a91026376c" data-type="term">vehicle</span>
+  <span data-role="tag" data-value="5e934428-5cf7-257d-4c46-49d9c503fe3e" id="idf6fb3565-2a41-e901-37a6-9adeeea08b33" data-type="term">location</span> controlling may be performed in 
+  <span data-role="tag" data-value="aea59a80-ffad-c635-8bcd-fdac0f7c6d10" id="id8473a1fd-15c7-7e74-20e6-c0fe64d1f693" data-type="term">real-time</span> within the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="idcc67773f-8b3e-b950-c6c6-21ab15a5d2fb" data-type="term">vehicle</span>.&nbsp;
+</p>
+<p></p>
+<p>Also, in one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="idd7ef8020-6737-763c-d837-5df59782806f" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="d39f2da2-2387-f89f-650b-5697200627a1" id="id55eb469d-fc72-7589-e76b-4a34cac7c713" data-type="term">DNN</span> may control 
+  <span data-role="tag" data-value="47b5ee20-5178-6db2-c58e-d8abc785ae61" id="idb6685fc9-3800-04e1-e16f-deac2834e184" data-type="term">directional stability</span> by utilizing 
+  <span data-role="tag" data-value="02ca3f50-8c4b-288a-a99b-371a02d97cc4" id="id56368d12-46ce-4d3d-9df1-7d4cb9832f51" data-type="term">predictions</span> with a 
+  <span data-role="tag" data-value="19fcdf48-8121-f437-9773-5c91b8ed9c05" id="idafa157b0-eec4-08b7-bb76-c2cd51d16576" data-type="term">reduced confidence</span>. For 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id2cbe3506-2655-4924-a77d-503361138a26" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="d39f2da2-2387-f89f-650b-5697200627a1" id="id80296239-1e0c-26e1-9a3c-4df47ac2e8eb" data-type="term">DNN</span> may implement a 
+  <span data-role="tag" data-value="f495920d-b63d-1ebc-4867-34de5f6a8ed4" id="id293c62e3-32cd-a22e-ccdc-1d752099156a" data-type="term">classification</span> scheme with a 
+  <span data-role="tag" data-value="19fcdf48-8121-f437-9773-5c91b8ed9c05" id="idd6bc20b9-dd2f-651b-c077-07c357e0c0cd" data-type="term">reduced confidence</span> for more smooth and stable 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id4df0d405-ca43-88a3-b19d-8850fd82c44c" data-type="term">vehicle</span>
+  <span data-role="tag" data-value="b911767e-b1d8-0d90-8504-f685fbd9cf1d" id="idd7fd458c-43b8-dac5-c905-1a254df38751" data-type="term">direction</span> control.&nbsp;
+</p>
+<p></p>
+<p>In 
+  <span data-role="tag" data-value="5624e7fb-beac-47d9-437f-91b92e001693" id="id537fe31a-22c1-1751-b8a0-99aadd51e221" data-type="term">addition</span>, in one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="idbb3b2e15-1680-24e8-4a7c-8bb71cf373d2" data-type="term">embodiment</span>, a 
+  <span data-role="tag" data-value="6c4417f9-17c5-88d7-bd2a-0787bbae90be" id="id5d3a5ea6-696f-86f7-ccc0-6c5cc5f29400" data-type="term">second DNN</span> may perform 
+  <span data-role="tag" data-value="939682b7-2f7e-bcde-a19f-5614a007e24b" id="id40b4ef96-778a-3224-74d9-16b07d355dac" data-type="term">object detection</span> within the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="id3d8d7fd4-675f-028f-5430-8fa0e26e843a" data-type="term">path</span>. For 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="idb0a900cd-c3ab-d987-0cfc-e4486eb4c88c" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="6c4417f9-17c5-88d7-bd2a-0787bbae90be" id="id6738c771-5728-52b8-3b5c-83464c1558e0" data-type="term">second DNN</span> may be included within the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id783f0acd-7146-be6a-8ae6-a24d6fa87a7e" data-type="term">vehicle</span> and may communicate to 
+  <span data-role="tag" data-value="b4a8bc3f-4de8-2b09-b9f7-b29e2f533b69" id="idfb227ef6-f00e-0e56-7f76-1754a83a2a33" data-type="term">other modules</span> within the 
+  <span data-role="tag" data-value="a89bdc3f-651d-2306-7881-64b2d0363bf6" id="id4e2e22a1-873e-48e9-46ac-df2031ca31d8" data-type="term">vehicles</span> (e.g., via 
+  <span data-role="tag" data-value="b59a246e-bcce-7550-beb5-40b34caf7792" id="id3d5d6df4-9cfb-67e4-278b-719283f60bc2" data-type="term">middleware</span>, etc.). In another 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id6c90d735-6230-3d6a-35c6-cce9c037fb65" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="6c4417f9-17c5-88d7-bd2a-0787bbae90be" id="id4fcf501d-9711-91a5-ba68-2901ecc530e8" data-type="term">second DNN</span> may receive the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="id8755ac27-ced2-fb69-c9dd-f1d22fda3f69" data-type="term">image data</span>, and may 
+  <span data-role="tag" data-value="b1d033d4-b6c1-a436-6328-2fe056859f55" id="idda800f4d-4d69-26df-8d75-311f10b281e6" data-type="term">output</span>
+  <span data-role="tag" data-value="e6521436-3969-a786-4ff3-7aff7b1c13f4" id="iddcaa592e-d0e0-dde1-7353-6e689d9eef56" data-type="term">object data</span> indicating whether an 
+  <span data-role="tag" data-value="532a72b3-e5ae-62ee-a009-bb0b1f93d47f" id="id221be287-9062-4647-8be3-26a991f14557" data-type="term">object</span> (e.g., a 
+  <span data-role="tag" data-value="8f05ba1e-6eb0-840a-0cc0-a7ce218055d7" id="idc836e048-d704-26d2-eb83-e84f63937270" data-type="term">person, animal, etc</span>.) is in the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="ida2adb68c-e865-985b-9b20-5e4028aa7615" data-type="term">image data</span>. In 
+  <span data-role="tag" data-value="fc68c3d2-de8f-138e-abf1-79961ecda48f" id="id144a55fe-6626-ac8c-e7d0-8b89d4f88425" data-type="term">yet another example</span>, the 
+  <span data-role="tag" data-value="e6521436-3969-a786-4ff3-7aff7b1c13f4" id="id1507fd37-c602-16b8-5e6a-becceb4c0b3f" data-type="term">object data</span> may be sent from the 
+  <span data-role="tag" data-value="6c4417f9-17c5-88d7-bd2a-0787bbae90be" id="id82a75112-4fe6-36f7-2360-8fe2fedd458d" data-type="term">second DNN</span> to the 
+  <span data-role="tag" data-value="868b7205-27d5-e33d-5e1c-e4ab73c96b7c" id="id562a3869-bc4e-95f4-df03-4088e7ad952a" data-type="term">controller module</span> (e.g., via 
+  <span data-role="tag" data-value="b59a246e-bcce-7550-beb5-40b34caf7792" id="id9b53b668-787f-accf-a935-c38fc35947b2" data-type="term">middleware</span>, etc.). In 
+  <span data-role="tag" data-value="e8e97e4a-08d0-b115-96c9-379c7b332f0b" id="id91078baf-1765-2a67-0d94-3fd25b4e5a86" data-type="term">still another example</span>, the 
+  <span data-role="tag" data-value="868b7205-27d5-e33d-5e1c-e4ab73c96b7c" id="idb95807fc-57a4-a8b7-c1f3-6196cf8b96e8" data-type="term">controller module</span> may determine whether a 
+  <span data-role="tag" data-value="5525c89f-53fd-580b-473b-59217312d661" id="id179aae28-52f5-5be9-6d47-ef9d84c82174" data-type="term">size</span> of the 
+  <span data-role="tag" data-value="532a72b3-e5ae-62ee-a009-bb0b1f93d47f" id="idd23697f1-de20-d98e-8c90-099cbeafaabf" data-type="term">object</span> in the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="idbafe9a32-7cc9-8cef-cf6b-429bdac83e8f" data-type="term">image data</span> is a 
+  <span data-role="tag" data-value="59f9c719-1f1c-3440-058a-8734bfac23af" id="id406a0e8d-b7a5-26b0-819c-3144871e7d1c" data-type="term">predetermined percentage</span> of a 
+  <span data-role="tag" data-value="5525c89f-53fd-580b-473b-59217312d661" id="id6a226c17-7562-5eec-9efc-d61f08121ba7" data-type="term">size</span> of the 
+  <span data-role="tag" data-value="a89969c5-aee3-5342-4b06-e13a4dcf87ab" id="id1fee573e-357a-00ea-e694-914edea8d47d" data-type="term">image</span> in the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="idfc05bcfb-4727-81e4-a986-9af87d6b128c" data-type="term">image data</span>.&nbsp;
+</p>
+<p></p>
+<p>Further, in one 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="idba35018e-39d5-b3ad-1312-027c1a68c03c" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="868b7205-27d5-e33d-5e1c-e4ab73c96b7c" id="idc66da62e-2003-5e69-a1f7-4b1f16012a6d" data-type="term">controller module</span> may send one or more 
+  <span data-role="tag" data-value="640305c3-fe5e-028d-ac79-242540441036" id="id48637372-3cda-745e-3062-6db70ffd70d9" data-type="term">commands</span> to the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id7c3e7e1a-5f50-8679-69c8-47083c8be83f" data-type="term">vehicle</span>
+  <span data-role="tag" data-value="4d3b3c49-a4c2-aba0-314e-fb2b152698bc" id="id6c95b217-3e6b-c5ff-4935-c1119dedad12" data-type="term">systems</span> (e.g., to change a 
+  <span data-role="tag" data-value="f47c1a08-130c-2bcd-833e-29b4ebd36de0" id="idb2ea385a-f4f7-0301-124d-5967c1eab2a7" data-type="term">course</span> of the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id084f82a2-d195-a38a-85a9-9d3c579ac9fd" data-type="term">vehicle</span>, to stop a 
+  <span data-role="tag" data-value="41782d66-7497-ab21-413d-3df9699762b0" id="idd3424092-1739-3c08-1210-6d6d807b038d" data-type="term">functioning</span> of the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="idd35c1949-785d-8fd2-467e-8900b89b6542" data-type="term">vehicle</span>, etc.) in 
+  <span data-role="tag" data-value="d6b4385e-d0fe-46ca-d21f-0f6dd762ed05" id="idf5976dbf-013c-c534-0842-65a702d4f6c6" data-type="term">response</span> to determining that the 
+  <span data-role="tag" data-value="5525c89f-53fd-580b-473b-59217312d661" id="ide1f754e1-a77e-30ad-f77b-23520db799f2" data-type="term">size</span> of the 
+  <span data-role="tag" data-value="532a72b3-e5ae-62ee-a009-bb0b1f93d47f" id="id8c189dce-bcf0-426a-156f-91e39903831b" data-type="term">object</span> in the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="idaf333546-1d95-14cc-9db3-6bc2a8b7206c" data-type="term">image data</span> is equal to or greater than the 
+  <span data-role="tag" data-value="59f9c719-1f1c-3440-058a-8734bfac23af" id="id7dcde074-50d2-ba6d-02a9-bea31905c3cd" data-type="term">predetermined percentage</span> of the 
+  <span data-role="tag" data-value="5525c89f-53fd-580b-473b-59217312d661" id="idab3866a0-d08e-4577-a26f-99bffeb86d89" data-type="term">size</span> of the 
+  <span data-role="tag" data-value="a89969c5-aee3-5342-4b06-e13a4dcf87ab" id="id070f60d3-d7b5-014c-0291-c26407b8d18e" data-type="term">image</span> in the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="idf7300873-b61b-1852-0a9e-7e2f68ab591d" data-type="term">image data</span>. This may provide a 
+  <span data-role="tag" data-value="b12b4a16-bb81-89b1-c819-0534a6dd498b" id="id532aeeb4-8fa0-e408-0a64-36162cb12e40" data-type="term">safety mechanism</span> that may stop the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id279408d6-e1a0-06a3-c451-6ec6c361ad1c" data-type="term">vehicle</span> when an 
+  <span data-role="tag" data-value="532a72b3-e5ae-62ee-a009-bb0b1f93d47f" id="id055cef95-6026-873a-af8c-9bd1fe13f770" data-type="term">object</span> of a 
+  <span data-role="tag" data-value="5e7f3b8f-f420-efd8-bb1a-59343c4c2e0e" id="idbbce40cf-c517-ed91-5fa7-690a77a73554" data-type="term">predetermined size</span> is on the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="idbd814356-7188-00db-dc58-fbf26dd1d1b3" data-type="term">path</span>.&nbsp;
+</p>
+<p></p>
+<p>Further still, in one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="ida3bdb63e-203a-0a27-b41d-ccebf2c9a9e3" data-type="term">embodiment</span>, a 
+  <span data-role="tag" data-value="b4e84390-a063-4472-e88e-2654eb8f3c67" id="id5d70cebf-c271-e76e-449f-a7d10247673a" data-type="term">third DNN</span> may perform 
+  <span data-role="tag" data-value="1b3e84e6-0640-f220-8da5-8afc46d4d739" id="id65f5475f-47db-d52c-8d01-ab927e283d65" data-type="term">obstacle detection</span> associated with the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="ida7ea311b-dca2-a282-6943-325cf084918c" data-type="term">path</span>. For 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id55461642-f916-09cd-9b76-8d1774cb80e8" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="b4e84390-a063-4472-e88e-2654eb8f3c67" id="ide195800f-fdad-74bd-f02e-394c8d6630ee" data-type="term">third DNN</span> may be included within the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="idb93886f5-f768-429b-5f6c-ecde222d23f3" data-type="term">vehicle</span> and may communicate to 
+  <span data-role="tag" data-value="b4a8bc3f-4de8-2b09-b9f7-b29e2f533b69" id="id6784b8e4-3836-0b1f-478d-6bb8b5a25616" data-type="term">other modules</span> within the 
+  <span data-role="tag" data-value="a89bdc3f-651d-2306-7881-64b2d0363bf6" id="id99d7ca6e-d501-ab0a-1619-528f7f19fd8c" data-type="term">vehicles</span> (e.g., via 
+  <span data-role="tag" data-value="b59a246e-bcce-7550-beb5-40b34caf7792" id="id090a994f-5b47-6193-885d-ebb1414161c3" data-type="term">middleware</span>, etc.). In another 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id587f6cff-df19-b60f-9a0a-6e8e7af2d131" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="b4e84390-a063-4472-e88e-2654eb8f3c67" id="id69cbacb3-337d-f7ba-c633-42eb70082f33" data-type="term">third DNN</span> may receive the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="id05a784c9-6d50-e21b-752d-76c4157f6b24" data-type="term">image data</span>, and may 
+  <span data-role="tag" data-value="b1d033d4-b6c1-a436-6328-2fe056859f55" id="ida8475c3f-fe49-d41b-fffb-62005c26af54" data-type="term">output</span>
+  <span data-role="tag" data-value="90794497-16fd-9db4-b6d4-869952b94bc9" id="id0139ee6d-2ff3-6d63-54b2-5fd1d34e3240" data-type="term">obstacle data</span> such as a set of 
+  <span data-role="tag" data-value="c8b9b7a6-a122-bf6e-8744-64ac96816722" id="ide635204c-3969-8453-6f30-1559b3fe013d" data-type="term">weights</span> indicating a 
+  <span data-role="tag" data-value="0991e522-a278-3303-e853-a191f4b047c2" id="idbb7138a8-13bb-011f-441d-0201c4c49c9f" data-type="term">likelihood</span> of one or more 
+  <span data-role="tag" data-value="53cce9c6-4203-1129-b4da-bf17b24cd05c" id="id2ec774e6-562f-a0ed-dd33-c283d6949e3a" data-type="term">obstacles</span> at 
+  <span data-role="tag" data-value="1d5c4363-5da4-10b8-f883-b55af5dededd" id="id28751c56-e24f-2016-0ffe-867bfbf38396" data-type="term">various locations and distances</span> along the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="id38c5f5ad-3aed-e69e-8ddd-ead40f75fead" data-type="term">path</span>. For 
+  <span data-role="tag" data-value="2556edb2-69c7-a5f6-3af5-962573be8f9c" id="id3806c7b6-e971-8c3d-f547-5bd6d3fa683e" data-type="term">instance</span>, the 
+  <span data-role="tag" data-value="b4e84390-a063-4472-e88e-2654eb8f3c67" id="idbca7a1a7-50c5-01ef-0cdd-2cb6c6a02149" data-type="term">third DNN</span> may implement 
+  <span data-role="tag" data-value="ec2438b1-3c38-3b27-93b0-dfc4d0199815" id="id81386ea4-2dbe-5353-b655-3d2d823b371b" data-type="term">simultaneous localization and mapping</span> (
+  <span data-role="tag" data-value="df89e0d3-6e5b-9d7b-9256-d9dc22838f51" id="idf802e1da-9922-46eb-7532-4be2d1178e1a" data-type="term">SLAM</span>) to identify a 
+  <span data-role="tag" data-value="5e934428-5cf7-257d-4c46-49d9c503fe3e" id="id34493f2a-3a9d-deee-53f6-863093956f2a" data-type="term">location</span> of the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id8d56ce99-ed6a-430b-9492-4ea343e30bb8" data-type="term">vehicle</span> within a 
+  <span data-role="tag" data-value="2a8e9a1a-b592-c565-a7d4-756bab23305c" id="ide89ee969-6705-884d-2c1d-f9d2b750e93b" data-type="term">scene</span> indicated by the 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="idaa765ccf-5e22-120a-482b-4db6ec730598" data-type="term">image data</span> and provide 
+  <span data-role="tag" data-value="f2a6d199-a820-1178-8339-8cf9b6a4ba95" id="id5301d3bc-e93f-16a7-0fd6-3e47fb806197" data-type="term">information</span> about a 
+  <span data-role="tag" data-value="ddbb2a58-4153-d3de-1cec-b3ebdd5d9693" id="id00cdc670-0f6c-5f1c-3391-98b409f8c543" data-type="term">relative location</span> of 
+  <span data-role="tag" data-value="6d3e6d2b-1f10-0575-5c59-b999383ceca3" id="id416ffcc8-1465-7be5-4a32-60eb11181488" data-type="term">static objects</span> within the 
+  <span data-role="tag" data-value="2a8e9a1a-b592-c565-a7d4-756bab23305c" id="id587a50a3-f910-de55-e12a-a3ad239610a9" data-type="term">scene</span>.&nbsp;
+</p>
+<p></p>
+<p>Also, in one 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id5314ddaa-5d0e-c72f-1c85-a21abce79bcc" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="90794497-16fd-9db4-b6d4-869952b94bc9" id="idde62f478-939a-24c4-946f-e241c3d0a3ed" data-type="term">obstacle data</span> may be sent from the 
+  <span data-role="tag" data-value="b4e84390-a063-4472-e88e-2654eb8f3c67" id="id8507d6b0-2c34-df19-e3f1-c6616f0f05bc" data-type="term">third DNN</span> to the 
+  <span data-role="tag" data-value="868b7205-27d5-e33d-5e1c-e4ab73c96b7c" id="id8bdef3f4-cb17-8ccb-610a-0586c7228b2b" data-type="term">controller module</span> (e.g., via 
+  <span data-role="tag" data-value="b59a246e-bcce-7550-beb5-40b34caf7792" id="idc30e0129-5fdf-cdff-c74a-9b3ddece962e" data-type="term">middleware</span>, etc.). In another 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="id81f3b7ac-2141-6bfa-6d50-55af2259641c" data-type="term">example</span>, the 
+  <span data-role="tag" data-value="868b7205-27d5-e33d-5e1c-e4ab73c96b7c" id="idab9fee36-e18b-4766-fbea-3ba7713e55d5" data-type="term">controller module</span> may adjust the 
+  <span data-role="tag" data-value="5e934428-5cf7-257d-4c46-49d9c503fe3e" id="id4b8477a5-b5dc-bda4-cbd2-b3072f063416" data-type="term">location</span> of the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id30d8ba82-74d6-674d-e326-d3836fb90813" data-type="term">vehicle</span>, utilizing the 
+  <span data-role="tag" data-value="90794497-16fd-9db4-b6d4-869952b94bc9" id="id4b030a34-b0ba-d668-b79b-c31c7dba3a76" data-type="term">obstacle data</span>. This may help the 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id5abc76d2-954c-a9b0-60df-7fd9fba96f6c" data-type="term">vehicle</span> avoid 
+  <span data-role="tag" data-value="07209950-9727-30bf-2a6e-1fe295ebc67e" id="id9533e5d1-e1d4-0b63-f663-b432cc3fd3f9" data-type="term">static obstacles</span> in an alongside the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="idb86d0dde-164b-f2bd-c973-24ab908dcedf" data-type="term">path</span>.&nbsp;
+</p>
+<p></p>
+<p>In this way, a 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id111eb401-ded0-cd55-4636-9e3cd2c6c78f" data-type="term">vehicle</span> may be autonomously controlled, utilizing 
+  <span data-role="tag" data-value="e21c6fb9-2b50-8ed0-e72b-810b9c9ca30a" id="id291bc299-d400-42c9-140b-f49f4b0b37f3" data-type="term">steering directions</span> derived from 
+  <span data-role="tag" data-value="d39f2da2-2387-f89f-650b-5697200627a1" id="idca565b65-ea0a-5391-9061-3f1e6bb422e0" data-type="term">DNN</span> analysis of 
+  <span data-role="tag" data-value="7e4f6a61-cdcc-cd9a-eeff-184422f53c31" id="id4514c47b-cc81-0183-d365-db1089a6f910" data-type="term">image data</span>. Additionally, a 
+  <span data-role="tag" data-value="d39f2da2-2387-f89f-650b-5697200627a1" id="id4168d004-435a-8e31-a6c4-868db6786d89" data-type="term">DNN</span> may perform an 
+  <span data-role="tag" data-value="527b077e-398d-1e77-5cc4-21e20ba44053" id="id4cc7e34f-2e5a-972e-a83d-2393dbc640a9" data-type="term">estimation</span> of both 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="idfd3c68fa-343c-28b2-295a-9d1b0aab9e01" data-type="term">vehicle</span>
+  <span data-role="tag" data-value="6b6d7f98-e95b-8bfb-25e6-c258e364e7e8" id="id2f06815e-ca3d-d1da-5a8e-f67515a93a67" data-type="term">orientation</span> (3 
+  <span data-role="tag" data-value="65b21bc2-dc20-20bb-5b65-1c1358db40ac" id="idc04edd23-9c50-c95b-4063-28acab510b53" data-type="term">classes</span>) and 
+  <span data-role="tag" data-value="906a3598-6521-b6ba-a8f0-414d270845b5" id="id65948b5c-621e-ba27-5ee9-fff612e7d197" data-type="term">lateral position</span> with respect to 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="id63920e74-9c0f-ed0a-8fbf-e0701ff54e8b" data-type="term">path</span> (3 
+  <span data-role="tag" data-value="7228eae1-3db2-dc28-ab18-769d4c165af3" id="idb28fb7a0-ccca-90e2-2a9b-d9778c74216b" data-type="term">more classes</span>), for a 
+  <span data-role="tag" data-value="2af2bc48-c798-8fe5-2ed8-c9f805986553" id="idbc5570e6-e0f2-69c4-8c6f-833e525a24e9" data-type="term">total</span> of 6 
+  <span data-role="tag" data-value="65b21bc2-dc20-20bb-5b65-1c1358db40ac" id="id5a4b1974-e1a3-adff-f0c8-337edc9ad89d" data-type="term">classes</span>. Further, a 
+  <span data-role="tag" data-value="1f0c6fa4-bcae-ded4-40e1-cc863a964c5f" id="id41e27bae-1b04-c389-b50e-ae956db5b4c6" data-type="term">loss function</span> may be implemented during 
+  <span data-role="tag" data-value="959d3985-b83b-0881-077a-304d5c76ba80" id="id86f50a73-a101-a745-6a43-4fd363639ede" data-type="term">specific DNN training</span>. Further still, a 
+  <span data-role="tag" data-value="19fcdf48-8121-f437-9773-5c91b8ed9c05" id="id2d58848a-b445-c864-7f3f-9bbb9604a0bf" data-type="term">reduced confidence</span>
+  <span data-role="tag" data-value="16a2662d-2f24-4586-b0c4-fdb4a1adcb15" id="idf1843482-5b41-7a5d-69e0-1a7fe86d3e81" data-type="term">implementation</span> may be performed within a 
+  <span data-role="tag" data-value="d39f2da2-2387-f89f-650b-5697200627a1" id="id43d259f8-562d-fdd8-cef9-233c401036b0" data-type="term">DNN</span>. Also, 
+  <span data-role="tag" data-value="0c016459-2bc3-52a4-c71c-dba603ce5a6d" id="idc3e37532-bb54-942a-2a3e-30995b9bff71" data-type="term">object and obstacle detection</span> may be performed during 
+  <span data-role="tag" data-value="25b6fa40-956a-4649-ba1b-3d71a26abdaa" id="idf948542a-dfa5-9334-a087-cc5ea39ecf94" data-type="term">autonomous navigation</span> via additional 
+  <span data-role="tag" data-value="4166b5ff-8f0f-496b-a374-527ca0350bc4" id="idb49168b8-d22b-5777-105e-a8f2d93cbb89" data-type="term">DNNs</span>. In 
+  <span data-role="tag" data-value="5624e7fb-beac-47d9-437f-91b92e001693" id="idb22629a5-dcd4-2d6c-882c-93a5205d4911" data-type="term">addition</span>, these 
+  <span data-role="tag" data-value="836f34a5-439f-0587-7401-df7292c0ff91" id="id85b4f8c8-61c6-57f6-cf15-2d7e9d288f9a" data-type="term">features</span> may be implemented utilizing 
+  <span data-role="tag" data-value="74cc5f9e-daef-2832-7fac-ec26ceba52bd" id="id35496608-a1b9-a7d3-5f63-fafcb18a1ac3" data-type="term">on-board, real-time processing</span>.
+</p>

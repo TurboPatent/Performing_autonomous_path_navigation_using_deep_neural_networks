@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="664" height="666.1" viewBox="0 126.9 664 666.1"><g><g><path stroke="black" stroke-dasharray="none" d="M 299 475 306 475 306 504" fill="none"/><path fill="black" stroke="black" d="" transform="translate(299,475) scale(1,1) rotate(0)"/><path fill="black" stroke="black" d="M 8 0 L 0 4 L 8 8 z" transform="translate(302,512) scale(1,1) rotate(-90)"/><g><g label-idx="0" cursor="move" transform="translate(306, 486)"><rect fill="white" rx="3" ry="3" x="0" y="0" width="0" height="0"/><text text-anchor="middle" font-size="14pt" font-family="OpenSansCondensedLight" y="0.8em" display="none" xml:space="preserve" transform="translate(0,0)"/></g></g></g><g transform="translate(19,127)"><g><g>
+<path d="M551,0H0v154h551V0L551,0z" stroke="#000000" stroke-dasharray="none" fill="#FFFFFF"/>
+<rect x="24.1" y="7" width="502.8" height="140" fill="none"/>
+<circle fill="none" cx="275.5" cy="0" r="0.1"/>
+<circle fill="none" cx="412" cy="0" r="0.1"/>
+<circle fill="none" cx="551" cy="38.8" r="0.1"/>
+<circle fill="none" cx="551" cy="77" r="0.1"/>
+<circle fill="none" cx="551" cy="115.2" r="0.1"/>
+<circle fill="none" cx="412" cy="154" r="0.1"/>
+<circle fill="none" cx="275.5" cy="154" r="0.1"/>
+<circle fill="none" cx="139" cy="154" r="0.1"/>
+<circle fill="none" cx="0" cy="115.2" r="0.1"/>
+<circle fill="none" cx="0" cy="77" r="0.1"/>
+<circle fill="none" cx="0" cy="38.8" r="0.1"/>
+<circle fill="none" cx="139" cy="0" r="0.1"/>
+</g></g><rect stroke="none" stroke-width="1" fill="#FFFFFF" x="0" y="0" width="40" height="20" transform="translate(590.9,66.9)"/><path stroke="#000000" fill="none" d="M551,77 C567.9,93.9 573.9,60 590.9 76.9"/><text font-family="OpenSansCondensedLight" font-size="14pt" fill="black" transform="translate(590.9,66.9)" text-anchor="middle"><tspan x="20" y="16.3">102</tspan></text><rect stroke-width="0" fill="none" width="502.8" height="140" transform="translate(24.1,7)"/><text font-family="OpenSansCondensedLight" font-size="14pt" fill="black" transform="translate(24.1,7)" text-anchor="middle"><tspan x="251.4" y="76.3">  IMAGE DATA IS RECEIVED AT A DEEP NEURAL NETWORK (DNN)  </tspan></text><path stroke="#000000" fill="none" transform="translate(24.1,7)" d="M 0 0"/></g><g transform="translate(24,322)"><g><g>
+<path d="M551,0H0v154h551V0L551,0z" stroke="#000000" stroke-dasharray="none" fill="#FFFFFF"/>
+<rect x="24.1" y="7" width="502.8" height="140" fill="none"/>
+<circle fill="none" cx="275.5" cy="0" r="0.1"/>
+<circle fill="none" cx="412" cy="0" r="0.1"/>
+<circle fill="none" cx="551" cy="38.8" r="0.1"/>
+<circle fill="none" cx="551" cy="77" r="0.1"/>
+<circle fill="none" cx="551" cy="115.2" r="0.1"/>
+<circle fill="none" cx="412" cy="154" r="0.1"/>
+<circle fill="none" cx="275.5" cy="154" r="0.1"/>
+<circle fill="none" cx="139" cy="154" r="0.1"/>
+<circle fill="none" cx="0" cy="115.2" r="0.1"/>
+<circle fill="none" cx="0" cy="77" r="0.1"/>
+<circle fill="none" cx="0" cy="38.8" r="0.1"/>
+<circle fill="none" cx="139" cy="0" r="0.1"/>
+</g></g><rect stroke="none" stroke-width="1" fill="#FFFFFF" x="0" y="0" width="40" height="20" transform="translate(590.9,66.9)"/><path stroke="#000000" fill="none" d="M551,77 C567.9,93.9 573.9,60 590.9 76.9"/><text font-family="OpenSansCondensedLight" font-size="14pt" fill="black" transform="translate(590.9,66.9)" text-anchor="middle"><tspan x="20" y="16.3">104</tspan></text><rect stroke-width="0" fill="none" width="502.8" height="140" transform="translate(24.1,7)"/><text font-family="OpenSansCondensedLight" font-size="14pt" fill="black" transform="translate(24.1,7)" text-anchor="middle"><tspan x="251.4" y="55.3">DNN DETERMINES BOTH AN ORIENTATION OF A VEHICLE WITH RESPECT TO A PATH</tspan><tspan x="251.4" y="76.3">AND A LATERAL POSITION OF THE VEHICLE WITH RESPECT TO THE PATH, UTILIZING</tspan><tspan x="251.4" y="97.3">THE IMAGE DATA  </tspan></text><path stroke="#000000" fill="none" transform="translate(24.1,7)" d="M 0 0"/></g><g transform="translate(29,512)"><g><g>
+<path d="M551,0H0v154h551V0L551,0z" stroke="#000000" stroke-dasharray="none" fill="#FFFFFF"/>
+<rect x="24.1" y="7" width="502.8" height="140" fill="none"/>
+<circle fill="none" cx="275.5" cy="0" r="0.1"/>
+<circle fill="none" cx="412" cy="0" r="0.1"/>
+<circle fill="none" cx="551" cy="38.8" r="0.1"/>
+<circle fill="none" cx="551" cy="77" r="0.1"/>
+<circle fill="none" cx="551" cy="115.2" r="0.1"/>
+<circle fill="none" cx="412" cy="154" r="0.1"/>
+<circle fill="none" cx="275.5" cy="154" r="0.1"/>
+<circle fill="none" cx="139" cy="154" r="0.1"/>
+<circle fill="none" cx="0" cy="115.2" r="0.1"/>
+<circle fill="none" cx="0" cy="77" r="0.1"/>
+<circle fill="none" cx="0" cy="38.8" r="0.1"/>
+<circle fill="none" cx="139" cy="0" r="0.1"/>
+</g></g><rect stroke="none" stroke-width="1" fill="#FFFFFF" x="0" y="0" width="40" height="20" transform="translate(590.9,66.9)"/><path stroke="#000000" fill="none" d="M551,77 C567.9,93.9 573.9,60 590.9 76.9"/><text font-family="OpenSansCondensedLight" font-size="14pt" fill="black" transform="translate(590.9,66.9)" text-anchor="middle"><tspan x="20" y="16.3">106</tspan></text><rect stroke-width="0" fill="none" width="502.8" height="140" transform="translate(24.1,7)"/><text font-family="OpenSansCondensedLight" font-size="14pt" fill="black" transform="translate(24.1,7)" text-anchor="middle"><tspan x="251.4" y="55.3">LOCATION OF THE VEHICLE IS CONTROLLED, UTILIZING THE ORIENTATION OF THE</tspan><tspan x="251.4" y="76.3">VEHICLE WITH RESPECT TO THE PATH AND THE LATERAL POSITION OF THE VEHICLE</tspan><tspan x="251.4" y="97.3">WITH RESPECT TO THE PATH  </tspan></text><path stroke="#000000" fill="none" transform="translate(24.1,7)" d="M 0 0"/></g><g><path stroke="black" stroke-dasharray="none" d="M 299 284 299 314" fill="none"/><path fill="black" stroke="black" d="" transform="translate(299,284) scale(1,1) rotate(-270)"/><path fill="black" stroke="black" d="M 8 0 L 0 4 L 8 8 z" transform="translate(295,322) scale(1,1) rotate(-90)"/><g><g label-idx="0" cursor="move" transform="translate(299, 299)"><rect fill="white" rx="3" ry="3" x="0" y="0" width="0" height="0"/><text text-anchor="middle" font-size="14pt" font-family="OpenSansCondensedLight" y="0.8em" display="none" xml:space="preserve" transform="translate(0,0)"/></g></g></g></g><defs/></svg>

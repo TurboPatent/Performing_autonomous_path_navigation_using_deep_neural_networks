@@ -1,0 +1,78 @@
+<p>The 
+  <span data-role="tag" data-value="075ddb66-5bea-35bd-4fb9-200e23711bb0" id="id02479cc3-c810-6704-52ee-d1c3f9c53cf8" data-type="term">diagram</span> in 
+  <span data-role="tag" data-value="ec4cac88-ced0-935e-6ed0-64362dcb6947" id="id38485633-2dd3-d685-0b4f-ae161a3b7996" data-type="figure">Figure 9</span> illustrates an 
+  <span data-role="tag" data-value="0e398299-2647-7968-03c4-84979d4965d7" id="id9193fafe-d97d-0a50-36eb-f4b7a95e54a2" data-type="drawingObject">exemplary software architecture 900</span>, according to one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id15e09649-3c5c-eade-15aa-75f8a287a2c1" data-type="term">embodiment</span>. A 
+  <span data-role="tag" data-value="cc0713bf-9643-a11c-06a4-c5e26cfbf004" id="id0d13eafa-1882-3a57-1ca9-1d0612d31551" data-type="term">flight stack</span> may be used as 
+  <span data-role="tag" data-value="584181be-8276-212d-3675-66b51331266f" id="ide7853630-3f0d-758f-3ff4-b415adfe9983" data-type="drawingObject">flight firmware 902</span> for the 
+  <span data-role="tag" data-value="e02c219e-269f-4dcd-4af5-32ebadea48c8" id="id78ceda3c-2cfe-3ffe-b749-a31d49808065" data-type="drawingObject">flight controller hardware autopilot 920</span>. The 
+  <span data-role="tag" data-value="584181be-8276-212d-3675-66b51331266f" id="id9328ae5a-ceee-3eb7-4caa-015cda8a088d" data-type="drawingObject">flight firmware 902</span> may provide flexible and 
+  <span data-role="tag" data-value="dda65a04-ef25-7d08-000d-a4b88e0ef581" id="id471be25b-735e-c264-2983-43581f831477" data-type="term">robust control</span> over a 
+  <span data-role="tag" data-value="5e3eeeb8-b3ce-bec2-9139-25e4c17c50c0" id="id27b76722-bdf9-b9ef-6843-7a64b4f61aaf" data-type="term">range</span> of 
+  <span data-role="tag" data-value="f7fdb350-407d-d233-6a1a-8b0668780337" id="ide283d32e-956c-6f51-3192-ad75f26a884b" data-type="term">MAV configurations</span>. It may 
+  <span data-role="tag" data-value="3991c347-7c5f-6f63-4ee6-606b014b1c17" id="ida8c0517e-1b50-f971-93d8-c0414c9f20a4" data-type="term">include</span>
+  <span data-role="tag" data-value="7abc70b9-b928-fda7-fe26-ecdd416ab681" id="idd8307c08-d287-56ff-bd63-cc792085e538" data-type="term">software-in-the-loop</span> (
+  <span data-role="tag" data-value="ad61ecec-5028-acf1-024e-1f3e83dae90c" id="idd8a8b516-3f8d-9765-201b-36487d351358" data-type="term">SITL</span>) simulation, which may be used for 
+  <span data-role="tag" data-value="a4af92ff-63e9-bd59-8d79-95e7d3374114" id="id03f63913-be4b-58f3-e7df-a56ce92f14ec" data-type="term">controller testing and debugging</span>. The 
+  <span data-role="tag" data-value="d3071acd-d6be-52f4-d702-19781c57ba86" id="id9ca6cce3-2e10-2975-d00a-63e553ec1eac" data-type="term">on-board computer</span> may communicate with the 
+  <span data-role="tag" data-value="584181be-8276-212d-3675-66b51331266f" id="id4035deda-46f3-91c4-48b1-9be71bf349da" data-type="drawingObject">flight firmware 902</span> via a 
+  <span data-role="tag" data-value="397e8a0b-9476-4ae4-7fcb-1afb667c61f5" id="idd026b933-b20c-5a99-d586-7bc18f3f5fa3" data-type="term">predetermined protocol</span> (e.g., 
+  <span data-role="tag" data-value="5a6ba956-c0ff-af70-981a-a64fb50d8ff0" id="id4276839d-ccfe-587f-1183-ce701be67033" data-type="term">MavLink</span>, etc.). The 
+  <span data-role="tag" data-value="b6c4e2ce-c4de-1f5a-92cd-509256f78780" id="id0830f207-05c7-3a4f-0739-aef34fc9a74e" data-type="term">robotic operating system</span>
+  <span data-role="tag" data-value="1283e382-2946-f3e7-67f3-ac33815cc05c" id="idb94d7ce0-30cf-0038-b9d0-01e3c39deaa1" data-type="drawingObject">ROS 904</span> may be run on the 
+  <span data-role="tag" data-value="d3071acd-d6be-52f4-d702-19781c57ba86" id="id89002d3a-8e78-6451-f43f-76349fb17f8e" data-type="term">on-board computer</span>. As shown in 
+  <span data-role="tag" data-value="ec4cac88-ced0-935e-6ed0-64362dcb6947" id="idcf031ecf-e130-fdee-1c98-ea68b5228ac3" data-type="figure">Figure 9</span>, the 
+  <span data-role="tag" data-value="6e9e66a6-c22f-8ed5-6d01-8ae76b176d51" id="idc979e016-3dd6-3402-1f4c-00fbec0a0f6d" data-type="term">architecture</span> 900 uses the 
+  <span data-role="tag" data-value="6825c518-b261-e913-fb55-ac70c9b72ca1" id="idc67b2edf-ba46-cc46-f066-ad02f67089b9" data-type="term">following ROS nodes</span> 906-910: a 
+  <span data-role="tag" data-value="892a60a1-5f89-3e35-805b-b2d6a5baf6b1" id="id3f985a4a-9fc2-b1b8-2f2c-1b201d47fc9a" data-type="drawingObject">camera driver node 906</span> for reading 
+  <span data-role="tag" data-value="092f42f2-f229-6399-c3a7-d97fb599a3ac" id="id17f86dba-9833-8eca-edd9-36a86cc5cfe1" data-type="term">USB camera input</span>, a 
+  <span data-role="tag" data-value="06c4b77f-1f00-44aa-049c-5a01061870d5" id="id0815c46e-ef10-6614-5921-f698664e4757" data-type="drawingObject">joystick driver node 908</span> for 
+  <span data-role="tag" data-value="569f88e9-0cf3-a421-9264-9900780a338a" id="id03a8d362-ce16-b3fa-54b3-e15738fe8e74" data-type="term">reading game controller commands</span> used for 
+  <span data-role="tag" data-value="e863784b-8909-7352-0473-793c67af7ac3" id="id431b4f27-c2a1-1966-fe8a-8251282503c0" data-type="term">teleoperation</span> (e.g., during 
+  <span data-role="tag" data-value="b8cc382f-7e3e-f818-76f5-0876a2e7fdb2" id="id75360fae-5ef9-8904-7963-17404edc27a0" data-type="term">training</span> and for 
+  <span data-role="tag" data-value="aba2f6d3-f6e9-82d0-7a7c-4be349eaa25c" id="idf3e21fbd-5e10-6cf9-137e-39b7c04b8c94" data-type="term">emergency override</span>), and a 
+  <span data-role="tag" data-value="674b72a3-247f-76c3-c08d-40c08f484c42" id="id90cb6fb2-74e1-77a5-a9f7-a5f8cf1ea3b9" data-type="drawingObject">messaging bridge to external autopilot module 910</span> for communicating with the 
+  <span data-role="tag" data-value="584181be-8276-212d-3675-66b51331266f" id="ide6760d0e-4a8a-eb96-8cb4-b6c86f214974" data-type="drawingObject">flight firmware 902</span>.&nbsp;
+</p>
+<p></p>
+<p>In one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id519c38ce-92f0-eb1e-a354-5a94713b283c" data-type="term">embodiment</span>, 
+  <span data-role="tag" data-value="1b1e655c-eb99-62fe-5cfd-60788c36fffa" id="id9404ae21-8c12-b54e-1b08-f1ac59171d4e" data-type="term">vision processing</span> may be performed by 
+  <span data-role="tag" data-value="ac2f0ae0-3655-97b8-ca7f-10c378869890" id="id6d9324e3-2e7d-7041-dd1a-26739946f586" data-type="term">three nodes</span> 912-916. A 
+  <span data-role="tag" data-value="def7878c-06cd-bed6-81ad-62e6e4a63e06" id="id0576bc46-bdc8-f5a2-60ae-e178f117981a" data-type="drawingObject">TrailNet DNN node 912</span> applies a trained TrailNet 
+  <span data-role="tag" data-value="d39f2da2-2387-f89f-650b-5697200627a1" id="id3c71b44e-45ff-89e6-54a5-f4c739668e98" data-type="term">DNN</span>. An 
+  <span data-role="tag" data-value="5c6960c2-2bfd-6916-a252-2c81023bdf19" id="idf96c220b-0542-8818-c19a-96e7889b0ce6" data-type="drawingObject">object detection node 914</span> runs 
+  <span data-role="tag" data-value="7e5eea86-28c7-6d9b-3074-a26fa1aec6d2" id="idbd9c7660-e15e-9de8-6206-e570ede562c0" data-type="term">real-time object detection DNN</span>. An 
+  <span data-role="tag" data-value="f7ac711b-bbc8-a5d9-841b-456a4c9cd326" id="idf708048c-b7e1-b857-e9e3-a1306812dc6b" data-type="drawingObject">obstacle detector node 916</span> runs a 
+  <span data-role="tag" data-value="d45c9b2b-e360-48e6-09b8-d0fcdfe1383d" id="id7c2a2e83-4dfa-b34d-6c6d-29dadc16bec5" data-type="term">visual odometry algorithm</span>, whose 
+  <span data-role="tag" data-value="b1d033d4-b6c1-a436-6328-2fe056859f55" id="ida8792326-b7cc-e1c7-e799-4890ed994159" data-type="term">output</span> may be 
+  <span data-role="tag" data-value="bfbb4146-d72b-02d0-f214-650bc9465a27" id="ide52154de-6577-237d-7726-1d43f5e4c5bc" data-type="term">converted</span> to a 
+  <span data-role="tag" data-value="5b3c28fb-fe03-9ee0-d9f9-8f203efe62c4" id="id930c8850-e495-70ed-9e5f-09a660a5caff" data-type="term">camera-centric depth map</span> for 
+  <span data-role="tag" data-value="1b3e84e6-0640-f220-8da5-8afc46d4d739" id="id6d26f643-922a-df6e-c76a-7ebfc6d5bff3" data-type="term">obstacle detection</span> and 
+  <span data-role="tag" data-value="be202627-3e2e-cfe3-fe3e-4594ec9f7b3d" id="id90039d8a-1237-3573-e89c-99bf8d6c3da0" data-type="term">avoidance</span>.&nbsp;
+</p>
+<p></p>
+<p>The 
+  <span data-role="tag" data-value="49c53688-a1ab-b48d-76ed-442ea47fc96f" id="id06eb3148-0ece-034a-594a-71b48331593d" data-type="drawingObject">controller node 918</span> may be responsible for 
+  <span data-role="tag" data-value="1abf24cb-72e0-4262-525a-788117c19da8" id="idbff87684-acd6-ea6f-d585-3d257ad9ab27" data-type="term">computing desired movement commands</span> (
+  <span data-role="tag" data-value="be8576f7-db76-3855-f823-fe627b91022e" id="idb0a1f54d-615f-91b2-d60a-d4dfcb0cb5d1" data-type="term">waypoints</span>) per 
+  <span data-role="tag" data-value="f3204bbb-0f09-2af3-2475-f38d3bf085cc" id="id63fac998-b8ee-4008-132a-3087c3016fc1" data-type="term">current TrailNet DNN predictions</span>, detected 
+  <span data-role="tag" data-value="80ffcd1c-3f2e-0d89-21b5-bcbd46e1382a" id="idb4fa41f1-901a-2538-1866-9c0deff702a9" data-type="term">obstacles/objects</span> and 
+  <span data-role="tag" data-value="2a8f2082-576f-94a8-7468-44a65b589d24" id="id97b20212-35f8-dac2-af0e-726352dc926f" data-type="term">teleoperation commands</span>. For 
+  <span data-role="tag" data-value="ffe8e368-747f-b398-1276-9a6a5c0de181" id="id0345069a-8930-5384-2ec6-ddde639579d0" data-type="term">safety</span>, the 
+  <span data-role="tag" data-value="2a8f2082-576f-94a8-7468-44a65b589d24" id="id6c886552-0612-17e7-6b8d-2a9b4b3a32dc" data-type="term">teleoperation commands</span> may take 
+  <span data-role="tag" data-value="ac340629-9cd0-8127-aff8-fa2a30e92bcf" id="id4ebfdd74-4d7b-e740-dba8-699fc77d7446" data-type="term">precedence</span> over 
+  <span data-role="tag" data-value="47648af0-3aaa-c25d-e29a-bae464dc9aaf" id="id67888fed-c435-4039-2e11-e932c5e46661" data-type="term">DNN predictions</span>, so a 
+  <span data-role="tag" data-value="e5b82673-8d22-c6b6-6512-ffc05b29063d" id="id499740e9-f807-8946-9a81-0a2ac61383cd" data-type="term">human operator</span> may override the MAV at any 
+  <span data-role="tag" data-value="38f63620-a410-6495-ad8e-711d491df2fa" id="id0b252f3d-d5e2-62f1-7438-40a4766c4dc7" data-type="term">time</span> to prevent undesirable 
+  <span data-role="tag" data-value="03f1a37f-252e-b7b2-9238-cc91b115d8eb" id="id9809f366-5aa7-745e-e20d-de60535ad6c4" data-type="term">movements</span>. The 
+  <span data-role="tag" data-value="502d8797-a06f-1e33-b4ae-5f0713cbe1a5" id="id29e2ed07-67c9-9dcc-fbfc-c0cadad05991" data-type="term">computed waypoint</span> may then be sent to the 
+  <span data-role="tag" data-value="674b72a3-247f-76c3-c08d-40c08f484c42" id="idd8313e0a-1b12-3304-80e3-7f2e3e30ea2d" data-type="drawingObject">messaging bridge to external autopilot module 910</span> which resubmits it to the 
+  <span data-role="tag" data-value="584181be-8276-212d-3675-66b51331266f" id="id1a54519c-ae71-3bb0-7569-510b87b9bd16" data-type="drawingObject">flight firmware 902</span> via a 
+  <span data-role="tag" data-value="49c53688-a1ab-b48d-76ed-442ea47fc96f" id="id05b5f74c-3e50-a6f9-87d3-4bcc2b48f9f2" data-type="drawingObject">controller node 918</span>. A 
+  <span data-role="tag" data-value="3caef039-38ca-8973-0ab9-c3d104e6f46a" id="idcb77fe67-b898-8399-7cf1-7073ee103aeb" data-type="term">righthanded ENU (east-north-up) inertial coordinate frame</span> may be used for 
+  <span data-role="tag" data-value="df9521c3-c5f2-bf07-a748-8a61a76f5ddb" id="idbd8ad1f1-a48b-c418-a385-074384148b4f" data-type="term">waypoint computation</span>, which may be 
+  <span data-role="tag" data-value="bfbb4146-d72b-02d0-f214-650bc9465a27" id="id2b9b6bfe-e12b-c7ad-97d6-c903258e6d20" data-type="term">converted</span> to the 
+  <span data-role="tag" data-value="584181be-8276-212d-3675-66b51331266f" id="id818dcf1a-7899-f8ee-40a5-9d3b5d420b7b" data-type="drawingObject">flight firmware 902</span>'s right-handed NED (north-east-down) coordinate 
+  <span data-role="tag" data-value="14647dd9-76a2-0304-925a-231afef31319" id="ide7b486f8-10e0-0cde-246e-b8e00d958d42" data-type="term">frame</span>.&nbsp;
+</p>

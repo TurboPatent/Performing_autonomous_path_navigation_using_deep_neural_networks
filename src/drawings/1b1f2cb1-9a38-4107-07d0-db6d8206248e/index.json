@@ -1,0 +1,228 @@
+{
+  "isLandscape": false,
+  "drawingData": {
+    "cells": [
+      {
+        "type": "tp.Link",
+        "isNumbered": false,
+        "arrowheads": "target",
+        "strokeStyle": "solid",
+        "displayCase": "uppercase",
+        "showLabel": true,
+        "source": {
+          "id": "4b3767f4-9229-1f4f-145c-0a98e4a30f91"
+        },
+        "target": {
+          "id": "4762dd98-4aee-7fbc-37ab-8c3bed614f52"
+        },
+        "id": "9eb649d4-9e22-4164-99ad-8d2c2cb5e241",
+        "embeds": "",
+        "z": 0,
+        "routing": "straight",
+        "objectID": "697dd39a-6382-b9be-4aea-dfe44ab4d7e2",
+        "vertices": [
+          {
+            "x": 306,
+            "y": 475
+          }
+        ]
+      },
+      {
+        "type": "tp.Element",
+        "shape": "numberLabel",
+        "labelVAlign": "center",
+        "isNumbered": true,
+        "outsideNumbers": false,
+        "displayCase": "uppercase",
+        "name": "<p><span data-role=\"tag\" data-value=\"3900190d-cf23-6b2c-861d-8038c858fd7e\" id=\"id0253cc59-7c44-4826-0428-0937743cf0b9\" data-type=\"term\">method for performing autonomous path navigation using deep neural networks</span></p>",
+        "position": {
+          "x": 603.2629165649414,
+          "y": 18.1875
+        },
+        "size": {
+          "width": 28.346457481384277,
+          "height": 28.346457481384277
+        },
+        "angle": 0,
+        "label": "",
+        "strokeStyle": "solid",
+        "hasName": true,
+        "labelPosition": "only",
+        "id": "d93968d8-7dfe-4f6d-9f1b-5db8114f1aac",
+        "z": 1,
+        "objectID": "4b09bf94-0ed6-b86a-b419-85f1e2aece55",
+        "number": 0
+      },
+      {
+        "type": "tp.Element",
+        "shape": "rectangle",
+        "labelVAlign": "center",
+        "isNumbered": true,
+        "outsideNumbers": true,
+        "displayCase": "uppercase",
+        "name": "",
+        "position": {
+          "x": 19,
+          "y": 127
+        },
+        "size": {
+          "width": 551,
+          "height": 154
+        },
+        "angle": 0,
+        "label": "<p>&nbsp;</p><p><span data-role=\"tag\" data-value=\"59cd700c-8337-fc59-959b-d2bdc688681c\" id=\"id53f56149-21c4-ad47-906e-91320d47160b\" data-type=\"term\">image data is received at a deep neural network (DNN)</span></p><p>&nbsp;</p>",
+        "strokeStyle": "solid",
+        "hasName": false,
+        "labelPosition": "internal",
+        "numberPosition": "position4",
+        "id": "205258d0-90b7-4a39-a22c-c8ce7fbdb13a",
+        "z": 2,
+        "labelLayout": {
+          "labelBoxWidth": 502.8393859863281,
+          "fullString": "  IMAGE DATA IS RECEIVED AT A DEEP NEURAL NETWORK (DNN)  ",
+          "endPad": 0,
+          "lines": [
+            {
+              "text": "  IMAGE DATA IS RECEIVED AT A DEEP NEURAL NETWORK (DNN)  ",
+              "width": 367.8149108886719,
+              "x": 67.51223754882812,
+              "y": 59.47718461914063
+            }
+          ],
+          "textWidth": 367.8149108886719,
+          "textHeight": 21.000037499999998
+        },
+        "objectID": "447d1225-932f-8405-3436-0ef515f30ef3",
+        "number": 2
+      },
+      {
+        "type": "tp.Element",
+        "shape": "rectangle",
+        "labelVAlign": "center",
+        "isNumbered": true,
+        "outsideNumbers": true,
+        "displayCase": "uppercase",
+        "name": "",
+        "position": {
+          "x": 24,
+          "y": 322
+        },
+        "size": {
+          "width": 551,
+          "height": 154
+        },
+        "angle": 0,
+        "label": "<p><span data-role=\"tag\" data-value=\"bd73acfa-e0ec-625d-0669-ae5e7aa4983f\" id=\"id564a9f2a-fc17-e3fa-14c3-cc66eee4554f\" data-type=\"term\">DNN determines both an orientation of a vehicle with respect to a path and a lateral position of the vehicle with respect to the path, utilizing the image data</span></p><p>&nbsp;</p>",
+        "strokeStyle": "solid",
+        "hasName": false,
+        "labelPosition": "internal",
+        "numberPosition": "position4",
+        "id": "4b3767f4-9229-1f4f-145c-0a98e4a30f91",
+        "z": 3,
+        "labelLayout": {
+          "labelBoxWidth": 502.8393859863281,
+          "fullString": "DNN DETERMINES BOTH AN ORIENTATION OF A VEHICLE WITH RESPECT TO A PATH AND A LATERAL POSITION OF THE VEHICLE WITH RESPECT TO THE PATH, UTILIZING THE IMAGE DATA  ",
+          "endPad": 0,
+          "lines": [
+            {
+              "text": "DNN DETERMINES BOTH AN ORIENTATION OF A VEHICLE WITH RESPECT TO A PATH",
+              "width": 488.8861083984375,
+              "x": 6.9766387939453125,
+              "y": 38.477147119140625
+            },
+            {
+              "text": "AND A LATERAL POSITION OF THE VEHICLE WITH RESPECT TO THE PATH, UTILIZING",
+              "width": 485.3509521484375,
+              "x": 8.744216918945312,
+              "y": 59.47718461914062
+            },
+            {
+              "text": "THE IMAGE DATA  ",
+              "width": 97.92848205566406,
+              "x": 202.45545196533203,
+              "y": 80.47722211914062
+            }
+          ],
+          "textWidth": 488.8861083984375,
+          "textHeight": 63.00011249999999
+        },
+        "objectID": "cf0c0880-a3a1-1e84-934d-2aff91476a78",
+        "number": 4
+      },
+      {
+        "type": "tp.Element",
+        "shape": "rectangle",
+        "labelVAlign": "center",
+        "isNumbered": true,
+        "outsideNumbers": true,
+        "displayCase": "uppercase",
+        "name": "",
+        "position": {
+          "x": 29,
+          "y": 512
+        },
+        "size": {
+          "width": 551,
+          "height": 154
+        },
+        "angle": 0,
+        "label": "<p><span data-role=\"tag\" data-value=\"ad306d1e-f681-83ed-aa13-8033959905d1\" id=\"id6caa5352-c413-ebf1-a513-4eafba0bc9e9\" data-type=\"term\">location of the vehicle is controlled, utilizing the orientation of the vehicle with respect to the path and the lateral position of the vehicle with respect to the path</span></p><p>&nbsp;</p>",
+        "strokeStyle": "solid",
+        "hasName": false,
+        "labelPosition": "internal",
+        "numberPosition": "position4",
+        "id": "4762dd98-4aee-7fbc-37ab-8c3bed614f52",
+        "z": 4,
+        "labelLayout": {
+          "labelBoxWidth": 502.8393859863281,
+          "fullString": "LOCATION OF THE VEHICLE IS CONTROLLED, UTILIZING THE ORIENTATION OF THE VEHICLE WITH RESPECT TO THE PATH AND THE LATERAL POSITION OF THE VEHICLE WITH RESPECT TO THE PATH  ",
+          "endPad": 0,
+          "lines": [
+            {
+              "text": "LOCATION OF THE VEHICLE IS CONTROLLED, UTILIZING THE ORIENTATION OF THE",
+              "width": 479.19171142578125,
+              "x": 11.823837280273438,
+              "y": 38.477147119140625
+            },
+            {
+              "text": "VEHICLE WITH RESPECT TO THE PATH AND THE LATERAL POSITION OF THE VEHICLE",
+              "width": 487.0274353027344,
+              "x": 7.905975341796875,
+              "y": 59.47718461914062
+            },
+            {
+              "text": "WITH RESPECT TO THE PATH  ",
+              "width": 165.470703125,
+              "x": 168.68434143066406,
+              "y": 80.47722211914062
+            }
+          ],
+          "textWidth": 487.0274353027344,
+          "textHeight": 63.00011249999999
+        },
+        "objectID": "d0f5d791-4d27-11e2-1b8a-439ff339b0fe",
+        "number": 6
+      },
+      {
+        "type": "tp.Link",
+        "isNumbered": false,
+        "arrowheads": "target",
+        "strokeStyle": "solid",
+        "displayCase": "uppercase",
+        "showLabel": true,
+        "source": {
+          "x": 297,
+          "y": 284
+        },
+        "target": {
+          "id": "4b3767f4-9229-1f4f-145c-0a98e4a30f91"
+        },
+        "id": "b5abf864-6909-4182-8ea6-6a5f6465008b",
+        "embeds": "",
+        "z": 7,
+        "routing": "straight",
+        "objectID": "5eced49d-e498-64e2-b32f-ba21a04f4724"
+      }
+    ]
+  }
+}

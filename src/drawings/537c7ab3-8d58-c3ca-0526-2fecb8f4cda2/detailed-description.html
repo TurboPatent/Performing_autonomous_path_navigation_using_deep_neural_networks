@@ -1,0 +1,487 @@
+<p>
+  <span data-role="tag" data-value="537c7ab3-8d58-c3ca-0526-2fecb8f4cda2" id="id8916b02e-5498-8e0a-69f3-ea7fdc712f02" data-type="figure">Figure 5</span> illustrates the streaming multi-processor 306 of 
+  <span data-role="tag" data-value="5a0cc2f9-c460-e996-b804-845cc184ae54" id="idcd121aa4-4010-fd32-e4cb-87d7c2c56eb1" data-type="figure">Figure 3</span>, in accordance with one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id8ec85a50-27c6-e2f3-ca2f-c1e8ff098908" data-type="term">embodiment</span>. As shown in 
+  <span data-role="tag" data-value="537c7ab3-8d58-c3ca-0526-2fecb8f4cda2" id="id56f1de97-68da-eea9-93a1-68741ed0641a" data-type="figure">Figure 5</span>, the 
+  <span data-role="tag" data-value="a614a628-3726-6cd5-3feb-b4e0bdbc1d3a" id="id62ec9e61-a941-11a6-5ea5-8433c7827b80" data-type="drawingObject">SM 306</span> includes an 
+  <span data-role="tag" data-value="1489471e-2c21-eff5-9f83-6b6dcfb1b631" id="iddaad71d7-965e-c8cb-0085-b8ff0d8798f4" data-type="drawingObject">instruction cache 502</span>, one or more 
+  <span data-role="tag" data-value="732b1426-1e22-88ca-53fe-783548997ba3" id="idb29bb174-f664-3ea0-73d8-abbbaf17456b" data-type="drawingObject">scheduler units 214</span> s, a 
+  <span data-role="tag" data-value="b419726f-1476-d6ba-2f3f-0329538c61a2" id="idb172bb17-e257-6c19-d487-2ae85cd0a7b7" data-type="drawingObject">register file 506</span>, one or more 
+  <span data-role="tag" data-value="5cecfb7f-c9a6-5a77-473c-8f26ea8e5b41" id="idf1764312-6dff-49f5-1a7f-c5ffb286d82e" data-type="drawingObject">processing cores 508</span> s, one or more special function 
+  <span data-role="tag" data-value="cdc4c605-e3f8-bb25-e598-9edab1686248" id="id700c59a4-fbd0-e144-064d-e78154563730" data-type="term">units</span>
+  <span data-role="tag" data-value="7dc10304-bde5-666d-e34f-46123d909e64" id="ida89fd634-1fca-2f37-b54c-c0aba713648b" data-type="term">SFUs</span> 604, one or more load/store 
+  <span data-role="tag" data-value="cdc4c605-e3f8-bb25-e598-9edab1686248" id="id6be876a4-3f83-f03e-89ed-2365ab184695" data-type="term">units</span>
+  <span data-role="tag" data-value="5d51ba83-7996-872c-b2d1-bbed494cee34" id="idb1a0f3b7-5834-0c91-2649-87a2dfff52e3" data-type="drawingObject">LSUs 512</span>, an 
+  <span data-role="tag" data-value="6c9dbd3c-f3dd-2d2c-74ac-a32204fcc0c6" id="idc193571b-23e8-5731-011e-b8251a56e4f9" data-type="drawingObject">interconnect network 514</span>, a 
+  <span data-role="tag" data-value="06192ff7-4959-83f8-a0f4-796b876eb4ee" id="id260c7e37-ede4-90c6-58c2-f13dcbc5bf61" data-type="drawingObject">shared memory/L1 cache 516</span>.&nbsp;
+</p>
+<p>&nbsp;</p>
+<p>As 
+  <span data-role="tag" data-value="ad113ecd-fd74-aa08-6447-eee4f79f355d" id="id9a52caae-e5b9-f200-f9d9-222bcfe5f168" data-type="term">described above</span>, the 
+  <span data-role="tag" data-value="cbd5c9d7-d1f1-46ca-92fd-d230a6a85c4e" id="id45825077-235f-5990-4e63-39e5d9cba540" data-type="drawingObject">work distribution unit 216</span> dispatches 
+  <span data-role="tag" data-value="84dc7062-44df-fb9d-2d83-e6eb786fab1f" id="id7c8ee48c-960e-2344-a42f-3996bf56596b" data-type="term">tasks</span> for 
+  <span data-role="tag" data-value="ae6e7aea-d06b-eab5-d24a-c98ec796f69d" id="id5ec79ff0-7579-04cd-4b94-843505299ecf" data-type="term">execution</span> on the 
+  <span data-role="tag" data-value="93fa9c30-3ee2-68df-c9ce-fdc73e8d122c" id="id85b97a40-f234-ca17-3d99-8999da9052d6" data-type="drawingObject">GPCs 204</span> s of the 
+  <span data-role="tag" data-value="16b5d8a5-6546-d84d-f870-6e19b3d7bc86" id="id75e3c66d-c247-59e5-9ab2-55f286d70e6b" data-type="drawingObject">PPU 202</span>. The 
+  <span data-role="tag" data-value="84dc7062-44df-fb9d-2d83-e6eb786fab1f" id="id1d0d5468-55e3-e05b-b841-f1275f85a4bd" data-type="term">tasks</span> are allocated to particular 
+  <span data-role="tag" data-value="1034afe7-ba17-4fc4-add9-aac2f7d0c260" id="id959decc5-c7b4-2c19-771a-003b7b6dc9d6" data-type="drawingObject">DPCs 318</span> within a 
+  <span data-role="tag" data-value="93fa9c30-3ee2-68df-c9ce-fdc73e8d122c" id="id67307ab0-9ceb-8e77-db13-13b801ce52d3" data-type="drawingObject">GPCs 204</span> and, if the 
+  <span data-role="tag" data-value="a070aaaa-a8a0-3aff-05ce-34102553e79f" id="id5f317a8e-a1a5-76ac-b629-691f24551a3e" data-type="term">task</span> is associated with a 
+  <span data-role="tag" data-value="0417f4fb-928a-bc7b-aba4-7bbec8af24c3" id="idd4705eeb-fc22-3237-de30-19d6da5dc717" data-type="term">shader program</span>, the 
+  <span data-role="tag" data-value="a070aaaa-a8a0-3aff-05ce-34102553e79f" id="iddd80566f-2f1c-b7a2-67cc-83d676bce217" data-type="term">task</span> may be allocated to an 
+  <span data-role="tag" data-value="a614a628-3726-6cd5-3feb-b4e0bdbc1d3a" id="idc7bcd109-5532-85f1-0161-bcb7f7c60a3a" data-type="drawingObject">SM 306</span>. The 
+  <span data-role="tag" data-value="732b1426-1e22-88ca-53fe-783548997ba3" id="id917c29a4-155c-5c00-cdfa-a8ebd83b0a08" data-type="drawingObject">scheduler units 214</span> receives the 
+  <span data-role="tag" data-value="84dc7062-44df-fb9d-2d83-e6eb786fab1f" id="id21d437dd-e3f9-1628-3059-a0c3dc2100dd" data-type="term">tasks</span> from the 
+  <span data-role="tag" data-value="cbd5c9d7-d1f1-46ca-92fd-d230a6a85c4e" id="ide5790b45-7cb2-04fd-0d72-d2125670aa16" data-type="drawingObject">work distribution unit 216</span> and manages 
+  <span data-role="tag" data-value="36939f72-87bf-957c-379e-286114b6fd28" id="ideb5c4507-2ed6-c249-e0e3-7dbc013bf3c2" data-type="term">instruction scheduling</span> for one or more 
+  <span data-role="tag" data-value="871b039d-504b-edb4-2c3d-c8fa2410d975" id="id9815dad8-4e92-0ceb-0aa7-258e09c414cf" data-type="term">thread blocks</span> assigned to the 
+  <span data-role="tag" data-value="a614a628-3726-6cd5-3feb-b4e0bdbc1d3a" id="id542ad8e3-2583-5091-280b-ec12a0cee7e9" data-type="drawingObject">SM 306</span>. The 
+  <span data-role="tag" data-value="732b1426-1e22-88ca-53fe-783548997ba3" id="idebea4552-ae3f-8f75-e870-9dfad2235225" data-type="drawingObject">scheduler units 214</span>
+  <span data-role="tag" data-value="719a4524-e1b5-9b77-98f0-5510a03aeb9a" id="id128aa747-e99a-19f3-c233-67d2de2c3d3e" data-type="term">schedules</span>
+  <span data-role="tag" data-value="871b039d-504b-edb4-2c3d-c8fa2410d975" id="id8f4750e6-4a1a-1d2d-756d-a9898e93b093" data-type="term">thread blocks</span> for 
+  <span data-role="tag" data-value="ae6e7aea-d06b-eab5-d24a-c98ec796f69d" id="id15b4b761-c35e-08b8-4edd-aff7960e2d45" data-type="term">execution</span> as 
+  <span data-role="tag" data-value="ed262aa0-3e75-4e9f-8488-b450a535fe5d" id="id451ddf84-df0e-ae73-e583-76807ac4ad83" data-type="term">warps</span> of 
+  <span data-role="tag" data-value="0d1e9b90-da4a-b1e4-50f7-38d1beba3651" id="id03e6540e-bc2c-e476-ed82-8da2407ae2e9" data-type="term">parallel threads</span>, where each 
+  <span data-role="tag" data-value="d2e2efcb-68ec-43ef-16aa-555f9cdbd326" id="id57003f41-ef1e-300d-ffdc-f923305346b0" data-type="term">thread block</span> is allocated 
+  <span data-role="tag" data-value="398962e3-c6ab-f290-05b5-325bc955c63a" id="id30414731-aacf-a755-a6bd-711d6378469d" data-type="term">at least one warp</span>. In one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id12142b42-622d-c227-153b-7e3179986e6c" data-type="term">embodiment</span>, each 
+  <span data-role="tag" data-value="e888cb60-18e5-fcf4-e9a9-4b015fb5a01e" id="id216f9820-809c-fd55-8092-8e54b6815cb0" data-type="term">warp executes</span>
+  <span data-role="tag" data-value="6ec164d2-7f2d-e4b4-6ef8-603084223681" id="id0c2b88b4-9350-6c43-3200-7f1fc5358bee" data-type="term">32 threads</span>. The 
+  <span data-role="tag" data-value="732b1426-1e22-88ca-53fe-783548997ba3" id="id1eeef860-9384-2d8c-b728-ed9cad5925bb" data-type="drawingObject">scheduler units 214</span> may manage a 
+  <span data-role="tag" data-value="43e428f0-2efd-e00f-03fc-25833d13c566" id="ideb0d4df5-862b-519f-10d2-6b43ce0e955f" data-type="term">plurality</span> of different 
+  <span data-role="tag" data-value="871b039d-504b-edb4-2c3d-c8fa2410d975" id="id5056b0c3-4c27-19d8-e8f6-594f9fb47a5c" data-type="term">thread blocks</span>, allocating the 
+  <span data-role="tag" data-value="ed262aa0-3e75-4e9f-8488-b450a535fe5d" id="id5f82a92f-df0d-bf4b-5b87-0a50ad9e2e6b" data-type="term">warps</span> to the different 
+  <span data-role="tag" data-value="871b039d-504b-edb4-2c3d-c8fa2410d975" id="idd910a13e-95b0-54b9-4e25-7d90b05315f1" data-type="term">thread blocks</span> and then dispatching 
+  <span data-role="tag" data-value="3a4c740b-bc79-db6f-1220-2c68589ae59b" id="id44504a87-b6df-ef19-115c-5a8c9d9ef25b" data-type="term">instructions</span> from the 
+  <span data-role="tag" data-value="43e428f0-2efd-e00f-03fc-25833d13c566" id="id8b2a8267-4f9b-a313-bf71-39a89d62274f" data-type="term">plurality</span> of different cooperative 
+  <span data-role="tag" data-value="c12bc3ec-a233-f390-b231-a95f1d5d0af5" id="id353cd36e-fa3d-dc87-3e61-b4c6b6140922" data-type="term">groups</span> to the 
+  <span data-role="tag" data-value="cb709c0e-9f1a-3791-6371-5c325b0970b1" id="iddcecbed8-9146-b5b5-cf88-d5f177971f65" data-type="term">various functional units</span> (i.e., 
+  <span data-role="tag" data-value="5cecfb7f-c9a6-5a77-473c-8f26ea8e5b41" id="idc875e93e-e477-b6ec-83eb-ad57c685d649" data-type="drawingObject">processing cores 508</span> s, 
+  <span data-role="tag" data-value="7dc10304-bde5-666d-e34f-46123d909e64" id="id213cebc1-d6be-1a1e-d559-12b2e50e5d72" data-type="term">SFUs</span> 604, and 
+  <span data-role="tag" data-value="5d51ba83-7996-872c-b2d1-bbed494cee34" id="id68aaee4a-70b0-d6ee-e91a-4865a5aaba4a" data-type="drawingObject">LSUs 512</span>) during each 
+  <span data-role="tag" data-value="1bed1017-e967-0f1a-9d1d-f88b585b75b6" id="id5e661a0f-bca2-aa29-096b-f9486d9b9e70" data-type="term">clock cycle</span>.&nbsp;
+</p>
+<p>&nbsp;</p>
+<p>Cooperative 
+  <span data-role="tag" data-value="c12bc3ec-a233-f390-b231-a95f1d5d0af5" id="id7f0217fe-9a69-7633-81eb-17ca851933ee" data-type="term">groups</span> is a 
+  <span data-role="tag" data-value="b5e221b4-e58c-399d-41d7-60c929a676b3" id="id0b876239-9f32-fbd4-b602-4626c24d0c0e" data-type="term">programming model</span> for 
+  <span data-role="tag" data-value="325554a0-f14e-13b3-4edb-7f66a1622c30" id="idc67146f4-b2f1-8589-8c2a-612770e8ad90" data-type="term">organizing groups</span> of communicating 
+  <span data-role="tag" data-value="b67b4fc6-f73f-9f7d-50bd-a3e2a6169276" id="id62740174-420b-019c-575a-93f4f802a818" data-type="term">threads</span> that allows 
+  <span data-role="tag" data-value="c912a73e-7748-c07e-e060-91c23df31105" id="id41dd432b-75a3-1795-283e-873218b7b344" data-type="term">developers</span> to express the 
+  <span data-role="tag" data-value="b27b64a4-ce94-f35d-e3d4-fb083917a81d" id="idfeedf049-6dfe-e72d-3245-4bde1054b41e" data-type="term">granularity</span> at which 
+  <span data-role="tag" data-value="b67b4fc6-f73f-9f7d-50bd-a3e2a6169276" id="id08f17236-28f2-e825-873a-0d46e4bb7405" data-type="term">threads</span> are communicating, enabling the 
+  <span data-role="tag" data-value="8a530f13-d052-f5e2-4285-c1f7a9fde152" id="id747585dd-432e-bcea-2131-1f54fe4c775a" data-type="term">expression</span> of richer, more efficient 
+  <span data-role="tag" data-value="94b5eeb7-1fac-3b12-00ac-9cea7229b085" id="idd1c5e5f9-b510-da74-1e82-a3deb114111c" data-type="term">parallel</span> decompositions. 
+  <span data-role="tag" data-value="f1dedc48-415d-22b3-48db-6cd1c190278f" id="id90549fcb-09e4-e3a5-f289-ef3ded622f40" data-type="term">Cooperative launch APIs support synchronization amongst thread blocks</span> for the 
+  <span data-role="tag" data-value="ae6e7aea-d06b-eab5-d24a-c98ec796f69d" id="id3d7bde13-a5ef-5780-7d6c-26c2967150a4" data-type="term">execution</span> of 
+  <span data-role="tag" data-value="1890b653-24d2-ca0f-1062-815cad14c7a9" id="idbbd84ee8-3180-06d8-1105-e07c4ef6470e" data-type="term">parallel algorithms</span>. 
+  <span data-role="tag" data-value="1b3bf7ac-c8cf-46f5-096c-138d7730cdfb" id="id2faa5324-6af7-5dc2-8cdf-8399a4d05d42" data-type="term">Conventional programming models</span> provide a 
+  <span data-role="tag" data-value="6ea62330-7dfc-a5eb-2cb7-b105a2aed8ab" id="idfc2d670c-e91d-46b5-f18a-d994a01b6f86" data-type="term">single, simple construct</span> for synchronizing 
+  <span data-role="tag" data-value="9440fdb4-e54a-fbd9-5b96-cd00d7f14726" id="id1bf2c94f-2a0b-542a-6039-bd1c761c386c" data-type="term">cooperating threads</span>: a 
+  <span data-role="tag" data-value="4ad34f72-84c8-7bd5-9144-ddbcc0a1f9bb" id="idc1a85dd3-eeaf-a19a-f0d8-54da68a5a568" data-type="term">barrier</span> across all 
+  <span data-role="tag" data-value="b67b4fc6-f73f-9f7d-50bd-a3e2a6169276" id="id67694488-387c-0707-ca3b-bf4c2a5a1c81" data-type="term">threads</span> of a 
+  <span data-role="tag" data-value="d2e2efcb-68ec-43ef-16aa-555f9cdbd326" id="idc26a49c2-9a61-7d23-d762-dc80383babf2" data-type="term">thread block</span> (i.e., the 
+  <span data-role="tag" data-value="4065dd09-f727-80bc-9d0c-67c8233f1cb0" id="id08f61714-4620-b16e-371d-6566c67f1744" data-type="term">syncthreads</span>( 
+  <span data-role="tag" data-value="b0d701ce-9a4e-5137-d8cb-c9a314e3361b" id="idc1e5687a-832e-27af-8549-eb8d3b250572" data-type="term">) function</span>). However, 
+  <span data-role="tag" data-value="81e21efb-ce4d-ad34-9e2b-b9aa039b8ef1" id="id4f96e373-54b7-c830-9f3e-7da73f0ae5cf" data-type="term">programmers</span> would often like to define 
+  <span data-role="tag" data-value="c12bc3ec-a233-f390-b231-a95f1d5d0af5" id="idab56d374-9791-0488-3347-abfe05578f45" data-type="term">groups</span> of 
+  <span data-role="tag" data-value="b67b4fc6-f73f-9f7d-50bd-a3e2a6169276" id="ida46a1b64-eed2-6f41-1647-f73f0617aae4" data-type="term">threads</span> at smaller than 
+  <span data-role="tag" data-value="a0dca527-5ed3-a8b3-7d97-5df512797b3e" id="id58de9c6e-7ffd-2ed1-da2c-235a1d179c3a" data-type="term">thread block granularities</span> and synchronize within the 
+  <span data-role="tag" data-value="3ba5d3d0-d515-759f-41c4-f21cf0f3ed68" id="id957b31c9-5884-f4ce-433d-50ad9bee9c17" data-type="term">defined groups</span> to enable 
+  <span data-role="tag" data-value="a0927b0d-c134-e5de-31a3-c6da824720ad" id="idf05f5f0b-da23-ecf8-45d1-0e2c0b4dd4fd" data-type="term">greater performance</span>, 
+  <span data-role="tag" data-value="85c631a0-5adf-962e-84d1-abb33839c9b4" id="id3b484a78-b5a4-cf53-e9bc-423eac940267" data-type="term">design flexibility</span>, and 
+  <span data-role="tag" data-value="3a9bdec5-5579-8c67-55f6-5823a343489c" id="ida86d42c0-4ce3-ff20-d640-499b8fc6b269" data-type="term">software reuse</span> in the 
+  <span data-role="tag" data-value="7e1160c6-f036-820e-34ac-4488dc96ec0d" id="idd207c263-3f3f-27be-6db1-aaa5af5730ce" data-type="term">form</span> of 
+  <span data-role="tag" data-value="bdc92199-09f7-0b26-745e-d29aa2da1e9a" id="iddb2bded7-bd1d-a37f-397c-0272dfbeee50" data-type="term">collective group-wide function interfaces</span>.&nbsp;
+</p>
+<p>&nbsp;</p>
+<p>Cooperative 
+  <span data-role="tag" data-value="c12bc3ec-a233-f390-b231-a95f1d5d0af5" id="id4803a085-33bf-7b8f-2476-acaf294fbe97" data-type="term">groups</span> enables 
+  <span data-role="tag" data-value="81e21efb-ce4d-ad34-9e2b-b9aa039b8ef1" id="ide75030ed-da2c-5aeb-2588-ffb945d85302" data-type="term">programmers</span> to define 
+  <span data-role="tag" data-value="c12bc3ec-a233-f390-b231-a95f1d5d0af5" id="id7b7981b5-6e7d-af14-08a2-d2639c7f87e5" data-type="term">groups</span> of 
+  <span data-role="tag" data-value="b67b4fc6-f73f-9f7d-50bd-a3e2a6169276" id="id6bcea69a-1265-dea9-3a97-bbf30a9f08d2" data-type="term">threads</span> explicitly at 
+  <span data-role="tag" data-value="8c60c348-ca08-ea10-bbc5-b90d7f5b4004" id="id07b52cd6-fcd3-e223-59dc-a250473204cb" data-type="term">sub-block</span> (i.e., as small as a single 
+  <span data-role="tag" data-value="f660b3f7-170c-75f0-ecda-b0eadcea0967" id="id9c6abeec-8f01-34be-9ee1-8223be047250" data-type="term">thread</span>) and 
+  <span data-role="tag" data-value="1b8ece94-e864-34d0-476d-3af2924ae7bc" id="idd8fe6b87-5735-cf19-a3b7-39ddc0c9ce54" data-type="term">multi-block granularities</span>, and to perform 
+  <span data-role="tag" data-value="00efe48d-614a-7e91-1439-518c14d779d8" id="ide27cf61d-d2ba-f5de-3337-1bebe621e060" data-type="term">collective operations</span> such as 
+  <span data-role="tag" data-value="506b9f4e-74ce-1f48-be7a-6bfacba8c6ef" id="id74e4621e-703f-ae09-3743-367fa2ae9187" data-type="term">synchronization</span> on the 
+  <span data-role="tag" data-value="b67b4fc6-f73f-9f7d-50bd-a3e2a6169276" id="id78ec2ae7-c475-d7c0-2086-669db9437945" data-type="term">threads</span> in a 
+  <span data-role="tag" data-value="d97c90ed-1e16-de03-a60b-5031fb153e2d" id="idb6ec0e29-2193-29c6-1811-356aac473334" data-type="term">cooperative group</span>. The 
+  <span data-role="tag" data-value="b5e221b4-e58c-399d-41d7-60c929a676b3" id="id53684611-9cf8-c96c-050a-715a8f605115" data-type="term">programming model</span> supports 
+  <span data-role="tag" data-value="340bda4d-221c-afd2-5762-08460135de15" id="id0fec5c81-c9b3-c97b-660e-09fd020b1fa1" data-type="term">clean composition</span> across 
+  <span data-role="tag" data-value="2123cb58-9837-b15d-c83d-0c2c0126326b" id="id56624c78-9f9e-8c91-c218-a3634d2710f6" data-type="term">software boundaries</span>, so that 
+  <span data-role="tag" data-value="f9b1ff81-08da-3a50-38b4-178b7f6d69b6" id="id75048e7e-3362-7bd2-e2fc-28660c4b58f9" data-type="term">libraries and utility functions</span> can synchronize safely within 
+  <span data-role="tag" data-value="8bf5aae3-75d2-dea0-9820-9529a512efe9" id="id97b86b6d-3bfb-51db-3e86-a7993090cc88" data-type="term">their local context</span> without having to make 
+  <span data-role="tag" data-value="f96c7172-5324-356c-6dce-224e6060ed9a" id="idf0c651ae-3c37-44b3-55bc-1512c793dc00" data-type="term">assumptions</span> about 
+  <span data-role="tag" data-value="4471f6fc-adf5-4a22-c4a3-8d47d24ae2f5" id="idedbf9189-aa5a-8c3b-a2bd-6ae5bbe9e2f1" data-type="term">convergence</span>. 
+  <span data-role="tag" data-value="1749a415-b546-b75a-0aac-70aede43d80e" id="idf809dff7-5710-ff3e-3cae-0a54e0f62e3c" data-type="term">Cooperative Groups primitives</span> enable 
+  <span data-role="tag" data-value="18a0bfbc-03e9-bff5-3845-5ce7720c44bd" id="id461c1b75-5fc5-e87a-0558-095f2190cb80" data-type="term">new patterns</span> of 
+  <span data-role="tag" data-value="0657d02d-df8f-4ece-180b-6ebf86a9ce8a" id="id3a71b011-6dd2-f45c-8f75-9a4586b78496" data-type="term">cooperative parallelism</span>, including 
+  <span data-role="tag" data-value="5c806ee8-fa4a-6b61-a858-65223f0d88e5" id="id015b442f-84e8-4454-0231-17b6ccb42fab" data-type="term">producer-consumer parallelism</span>, 
+  <span data-role="tag" data-value="5116ed1d-738c-bdfe-17d8-3ecc511d5a69" id="id4ac12e9c-3b76-3bc1-bea4-376cf938947b" data-type="term">opportunistic parallelism</span>, and 
+  <span data-role="tag" data-value="88f88768-57e7-27f2-407f-96132f3708ba" id="id4089ecbf-87f6-9952-8e5e-daa5e10c25dd" data-type="term">global synchronization</span> across an 
+  <span data-role="tag" data-value="b8bb3598-7735-8131-af95-b7e97962cd07" id="id96e8edac-76ba-ea42-da5d-fad89b58ae6f" data-type="term">entire grid</span> of 
+  <span data-role="tag" data-value="871b039d-504b-edb4-2c3d-c8fa2410d975" id="id2cbb2f16-ecc3-a63d-3275-d57ed6b21e22" data-type="term">thread blocks</span>.&nbsp;
+</p>
+<p>&nbsp;</p>
+<p>A 
+  <span data-role="tag" data-value="6be205f1-ff2a-7b27-d6ef-f9398e43940f" id="id9c0dc6c6-dfdf-a1ba-ed77-762aeade6b10" data-type="drawingObject">dispatch unit 504</span> is configured to transmit 
+  <span data-role="tag" data-value="3a4c740b-bc79-db6f-1220-2c68589ae59b" id="ida8c83d05-e43b-16d1-fac5-7fea58bc14aa" data-type="term">instructions</span> to one or more of the 
+  <span data-role="tag" data-value="74ab7d40-71bb-17db-031a-3f49ed3ad869" id="idb1aa3308-deb7-6aab-f31b-b00bfa7d4615" data-type="term">functional units</span>. In the 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id28fc2601-345f-e695-8d4c-e1857e4ed66c" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="732b1426-1e22-88ca-53fe-783548997ba3" id="id529a9f83-afce-c9b8-029d-52db482f74d5" data-type="drawingObject">scheduler units 214</span> includes two 
+  <span data-role="tag" data-value="6be205f1-ff2a-7b27-d6ef-f9398e43940f" id="id2cf4bb78-fd2d-6818-d62a-858fd6b28ac4" data-type="drawingObject">dispatch unit 504</span> s that enable 
+  <span data-role="tag" data-value="1e6781aa-2d12-ebe1-8db8-96f0db1db7e6" id="id4b89331b-026c-aa89-c16e-e54302bcc58d" data-type="term">two different instructions</span> from the 
+  <span data-role="tag" data-value="9bab6b63-4a5d-4ba7-a119-a90dcb877fc6" id="id97f6b188-0233-63a0-7f17-9250e18b06d5" data-type="term">same warp</span> to be dispatched during each 
+  <span data-role="tag" data-value="1bed1017-e967-0f1a-9d1d-f88b585b75b6" id="idb1e43b60-8e1f-eb66-2658-aa9439e95a36" data-type="term">clock cycle</span>. In 
+  <span data-role="tag" data-value="488cac60-214e-2247-7ab8-36f3193094c3" id="id5b423ec8-67f1-06ee-8ebb-ac4d96289e14" data-type="term">alternative embodiments</span>, each 
+  <span data-role="tag" data-value="732b1426-1e22-88ca-53fe-783548997ba3" id="id27362d3b-0a8d-3cab-2e04-2fdfcfe76346" data-type="drawingObject">scheduler units 214</span> may 
+  <span data-role="tag" data-value="3991c347-7c5f-6f63-4ee6-606b014b1c17" id="id3b7be158-f201-9fae-c1a3-a9b923134f4e" data-type="term">include</span> a single 
+  <span data-role="tag" data-value="6be205f1-ff2a-7b27-d6ef-f9398e43940f" id="id349789dd-b843-08cc-2cc3-933419a9485d" data-type="drawingObject">dispatch unit 504</span> or additional 
+  <span data-role="tag" data-value="6be205f1-ff2a-7b27-d6ef-f9398e43940f" id="id20a35587-c4d2-6171-008c-6306f91b74dc" data-type="drawingObject">dispatch unit 504</span> s.&nbsp;
+</p>
+<p>&nbsp;</p>
+<p>Each 
+  <span data-role="tag" data-value="a614a628-3726-6cd5-3feb-b4e0bdbc1d3a" id="iddc0cc441-81f9-735f-c47d-cbd71158f4f0" data-type="drawingObject">SM 306</span> includes a 
+  <span data-role="tag" data-value="b419726f-1476-d6ba-2f3f-0329538c61a2" id="ida5908b44-1a83-fda6-4853-7c413c715c80" data-type="drawingObject">register file 506</span> that provides a set of 
+  <span data-role="tag" data-value="fad594d7-e1f2-7311-2b38-bb173130e23c" id="id1c124fdb-e6d1-1e29-c42b-9dd78c717005" data-type="term">registers</span> for the 
+  <span data-role="tag" data-value="74ab7d40-71bb-17db-031a-3f49ed3ad869" id="id1ef47f23-8d25-ef39-525c-73f1996c068c" data-type="term">functional units</span> of the 
+  <span data-role="tag" data-value="a614a628-3726-6cd5-3feb-b4e0bdbc1d3a" id="ide14add4e-2ae5-709c-668d-4dcfacd02647" data-type="drawingObject">SM 306</span>. In one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="idf436c693-a090-f1e2-1623-e70652fb94d7" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="b419726f-1476-d6ba-2f3f-0329538c61a2" id="id2f48d817-8b4e-ab00-ba24-c8241574984b" data-type="drawingObject">register file 506</span> is divided between each of the 
+  <span data-role="tag" data-value="74ab7d40-71bb-17db-031a-3f49ed3ad869" id="id461aecea-4b18-cbda-774a-8348879861ed" data-type="term">functional units</span> such that each 
+  <span data-role="tag" data-value="acb095ca-d2f9-4916-11ae-33759a2f90b5" id="id3f835f8d-8031-148a-cfc4-d4777fe98d5d" data-type="term">functional unit</span> is allocated a 
+  <span data-role="tag" data-value="762a411e-ccbb-f0e9-de93-6738314446ac" id="idb4ebcb1d-dc9b-0497-f062-c1673f1db4b2" data-type="term">dedicated portion</span> of the 
+  <span data-role="tag" data-value="b419726f-1476-d6ba-2f3f-0329538c61a2" id="ida0360dec-f26f-bbf5-654e-766bfca4036b" data-type="drawingObject">register file 506</span>. In another 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="idf5651c11-5443-77d1-9eb2-3f333d65258d" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="b419726f-1476-d6ba-2f3f-0329538c61a2" id="idb661225b-3f93-0e2f-5f35-f59382b7a848" data-type="drawingObject">register file 506</span> is divided between the 
+  <span data-role="tag" data-value="821baf14-bf1b-4fa9-a97c-f178c8ea6409" id="id7cd4e04c-5afd-4d58-b465-4c12a8cd8f93" data-type="term">different warps</span> being executed by the 
+  <span data-role="tag" data-value="a614a628-3726-6cd5-3feb-b4e0bdbc1d3a" id="id38f637cf-f0af-489d-bdba-a82f1fb372e2" data-type="drawingObject">SM 306</span>. The 
+  <span data-role="tag" data-value="b419726f-1476-d6ba-2f3f-0329538c61a2" id="idacb283e3-6ed8-60d9-e855-eeb401fb542c" data-type="drawingObject">register file 506</span> provides 
+  <span data-role="tag" data-value="a38532d0-32e3-59f2-3a42-c1989ab1e8a0" id="id55a39fd4-f772-f4c8-5b93-5782fdb77bd2" data-type="term">temporary storage</span> for 
+  <span data-role="tag" data-value="035ace6a-4f07-770f-7799-d9388f4cc595" id="id94a656dd-69db-4830-59f5-b9176ecf3c39" data-type="term">operands</span> connected to the 
+  <span data-role="tag" data-value="de2e2208-6b3a-8192-b549-d3d286155866" id="id4930e4d3-9eeb-3bcd-8d44-2e1e9b812bd5" data-type="term">data paths</span> of the 
+  <span data-role="tag" data-value="74ab7d40-71bb-17db-031a-3f49ed3ad869" id="id44c128a5-218b-ac1b-26aa-75c45494bb38" data-type="term">functional units</span>.&nbsp;
+</p>
+<p>&nbsp;</p>
+<p>Each 
+  <span data-role="tag" data-value="a614a628-3726-6cd5-3feb-b4e0bdbc1d3a" id="id88e69af3-bd42-04f4-9dc9-433d07a0852b" data-type="drawingObject">SM 306</span>
+  <span data-role="tag" data-value="38316048-1138-29b6-ea86-155965ff5b43" id="id85bf98b9-bf07-ab39-8eb2-2ece82d0ddfd" data-type="term">comprises</span> L 
+  <span data-role="tag" data-value="5cecfb7f-c9a6-5a77-473c-8f26ea8e5b41" id="id4f0ee7fc-85ac-9bab-e9ce-e9d648526d89" data-type="drawingObject">processing cores 508</span> s. In one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="ide20a8e2f-5b4b-1e0c-708a-7c1a0fa9f230" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="a614a628-3726-6cd5-3feb-b4e0bdbc1d3a" id="id57f32eec-89e5-c552-5162-b4d23cfb9c29" data-type="drawingObject">SM 306</span> includes a 
+  <span data-role="tag" data-value="f74c87fc-3feb-8b8b-1e5a-7f69008ceb4b" id="id3eace87a-eb24-3508-e980-ba3957dc3780" data-type="term">large number</span> (e.g., 128, etc.) of distinct 
+  <span data-role="tag" data-value="5cecfb7f-c9a6-5a77-473c-8f26ea8e5b41" id="idac18ceb0-3881-2bac-6c78-2fc8a8ffa1ec" data-type="drawingObject">processing cores 508</span> s. Each 
+  <span data-role="tag" data-value="5cecfb7f-c9a6-5a77-473c-8f26ea8e5b41" id="id42d9c625-00ce-efea-91e7-9811123cc666" data-type="drawingObject">processing cores 508</span> may 
+  <span data-role="tag" data-value="3991c347-7c5f-6f63-4ee6-606b014b1c17" id="id11968dff-a036-d772-d9f9-827c539ff4d6" data-type="term">include</span> a 
+  <span data-role="tag" data-value="d9bee65e-3610-1cf2-beb4-318de3dfa0ba" id="ideaba2e5f-b095-58da-de9c-d6b4ec6fa625" data-type="term">fully-pipelined, single-precision, double-precision</span>, and/or 
+  <span data-role="tag" data-value="af8e5828-a40d-9677-6b23-180e91abeb32" id="id4caed96d-10a1-d211-a4dc-3c1de9e48fb4" data-type="term">mixed precision processing unit</span> that includes a 
+  <span data-role="tag" data-value="c53c7ab8-8cb1-7cb6-4a25-01bf5e782ea5" id="id54185c6f-2a02-a3fc-4e51-bb08328c876f" data-type="term">floating point arithmetic</span>
+  <span data-role="tag" data-value="67db7d1d-0a01-f1f2-d765-9007c4713283" id="idc05d480c-0cfb-ed4c-f88d-0fb298f0bedf" data-type="term">logic</span> unit and an 
+  <span data-role="tag" data-value="1a8ce9c6-1469-5ca5-e27f-ee35644ecc8c" id="ide686757d-78dc-1dc7-f0a9-6f0a37971dcd" data-type="term">integer arithmetic logic unit</span>. In one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="idc21a4cc1-a5d7-8801-06c0-bc58d79f074b" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="5cf1103b-3fa4-debd-2338-6bae85895f1c" id="idb4488642-d7cb-4d26-0fd6-788d0d00bdb4" data-type="term">floating point arithmetic logic units</span> implement the 
+  <span data-role="tag" data-value="a8bda9f4-8729-5245-cbc7-1348e8568fa9" id="ida86680e7-5704-bb0e-2d46-198a1f2b6929" data-type="term">IEEE 754-2008 standard</span> for 
+  <span data-role="tag" data-value="c53c7ab8-8cb1-7cb6-4a25-01bf5e782ea5" id="id3942dbb1-2819-43d9-4aa7-128076337708" data-type="term">floating point arithmetic</span>. In one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id62396a41-02a8-ab43-ae7c-eceade6eb86b" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="5cecfb7f-c9a6-5a77-473c-8f26ea8e5b41" id="ided1ec722-556b-792e-4ac4-cfe2e1d4f5a1" data-type="drawingObject">processing cores 508</span> s 
+  <span data-role="tag" data-value="3991c347-7c5f-6f63-4ee6-606b014b1c17" id="idef0ea94f-3899-b618-b8b2-b3e1ff4cee69" data-type="term">include</span> 64 
+  <span data-role="tag" data-value="2f8b3d96-8840-f525-3111-7323da4cf6be" id="id59b49950-170b-68e8-82a4-3ce27d74c261" data-type="term">single-precision</span> (32-bit) 
+  <span data-role="tag" data-value="82b01b0e-1121-0628-dcac-f43fe3fe2215" id="id3bed571d-c7ff-db85-a4f0-e292b80df61f" data-type="term">floating point cores</span>, 64 integer cores, 
+  <span data-role="tag" data-value="b0c3ae37-4577-5936-28eb-824e59cee800" id="id183249c4-ffc7-cc74-a949-2c99cc5ab4aa" data-type="term">32 double-precision</span> (64-bit) 
+  <span data-role="tag" data-value="82b01b0e-1121-0628-dcac-f43fe3fe2215" id="idfc66491f-508b-f3ef-13f0-c56bdd889039" data-type="term">floating point cores</span>, and 8 
+  <span data-role="tag" data-value="abcbfd02-bd4c-f7a3-1fc2-c85f7e709400" id="id3d5e7228-8e59-e0df-7c1b-467102203d06" data-type="term">tensor cores</span>.&nbsp;
+</p>
+<p>&nbsp;</p>
+<p>
+  <span data-role="tag" data-value="abcbfd02-bd4c-f7a3-1fc2-c85f7e709400" id="id4a7df5ea-7e0d-320c-1bf7-dacf069d2bce" data-type="term">Tensor cores</span> configured to perform 
+  <span data-role="tag" data-value="7637f837-10e0-9f96-8a37-72c3375466c2" id="idffaaa9d8-15a4-dff9-16e1-4d43050c66aa" data-type="term">matrix operations</span>, and, in one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="ide40d56cc-b1d6-5cca-8d80-f697fe2025f1" data-type="term">embodiment</span>, one or more 
+  <span data-role="tag" data-value="abcbfd02-bd4c-f7a3-1fc2-c85f7e709400" id="iddde049d4-8ae5-1ed6-7508-f6d7ee2aa6fc" data-type="term">tensor cores</span> are included in the 
+  <span data-role="tag" data-value="5cecfb7f-c9a6-5a77-473c-8f26ea8e5b41" id="id6a3fde2a-fb38-d98d-1862-60addd5657e8" data-type="drawingObject">processing cores 508</span> s. In particular, the 
+  <span data-role="tag" data-value="abcbfd02-bd4c-f7a3-1fc2-c85f7e709400" id="idedc8f2d8-ac95-6e58-fcb3-573a529c000e" data-type="term">tensor cores</span> are configured to perform 
+  <span data-role="tag" data-value="0c43d371-502e-6376-94e5-f32cfa4b3550" id="id2509e176-9fae-dc4a-ba9b-aa9e6b8237b5" data-type="term">deep learning matrix arithmetic</span>, such as 
+  <span data-role="tag" data-value="30d9d2df-4f7a-95cd-72b1-a8a0add24c04" id="id5abd8cb2-f198-58ea-0a4a-dbc7a362a616" data-type="term">convolution operations</span> for 
+  <span data-role="tag" data-value="393aa527-068c-6108-b388-f9f32a7e7433" id="id13dc5291-0b7a-d3a4-59da-8b8419b1a0b2" data-type="term">neural network training and inferencing</span>. In one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id3aee79ab-26ab-a854-669f-2a5630a288f7" data-type="term">embodiment</span>, each 
+  <span data-role="tag" data-value="c9f85dfd-a1e1-db29-8d66-6c85f71d89c6" id="id8130df0a-a861-dc2b-a0f3-32ac61f5407e" data-type="term">tensor core</span> operates on a 4.times.4 
+  <span data-role="tag" data-value="08be9ef1-0a88-1c0f-a1c8-ca60afdfccc0" id="id482dbbf0-b977-c83e-313e-f59cc157b60e" data-type="term">matrix</span> and performs a 
+  <span data-role="tag" data-value="b758f04e-6041-78e1-b3a4-603a76e06df3" id="id166b5a84-4cab-3fec-18c3-84c39c9c795e" data-type="term">matrix multiply and accumulate</span>
+  <span data-role="tag" data-value="0d15b452-e944-0f4d-e149-51617c258bdb" id="id99c6cda1-b447-2f1f-c829-70877bf935a9" data-type="term">accumulate operation D=A.times.B+C</span>, where A, B, C, and D are 4.times.4 
+  <span data-role="tag" data-value="986b6c74-b1ba-e41a-00fe-b026c123fee3" id="id970d8b33-4cf3-7249-d915-ec7d052df47b" data-type="term">matrices</span>.&nbsp;
+</p>
+<p>&nbsp;</p>
+<p>In one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id841d373f-3008-c8ce-b351-eea290221afc" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="11ed9ab9-463b-0afa-4d74-60bdd3808f52" id="id56ab66a8-a9fa-c420-2578-de8fae1e22b9" data-type="term">matrix multiply</span>
+  <span data-role="tag" data-value="da4a0e97-a9de-c107-e04b-3e6b96016b9f" id="id076a200a-f37c-9168-6f1c-301e08c48479" data-type="term">inputs</span> A and B are 
+  <span data-role="tag" data-value="fac7bcce-4433-9ee6-eab5-e31e2c638763" id="id848b5c2f-56d6-57b4-979e-0d4a2ee641d4" data-type="term">16-bit floating point matrices</span>, while the 
+  <span data-role="tag" data-value="d57b7aa3-b448-9590-f37f-2b1f6c591c7a" id="idb8c9d85d-659a-4f01-e655-12a68a235dd9" data-type="term">accumulation matrices</span> C and D may be 
+  <span data-role="tag" data-value="81e93f44-9a66-af3c-9298-b89e1f258e07" id="idfb529a6d-26b2-d711-87fd-b6004eba4c22" data-type="term">16-bit floating point</span> or 
+  <span data-role="tag" data-value="a65d3aff-84eb-2af0-4ac1-67cb75c91dc2" id="id88c3065d-d939-dd57-95a9-353541846edf" data-type="term">32-bit floating point matrices</span>. 
+  <span data-role="tag" data-value="abcbfd02-bd4c-f7a3-1fc2-c85f7e709400" id="id860cb1c5-6f2f-0e25-73c2-ddeb4422e063" data-type="term">Tensor cores</span> operate on 
+  <span data-role="tag" data-value="a3ef01e8-70a3-41fd-1dc7-a1bb4588db8c" id="id09c1e367-a801-da38-e4fb-13a5ff45b809" data-type="term">16-bit floating point input data</span> with 
+  <span data-role="tag" data-value="299bc6ef-6b43-b632-e297-df36c4eb8466" id="idf3c6a851-9844-36f2-e5ad-23392f16fe18" data-type="term">32-bit floating point accumulation</span>. The 
+  <span data-role="tag" data-value="81e93f44-9a66-af3c-9298-b89e1f258e07" id="idd01795f6-dcf7-1677-be10-53da25e2aa1f" data-type="term">16-bit floating point</span> multiply requires 64 
+  <span data-role="tag" data-value="6c82e063-1d8c-7a72-a435-00e8d1f0e9fe" id="id94979205-f5ee-94cb-64c1-a2d761cd83f5" data-type="term">operations</span> and 
+  <span data-role="tag" data-value="c016ff25-0f16-5bdb-009e-89774d653a26" id="id89a0417b-e5a4-1ff1-76f5-88a7b23a9c41" data-type="term">results</span> in a 
+  <span data-role="tag" data-value="de0d801e-50a6-473b-e230-7377518f317d" id="id60f41e35-5835-bc63-dcb8-dd0bccb929b7" data-type="term">full precision product</span> that is then accumulated using 
+  <span data-role="tag" data-value="4acaee76-2117-41b5-87c6-c203162c6066" id="idd0313961-73bc-8c06-1372-811a29cf1947" data-type="term">32-bit floating point addition</span> with the 
+  <span data-role="tag" data-value="4591750c-86b4-480d-2ef1-0ef2cb1a7f9d" id="id3446dd74-7e83-fa7f-53a0-be780acc0776" data-type="term">other intermediate products</span> for a 4.times.4.times.4 
+  <span data-role="tag" data-value="11ed9ab9-463b-0afa-4d74-60bdd3808f52" id="id0a91b170-d72c-dc75-2830-a56d385c8258" data-type="term">matrix multiply</span>. In 
+  <span data-role="tag" data-value="05193255-dde3-9497-aab4-22f012a980a3" id="idda38a956-8cb6-386b-4e3e-172af714a5ba" data-type="term">practice</span>, 
+  <span data-role="tag" data-value="abcbfd02-bd4c-f7a3-1fc2-c85f7e709400" id="iddd01b854-07bb-f253-d8b6-028bdb6faf71" data-type="term">tensor cores</span> are used to perform much larger two-dimensional or 
+  <span data-role="tag" data-value="6fdd3078-c640-bf60-4714-fde85fcfd8a5" id="idbe8846a9-f12e-9b5b-707b-daf8c4405153" data-type="term">higher dimensional matrix operations</span>, built up from these 
+  <span data-role="tag" data-value="446e4496-108d-042b-bac8-2dc10d0d7020" id="id56ef1353-0206-2e9e-67de-7cee07ef8b42" data-type="term">smaller elements</span>. An API, such as 
+  <span data-role="tag" data-value="a07f3e60-d783-a3ae-ef40-7b9bec8a9e8c" id="iddc85d3f2-fcd3-f6f1-ae5f-f0389cf351eb" data-type="term">CUDA</span> 9 C++ API, 
+  <span data-role="tag" data-value="8bdfa4af-2719-e09a-243c-1a36813841a8" id="id09ea7366-247b-8af5-1b3a-66a62d579e15" data-type="term">exposes</span> specialized 
+  <span data-role="tag" data-value="2740dcd5-d51c-da75-df53-73e110f123c8" id="ida3d1710b-2b2d-121b-4b5a-44d2ea15bfe5" data-type="term">matrix load</span>, 
+  <span data-role="tag" data-value="b758f04e-6041-78e1-b3a4-603a76e06df3" id="idddbb5711-2640-64e4-364d-a49421f6d66c" data-type="term">matrix multiply and accumulate</span>, and 
+  <span data-role="tag" data-value="1434deee-b241-6ca3-7b9c-e429d2b391d4" id="id803a1e77-05d1-414e-4f9c-5a093f5e2ebf" data-type="term">matrix store operations</span> to efficiently use 
+  <span data-role="tag" data-value="abcbfd02-bd4c-f7a3-1fc2-c85f7e709400" id="id02e3ca91-d85e-5d97-2d89-80870b8210f7" data-type="term">tensor cores</span> from a 
+  <span data-role="tag" data-value="11b6f667-5249-eb85-e4fe-422e38b74cc9" id="id7017ebb9-81a3-d232-fc97-b4eb60cbd192" data-type="term">CUDA-C++ program</span>. At the 
+  <span data-role="tag" data-value="859b7da7-5754-fc7f-806e-a2857f5be3b5" id="idfff1171e-1c10-a7a1-f23b-4add8522ca09" data-type="term">CUDA level</span>, the 
+  <span data-role="tag" data-value="4dce86a6-0a03-0258-3847-56d181d7aa4a" id="idd827ebec-c8d8-86ed-1b8f-edb833064e22" data-type="term">warp-level interface</span> assumes 
+  <span data-role="tag" data-value="867f9603-d030-bd81-87d1-6898ec2481ac" id="id5549769e-578a-13fc-e0de-db4df8e74622" data-type="term">16.times</span>.16 
+  <span data-role="tag" data-value="1fe3f4f7-6c14-1e7b-cf5d-0085e047b423" id="idc6883800-4bf5-1a84-2f2c-d110bb7b0ff6" data-type="term">size matrices</span> spanning all 
+  <span data-role="tag" data-value="6ec164d2-7f2d-e4b4-6ef8-603084223681" id="id4b656516-3e52-01e4-efec-fd7e9b8335fe" data-type="term">32 threads</span> of the 
+  <span data-role="tag" data-value="a22ec1f2-503e-f7d1-0545-bed0dfb12ba8" id="idbb75e3c4-e5e9-054c-2077-f67c965bed45" data-type="term">warp</span>.&nbsp;
+</p>
+<p>&nbsp;</p>
+<p>Each 
+  <span data-role="tag" data-value="a614a628-3726-6cd5-3feb-b4e0bdbc1d3a" id="id034ba7a7-5efb-09b5-bb59-0e4f99732e2a" data-type="drawingObject">SM 306</span> also 
+  <span data-role="tag" data-value="38316048-1138-29b6-ea86-155965ff5b43" id="id88f5c0b1-94ea-ceff-7ff6-30790c42f837" data-type="term">comprises</span> M 
+  <span data-role="tag" data-value="7dc10304-bde5-666d-e34f-46123d909e64" id="id976185bc-fc20-d5d1-8cf5-636b5ba217b0" data-type="term">SFUs</span> 604 that perform 
+  <span data-role="tag" data-value="c3d0a3a2-c25f-ea13-1140-edce2f6274f5" id="idcd02ae07-e7ec-03c5-0d67-2d1120cc75fa" data-type="term">special functions</span> (e.g., attribute 
+  <span data-role="tag" data-value="3054f069-2898-0213-6f3e-f575ed3b46f4" id="id54823d18-fb8c-bde8-5e14-09520104e3cc" data-type="term">evaluation</span>, 
+  <span data-role="tag" data-value="7ce4ef1e-16fe-b959-a2df-f49774fb2042" id="idb2c75cbf-2dda-21cb-cf59-6b7c9dda2588" data-type="term">reciprocal square root</span>, and the like). In one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id4fb0306f-ec2f-f306-5804-addb93e24243" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="7dc10304-bde5-666d-e34f-46123d909e64" id="idd6b691cc-ebf6-a0a3-94ea-14ad0576335c" data-type="term">SFUs</span> 604 may 
+  <span data-role="tag" data-value="3991c347-7c5f-6f63-4ee6-606b014b1c17" id="id0c7b7151-74bb-d037-5f43-80072fbc927d" data-type="term">include</span> a 
+  <span data-role="tag" data-value="c3877612-5013-75e2-e6d6-3352e1dccaec" id="id49361e9a-3848-a327-402c-a1b3f8be1fe8" data-type="term">tree traversal unit</span> configured to traverse a 
+  <span data-role="tag" data-value="a2d55e24-6dd7-4075-a435-0eefbcadd40d" id="idaab1da1f-c57e-d4b5-30f5-4b4eb5ca257c" data-type="term">hierarchical tree data structure</span>. In one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id91aa15ef-ea9b-4223-3a73-a2740afeda63" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="7dc10304-bde5-666d-e34f-46123d909e64" id="id7eb181bd-359b-1d7a-9f56-f47782860f3b" data-type="term">SFUs</span> 604 may 
+  <span data-role="tag" data-value="3991c347-7c5f-6f63-4ee6-606b014b1c17" id="idd86c95d4-6b8a-21a2-7d72-813323dd5500" data-type="term">include</span>
+  <span data-role="tag" data-value="75c9cf49-06fe-0824-1162-e0a86e2871fd" id="idea9db97e-06ac-7047-e05c-60b6da01e8e9" data-type="term">texture unit</span> configured to perform 
+  <span data-role="tag" data-value="12db0828-d8e5-e322-34ed-b7461137a69f" id="idbb0a5762-ace5-15d7-da32-802cbc952f7d" data-type="term">texture map filtering operations</span>. In one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="idc8f0cf38-69fe-bc84-59a9-445dd1736a52" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="0b5f9f14-3ce6-3072-f4f7-f957c1e60af9" id="id151d482a-3ad5-a4fe-5ce0-2519e5412683" data-type="term">texture units</span> are configured to 
+  <span data-role="tag" data-value="9f8b0add-8f4c-3177-62de-eebc5ae69962" id="idd898b0fc-3dd0-967a-6af0-d6b9ecf84d17" data-type="term">load texture maps</span> (e.g., a 
+  <span data-role="tag" data-value="d234e5a3-f151-e2dd-8e4f-879fc45db3a3" id="id7e31c2e1-a51b-44ae-dd3f-c6e41a356b08" data-type="term">2D array</span> of 
+  <span data-role="tag" data-value="3efc00c5-49a1-924a-f262-4f8fe8941771" id="ida5407a9f-9c84-94f6-9956-dfa773721663" data-type="term">texels</span>) from the 
+  <span data-role="tag" data-value="e45a81cd-8393-e8b5-54dd-f25dc8d8f372" id="id430b1b2e-b705-628b-d45e-55a6015a1a1f" data-type="term">memory</span> 220 and sample the 
+  <span data-role="tag" data-value="db63c0d1-4535-2496-71c0-1661be3c95d5" id="idec1e9630-565c-adb7-331d-7dfffe801af7" data-type="term">texture maps</span> to produce 
+  <span data-role="tag" data-value="e784fc15-a7b8-e564-434e-dc40c2bd193d" id="id9479b7b2-5b3c-b693-4b24-57a7b9187d5d" data-type="term">sampled texture values</span> for use in 
+  <span data-role="tag" data-value="e5140841-b1f9-2e43-6df1-ac814068b438" id="id7beda128-8247-f650-911d-c01936f7fb40" data-type="term">shader programs</span> executed by the 
+  <span data-role="tag" data-value="a614a628-3726-6cd5-3feb-b4e0bdbc1d3a" id="iddfa6783d-62fb-822e-7cb1-0b60801a2656" data-type="drawingObject">SM 306</span>. In one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id525af118-9d74-f7a5-2491-234c25dbc048" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="db63c0d1-4535-2496-71c0-1661be3c95d5" id="idff8a0817-4a81-c92a-f53f-f01e7c33e09c" data-type="term">texture maps</span> are stored in the 
+  <span data-role="tag" data-value="06192ff7-4959-83f8-a0f4-796b876eb4ee" id="id5740db75-bb64-0cf8-32c0-944df6d8b5b8" data-type="drawingObject">shared memory/L1 cache 516</span>. The 
+  <span data-role="tag" data-value="0b5f9f14-3ce6-3072-f4f7-f957c1e60af9" id="idb2859336-9ae1-4f76-34a0-24b0071d877c" data-type="term">texture units</span>
+  <span data-role="tag" data-value="56c0fd37-771f-db1d-49b2-2a8f9390d1f5" id="id8669fa63-104b-7a33-f2ac-a0945b8c64c9" data-type="term">implement texture operations</span> such as filtering 
+  <span data-role="tag" data-value="6c82e063-1d8c-7a72-a435-00e8d1f0e9fe" id="id69455237-0b36-ff30-6f2e-25c53d864d06" data-type="term">operations</span> using 
+  <span data-role="tag" data-value="bc792b8d-93d0-1af0-5f47-5dfe42ec4e2c" id="id2dfaf809-6973-2181-8e21-b094e40d03a3" data-type="term">mip-maps</span> (
+  <span data-role="tag" data-value="ad92e13a-ccff-3b18-f5fe-4f641f51af1c" id="idc99be05c-1649-d5e4-d3ee-0089736b80e9" data-type="term">i.e., texture maps</span> of 
+  <span data-role="tag" data-value="197aa740-4274-22ed-61e1-2e6b4617c3e3" id="id3015d091-a24a-ac90-e2d7-460060301086" data-type="term">varying levels</span> of 
+  <span data-role="tag" data-value="dab11425-ffb8-fd76-5b31-de487bd166dd" id="id532f7fcd-9446-e1ce-d318-c15cbee8626e" data-type="term">detail</span>). In one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id6f5cc523-30a8-8a24-0d92-bd9b07214424" data-type="term">embodiment</span>, each 
+  <span data-role="tag" data-value="a0e007f9-e285-d21b-cdad-074ef6750140" id="id6b9cc9a7-0fa4-528d-e430-e1a49ced0c79" data-type="term">SM</span> 340 includes 
+  <span data-role="tag" data-value="a67e3a21-a723-8a4c-c693-5e0dd373340e" id="id301f82c4-f334-9ab3-ce81-e3020de4345a" data-type="term">two texture units</span>.&nbsp;
+</p>
+<p>&nbsp;</p>
+<p>Each 
+  <span data-role="tag" data-value="a614a628-3726-6cd5-3feb-b4e0bdbc1d3a" id="ida58a6c0a-0d4f-3bf8-3f35-f4fa3b26a004" data-type="drawingObject">SM 306</span> also 
+  <span data-role="tag" data-value="38316048-1138-29b6-ea86-155965ff5b43" id="id784198ec-86e3-9307-cc0e-8842443ad73c" data-type="term">comprises</span> N 
+  <span data-role="tag" data-value="5d51ba83-7996-872c-b2d1-bbed494cee34" id="id65dd5edb-cf85-1fef-8a9b-1768e352652d" data-type="drawingObject">LSUs 512</span> that implement 
+  <span data-role="tag" data-value="99b6011e-410f-2b37-70b7-5ab86451f02c" id="idef3b358a-08b4-a424-5733-be3ae6afd79b" data-type="term">load and store operations</span> between the 
+  <span data-role="tag" data-value="06192ff7-4959-83f8-a0f4-796b876eb4ee" id="id7d2dff16-bd83-a61b-96e0-860abc912b9b" data-type="drawingObject">shared memory/L1 cache 516</span> and the 
+  <span data-role="tag" data-value="b419726f-1476-d6ba-2f3f-0329538c61a2" id="ida9003769-6df3-2fa9-da18-9c5ca6217f78" data-type="drawingObject">register file 506</span>. Each 
+  <span data-role="tag" data-value="a614a628-3726-6cd5-3feb-b4e0bdbc1d3a" id="id65023dc6-658d-4229-ac77-0673d0d2cc4d" data-type="drawingObject">SM 306</span> includes an 
+  <span data-role="tag" data-value="6c9dbd3c-f3dd-2d2c-74ac-a32204fcc0c6" id="id71a7f1aa-cfce-c267-9848-4a5db7e56d7a" data-type="drawingObject">interconnect network 514</span> that connects each of the 
+  <span data-role="tag" data-value="74ab7d40-71bb-17db-031a-3f49ed3ad869" id="idd1b225fd-1d6e-c23e-364e-3c90ffc382be" data-type="term">functional units</span> to the 
+  <span data-role="tag" data-value="b419726f-1476-d6ba-2f3f-0329538c61a2" id="id346ff5bf-9e68-e7b0-a0a6-c4f686adccb6" data-type="drawingObject">register file 506</span> and the 
+  <span data-role="tag" data-value="5d51ba83-7996-872c-b2d1-bbed494cee34" id="id818d632b-d110-46b1-7fa0-25268c450259" data-type="drawingObject">LSUs 512</span> to the 
+  <span data-role="tag" data-value="b419726f-1476-d6ba-2f3f-0329538c61a2" id="idcb828786-0608-a6fc-4871-4434f354b044" data-type="drawingObject">register file 506</span>, 
+  <span data-role="tag" data-value="06192ff7-4959-83f8-a0f4-796b876eb4ee" id="id9186af81-0f31-f185-bb1c-905615d227bc" data-type="drawingObject">shared memory/L1 cache 516</span>. In one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id83e6e5f4-7c9d-110c-c03a-629de09b46de" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="6c9dbd3c-f3dd-2d2c-74ac-a32204fcc0c6" id="id45a7ea5e-6fe5-8ac3-9094-c0390165b42d" data-type="drawingObject">interconnect network 514</span> is a 
+  <span data-role="tag" data-value="acd46cc2-753f-94d4-bf57-ad2ebed18456" id="ide355b46e-048f-e124-e819-ec63e547ea0e" data-type="term">crossbar</span> that can be configured to connect any of the 
+  <span data-role="tag" data-value="74ab7d40-71bb-17db-031a-3f49ed3ad869" id="id8cda656f-cd11-b93b-528e-cb14a4d5cf57" data-type="term">functional units</span> to any of the 
+  <span data-role="tag" data-value="fad594d7-e1f2-7311-2b38-bb173130e23c" id="id6225cecb-868f-a020-babc-b66413530617" data-type="term">registers</span> in the 
+  <span data-role="tag" data-value="b419726f-1476-d6ba-2f3f-0329538c61a2" id="id8fb398a8-59c6-22ab-721e-9d4f55dc06c9" data-type="drawingObject">register file 506</span> and connect the 
+  <span data-role="tag" data-value="5d51ba83-7996-872c-b2d1-bbed494cee34" id="id9a972106-0aa4-ec54-8aea-15f051b39d64" data-type="drawingObject">LSUs 512</span> to the 
+  <span data-role="tag" data-value="abbd033b-38ba-d3f3-248c-5ef8598a820a" id="idb85112ca-895b-7455-396b-a3e1d72a51d5" data-type="term">register file</span> and 
+  <span data-role="tag" data-value="a814f620-43c8-f9b5-cc6e-ef4b712d8da6" id="id9d94cca4-ee54-1611-e055-f9c6f18ff0e0" data-type="term">memory locations</span> in 
+  <span data-role="tag" data-value="06192ff7-4959-83f8-a0f4-796b876eb4ee" id="idccc89820-328e-a289-bb07-b34e98fcc8ad" data-type="drawingObject">shared memory/L1 cache 516</span>.&nbsp;
+</p>
+<p>&nbsp;</p>
+<p>The 
+  <span data-role="tag" data-value="06192ff7-4959-83f8-a0f4-796b876eb4ee" id="id08215d71-4dd2-87f7-5749-4a6582a08414" data-type="drawingObject">shared memory/L1 cache 516</span> is an 
+  <span data-role="tag" data-value="26cfa583-95a4-94c5-85b9-343c14c98702" id="id16d438c7-c13c-8fa4-f15e-97e1a79b7040" data-type="term">array</span> of 
+  <span data-role="tag" data-value="3ebd8a28-a55f-99ec-d455-6408ba62538c" id="idb6675885-edb4-1365-a798-b51fec14dd6a" data-type="term">on-chip memory</span> that allows for 
+  <span data-role="tag" data-value="62635c64-2eba-96c2-7a29-dc6bf9db35a9" id="idb8dffb1f-ca6c-c356-1f68-90f9edc14aca" data-type="term">data storage and communication</span> between the 
+  <span data-role="tag" data-value="a614a628-3726-6cd5-3feb-b4e0bdbc1d3a" id="id93034c32-613e-3197-55ed-52ec6b244250" data-type="drawingObject">SM 306</span> and the 304 435 and between 
+  <span data-role="tag" data-value="b67b4fc6-f73f-9f7d-50bd-a3e2a6169276" id="idfde1cc15-6ade-2668-88dc-c1e3b4612705" data-type="term">threads</span> in the 
+  <span data-role="tag" data-value="a614a628-3726-6cd5-3feb-b4e0bdbc1d3a" id="id081514cb-33cf-1a13-11c9-30a15335592c" data-type="drawingObject">SM 306</span>. In one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="ideb77c607-8e7a-aa61-eaea-102e4fa1898b" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="06192ff7-4959-83f8-a0f4-796b876eb4ee" id="idb973f045-a97d-ade3-6682-c83d5999cf6e" data-type="drawingObject">shared memory/L1 cache 516</span>
+  <span data-role="tag" data-value="38316048-1138-29b6-ea86-155965ff5b43" id="id2ff47500-d51f-a4fb-22f2-542b2cd86a87" data-type="term">comprises</span> 128 KB of 
+  <span data-role="tag" data-value="bc33eaaf-7ed2-3cf3-7f09-c87c33d6816b" id="id4441994c-9449-4254-5a28-2b152d4f6007" data-type="term">storage capacity</span> and is in the 
+  <span data-role="tag" data-value="b12ec481-1a46-efb1-d901-34933cfd987c" id="id0cf56fd8-6b9d-a994-5819-f00741da6588" data-type="term">path</span> from the 
+  <span data-role="tag" data-value="a614a628-3726-6cd5-3feb-b4e0bdbc1d3a" id="id0e72e22d-3c6d-cda1-7220-c0ccf608e4ad" data-type="drawingObject">SM 306</span> to the 
+  <span data-role="tag" data-value="917def80-6656-486c-b34d-24f3140c8a49" id="id6090bcd8-5b62-819f-923f-9da1ece7cb16" data-type="drawingObject">memory partition unit 220</span>. The 
+  <span data-role="tag" data-value="06192ff7-4959-83f8-a0f4-796b876eb4ee" id="id7297c06e-3528-ec7b-26be-d2ec84045b5c" data-type="drawingObject">shared memory/L1 cache 516</span> can be used to 
+  <span data-role="tag" data-value="83fe9c63-124b-ea62-8a69-e3bb9808fcbe" id="idf95f812a-8275-d93e-5fc4-46ce06b25463" data-type="term">cache</span>
+  <span data-role="tag" data-value="75002f82-11d7-cefb-035f-9dc7bde9af71" id="idfdfe7c55-ded9-6387-deb2-fd03b9822bc0" data-type="term">reads and writes</span>. One or more of the 
+  <span data-role="tag" data-value="06192ff7-4959-83f8-a0f4-796b876eb4ee" id="id9413b98a-cf2c-0bc1-704e-be67295631b4" data-type="drawingObject">shared memory/L1 cache 516</span>, 
+  <span data-role="tag" data-value="2f438792-1112-a831-28ac-d33257396855" id="id87ebc54e-6635-6f49-c358-942e19eb23fe" data-type="drawingObject">l2 cache 404</span>, and 
+  <span data-role="tag" data-value="e45a81cd-8393-e8b5-54dd-f25dc8d8f372" id="id68aab412-1275-5e9f-15eb-7854c475dc37" data-type="term">memory</span> 220 are backing 
+  <span data-role="tag" data-value="733c797a-a73d-7988-e431-db7d4b705c09" id="ida01c99c3-294f-df68-8fd8-979ed9f312d8" data-type="term">stores</span>.&nbsp;
+</p>
+<p>&nbsp;</p>
+<p>Combining 
+  <span data-role="tag" data-value="14268ba2-4c87-2d24-5793-be9d46f53df7" id="id0936e930-5d8c-b6a5-3dd0-ccbb5bebfef5" data-type="term">data cache</span> and 
+  <span data-role="tag" data-value="dffb4a86-093f-8a65-5004-12aa7190cfd3" id="id64dacf3f-ccf8-a711-0af7-447d9461cb42" data-type="term">shared memory functionality</span> into a single 
+  <span data-role="tag" data-value="e45a81cd-8393-e8b5-54dd-f25dc8d8f372" id="idf870b527-6167-8176-0843-0d8b6548d3f9" data-type="term">memory</span>
+  <span data-role="tag" data-value="20119575-bf72-1340-32fb-470497e9d09c" id="id234bb78f-0e60-34a7-a0eb-618859158e2c" data-type="term">block</span> provides the 
+  <span data-role="tag" data-value="dbad8195-63cc-7c98-da1a-179682023d2c" id="id4935f634-b1f4-2178-549b-1ca9ecc48222" data-type="term">best overall performance</span> for both 
+  <span data-role="tag" data-value="95c9f24d-bfc3-1fde-cce6-f0607448c4d4" id="id2d64647b-6b65-7cfc-af7b-d51ca605a792" data-type="term">types</span> of 
+  <span data-role="tag" data-value="d36a98e1-63af-0082-dbf1-dda8a3b75440" id="id7ee62789-540f-015a-7643-86baa38cd30f" data-type="term">memory accesses</span>. The 
+  <span data-role="tag" data-value="0a664c41-0833-a537-46cc-e8783fcb03e2" id="id325c36a3-281d-efd3-9070-19b19a1d536f" data-type="term">capacity</span> is usable as a 
+  <span data-role="tag" data-value="83fe9c63-124b-ea62-8a69-e3bb9808fcbe" id="id330fb52d-fc5f-fdeb-3e26-11913ea3f8c2" data-type="term">cache</span> by 
+  <span data-role="tag" data-value="3117ff74-8875-97e9-0738-43d6e9a953ca" id="ide96d0fe8-2693-3e17-28fc-aafe227cd8a1" data-type="term">programs</span> that do not use 
+  <span data-role="tag" data-value="3e107aa1-5d7e-3bd9-bb95-bf8a96fba2fe" id="id3fb7f693-d9cd-0d6c-f8bc-03999462295a" data-type="term">shared memory</span>. For 
+  <span data-role="tag" data-value="a3796164-bcba-5b8c-a52c-a532a9adcb7a" id="ida629579a-1946-470e-5df8-31525a11bc12" data-type="term">example</span>, if 
+  <span data-role="tag" data-value="3e107aa1-5d7e-3bd9-bb95-bf8a96fba2fe" id="idd20acf06-8da2-1f8a-4504-18511ea8da02" data-type="term">shared memory</span> is configured to use 
+  <span data-role="tag" data-value="8a9b76ea-9915-e5cc-60ed-456033717539" id="id0ea9fa2f-88d8-9a4e-e4e4-6a13cb3cd761" data-type="term">half</span> of the 
+  <span data-role="tag" data-value="0a664c41-0833-a537-46cc-e8783fcb03e2" id="idab08f73d-8174-581d-3a06-6685f8a40a6c" data-type="term">capacity</span>, 
+  <span data-role="tag" data-value="8c977d19-9d53-7ec9-7bde-a4db251c650e" id="idc1e5912e-a4c4-8bc4-35db-b548f92cae68" data-type="term">texture and load/store operations</span> can use the 
+  <span data-role="tag" data-value="e3f4b415-9acd-aa9c-5350-aa74382db4b9" id="idd8f5844f-7873-67da-3ea4-48248ef48f50" data-type="term">remaining capacity</span>. 
+  <span data-role="tag" data-value="cf4a7302-129e-953b-3257-5d1e7d343030" id="idf9bf77b6-975e-89bf-beb0-a07730486d3e" data-type="term">Integration</span> within the 
+  <span data-role="tag" data-value="06192ff7-4959-83f8-a0f4-796b876eb4ee" id="id90c7b2e1-e9bc-3068-8c88-3f9d6141b2d3" data-type="drawingObject">shared memory/L1 cache 516</span> enables the 
+  <span data-role="tag" data-value="06192ff7-4959-83f8-a0f4-796b876eb4ee" id="id87cb8469-ca5d-62fc-7ac7-b2a03085e330" data-type="drawingObject">shared memory/L1 cache 516</span> to function as a 
+  <span data-role="tag" data-value="86333841-aece-b22e-1add-079edfecbd68" id="id1d7c0f30-ab33-0909-4691-8f20b6b56fd0" data-type="term">high-throughput conduit</span> for 
+  <span data-role="tag" data-value="d1dc8505-ee7e-4e1e-dcfd-b9ecb76b1070" id="id7ffd7cd5-ed94-d03a-57cd-b244a63bf443" data-type="term">streaming data</span> while simultaneously 
+  <span data-role="tag" data-value="7cdb81c9-8dd3-374f-a837-cbffa8a5699c" id="id695308b0-0a4f-f648-8e71-f1ad3ea27d64" data-type="term">providing</span> high-bandwidth and 
+  <span data-role="tag" data-value="f092d7e8-b389-108e-bb82-ebda8551cfc4" id="idaf22bbc3-ac8c-5fa7-c2f6-f53f333363fd" data-type="term">low-latency access</span> to frequently reused 
+  <span data-role="tag" data-value="a4092958-3200-972e-22d0-ff600e42aea9" id="idd9eb9243-36a2-2c43-f07c-d6dd51660951" data-type="term">data</span>.&nbsp;
+</p>
+<p>&nbsp;</p>
+<p>When configured for 
+  <span data-role="tag" data-value="eb603204-eb21-20dc-d1f9-830f901b2659" id="id231896e1-6923-86a1-be7e-9af32e6b28f0" data-type="term">general purpose</span>
+  <span data-role="tag" data-value="94b5eeb7-1fac-3b12-00ac-9cea7229b085" id="id03c665e2-66d6-8656-ef08-8ba71b175d91" data-type="term">parallel</span>
+  <span data-role="tag" data-value="4f6f6698-8b46-f6af-bcaf-846cdfbdce5d" id="id57469d30-3d0c-cf49-f8cf-2345e31ada1f" data-type="term">computation</span>, a 
+  <span data-role="tag" data-value="fa9482fe-ada9-dc78-a04c-bd1d994a1ccd" id="ida628086a-48bf-e02e-4acc-524dc7616ab4" data-type="term">simpler configuration</span> can be used compared with 
+  <span data-role="tag" data-value="b318e4bb-f0c7-a00d-2d46-faa7b634ea85" id="id8af8c77d-442a-80d0-23ed-a707646acbea" data-type="term">graphics processing</span>. 
+  <span data-role="tag" data-value="813fcfac-4a4d-af17-e5cd-18a804754480" id="idcb781313-4c16-501e-043d-bed29d9c967f" data-type="term">Specifically</span>, the 
+  <span data-role="tag" data-value="025d61a4-5d7e-aaf5-9424-769abc8f7716" id="id35c3f9b5-c1de-bb59-cd24-f290f03cb48d" data-type="term">fixed function graphics processing units</span> shown in 
+  <span data-role="tag" data-value="f427fe7b-cda1-dc5e-e7d4-3e439cfbcdcb" id="id0316ee18-e918-a1d5-235c-574f641d3838" data-type="figure">Figure 2</span>, are bypassed, creating a 
+  <span data-role="tag" data-value="ede7a6dc-0c32-781b-591b-fd23fc02794e" id="id3e1f2bba-2747-a115-da24-fe77b6dab47a" data-type="term">much simpler programming model</span>. In the 
+  <span data-role="tag" data-value="67aaa16b-18a5-9a99-9625-1c98cb2946c5" id="idb2c16a59-475d-fabc-2740-e8abace07493" data-type="term">general purpose parallel computation configuration</span>, the 
+  <span data-role="tag" data-value="cbd5c9d7-d1f1-46ca-92fd-d230a6a85c4e" id="idc0129925-7fd1-26d1-6f85-dbc5fc051eb7" data-type="drawingObject">work distribution unit 216</span> assigns and distributes 
+  <span data-role="tag" data-value="dfdd7ca0-7f81-08b8-4acc-78b3da1bd9e4" id="id842e1fd6-2ab0-690d-5192-0a12a5d5d6c8" data-type="term">blocks</span> of 
+  <span data-role="tag" data-value="b67b4fc6-f73f-9f7d-50bd-a3e2a6169276" id="id59232d2e-3b7c-6377-fb5b-b230bb8ba968" data-type="term">threads</span> directly to the 
+  <span data-role="tag" data-value="1034afe7-ba17-4fc4-add9-aac2f7d0c260" id="ida65b41f1-0669-1ac9-218f-c21b18ab8af5" data-type="drawingObject">DPCs 318</span>. The 
+  <span data-role="tag" data-value="b67b4fc6-f73f-9f7d-50bd-a3e2a6169276" id="id96de6309-07ee-e069-123a-bc9983b667a2" data-type="term">threads</span> in a 
+  <span data-role="tag" data-value="20119575-bf72-1340-32fb-470497e9d09c" id="id2e12fd9a-f377-e1a2-6062-ad29fcaf2968" data-type="term">block</span> execute the 
+  <span data-role="tag" data-value="014bb492-41a5-d2e7-54a2-26e09808fa2f" id="idd0385a49-7e68-37d5-95dd-90342d0b0208" data-type="term">same program</span>, using a 
+  <span data-role="tag" data-value="4f6c2656-b211-00c7-7d42-07b964eb399a" id="id06cd0502-f434-7aaa-cbaa-7669bb6847e4" data-type="term">unique thread</span> ID in the 
+  <span data-role="tag" data-value="d557f3e8-7f09-48e1-2d70-94a977f769ac" id="id285411c8-0a42-8157-bbeb-6c6c92ec3f98" data-type="term">calculation</span> to ensure each 
+  <span data-role="tag" data-value="f660b3f7-170c-75f0-ecda-b0eadcea0967" id="id1481371b-6359-6a55-db68-80e8fc0be3de" data-type="term">thread</span> generates 
+  <span data-role="tag" data-value="e9d10c4b-895f-405b-0ec8-1344604869de" id="idaf003cde-33c7-7237-c80b-18b821de4c73" data-type="term">unique results</span>, using the 
+  <span data-role="tag" data-value="a614a628-3726-6cd5-3feb-b4e0bdbc1d3a" id="id2bfc5daa-97a8-cd8c-8f96-4c7fff75d55d" data-type="drawingObject">SM 306</span> to execute the 
+  <span data-role="tag" data-value="ae3a1c29-0fc7-49ea-8c18-c493b1c66607" id="id701032df-0754-955a-9db8-1fe1c6cf4fd7" data-type="term">program</span> and 
+  <span data-role="tag" data-value="e160c3af-a10e-4f3f-ddce-0fc79370937e" id="idcb1884c9-3db8-5993-0b88-e7797bb80077" data-type="term">perform calculations</span>, 
+  <span data-role="tag" data-value="06192ff7-4959-83f8-a0f4-796b876eb4ee" id="id03a5dacf-d0b4-6c85-980c-067890078205" data-type="drawingObject">shared memory/L1 cache 516</span> to communicate between 
+  <span data-role="tag" data-value="b67b4fc6-f73f-9f7d-50bd-a3e2a6169276" id="id80da1078-158d-ffa8-50bf-222b755f015c" data-type="term">threads</span>, and the 
+  <span data-role="tag" data-value="5d51ba83-7996-872c-b2d1-bbed494cee34" id="id9eb87ab6-3e2d-cb6e-d58a-bb6abf31ff20" data-type="drawingObject">LSUs 512</span> to read and write 
+  <span data-role="tag" data-value="ca9263b6-3293-defc-badc-87a8ecf23f4f" id="id3cec304c-7074-be3b-0d3c-432f66dabb73" data-type="term">global memory</span> through the 
+  <span data-role="tag" data-value="06192ff7-4959-83f8-a0f4-796b876eb4ee" id="id238e4ab2-d101-2894-5d0d-c5c395c1b86d" data-type="drawingObject">shared memory/L1 cache 516</span> and the 
+  <span data-role="tag" data-value="917def80-6656-486c-b34d-24f3140c8a49" id="id4ed43f6b-9a66-a3a2-ccc0-0d926a12b31c" data-type="drawingObject">memory partition unit 220</span>. When configured for 
+  <span data-role="tag" data-value="eb603204-eb21-20dc-d1f9-830f901b2659" id="idd41da168-3c24-1be5-201d-ca24d170a000" data-type="term">general purpose</span>
+  <span data-role="tag" data-value="94b5eeb7-1fac-3b12-00ac-9cea7229b085" id="ide5e46cc0-3ff9-0c26-0392-41b925ee283b" data-type="term">parallel</span>
+  <span data-role="tag" data-value="4f6f6698-8b46-f6af-bcaf-846cdfbdce5d" id="id3eda1a01-d01f-5267-c724-0b0138a63c1e" data-type="term">computation</span>, the 
+  <span data-role="tag" data-value="a614a628-3726-6cd5-3feb-b4e0bdbc1d3a" id="id9ef76320-1dc1-79e2-38bb-dbc5a8a09895" data-type="drawingObject">SM 306</span> can also write 
+  <span data-role="tag" data-value="640305c3-fe5e-028d-ac79-242540441036" id="id46c74c14-863b-8b19-094f-17d48d780c21" data-type="term">commands</span> that the 
+  <span data-role="tag" data-value="732b1426-1e22-88ca-53fe-783548997ba3" id="idc78e59ee-7ea3-f2e9-ed9e-21088ec9e30c" data-type="drawingObject">scheduler units 214</span> can use to launch 
+  <span data-role="tag" data-value="352e1e00-2c00-f1da-47fb-bc6bbecbb4dd" id="id365b0435-71a7-1c2c-5a57-c499b424b0e4" data-type="term">new work</span> on the 
+  <span data-role="tag" data-value="1034afe7-ba17-4fc4-add9-aac2f7d0c260" id="idd3d37d56-c162-5db6-65f0-9a9bc18fddce" data-type="drawingObject">DPCs 318</span>.&nbsp;
+</p>
+<p>&nbsp;</p>
+<p>The 
+  <span data-role="tag" data-value="16b5d8a5-6546-d84d-f870-6e19b3d7bc86" id="id595028ba-f482-cddd-7909-475a457fba0b" data-type="drawingObject">PPU 202</span> may be included in a 
+  <span data-role="tag" data-value="b4492d5f-d8ea-263a-49cf-c6f743815ba2" id="idc42f0bad-5db8-5dfb-a911-31cc48589891" data-type="term">desktop computer</span>, a 
+  <span data-role="tag" data-value="348ea607-d289-92ff-051f-8f24032953f4" id="idd8ce8c47-f905-8743-f181-9d8a3a1529f0" data-type="term">laptop computer</span>, a 
+  <span data-role="tag" data-value="7435b1ae-57ca-e1b4-4124-91c12d3a2d8c" id="idb17e4a39-d7ce-a414-6580-531d0b51b3b8" data-type="term">tablet computer</span>, 
+  <span data-role="tag" data-value="35d54f51-2bf0-93f9-2934-67eddf62a6fc" id="id31682786-10e2-6768-05f6-99a8682bd395" data-type="term">servers</span>, 
+  <span data-role="tag" data-value="810f37ef-e087-4891-d4ba-0ebb75f47754" id="ide6278cc5-03c7-ba9f-3d9d-86b80d054fe2" data-type="term">supercomputers</span>, a 
+  <span data-role="tag" data-value="8335a699-6bb9-d4b2-d0f5-de4a4337f89e" id="id724b1187-ba79-8cac-143a-95fb1de77e21" data-type="term">smart-phone (e.g.</span>, a 
+  <span data-role="tag" data-value="7d8c3d7f-215c-2a12-3c04-9405a6e9e8a3" id="id0d358458-456f-000c-0582-1d8d052424c4" data-type="term">wireless, hand-held device</span>), 
+  <span data-role="tag" data-value="74c30ad1-5926-acd8-5322-9182c20f4acc" id="idbb02197a-5021-46ec-27bd-2bf88213adb8" data-type="term">personal digital assistant</span> (PDA), a 
+  <span data-role="tag" data-value="2a15d7a1-4e44-0a25-bfa6-3699901d66a2" id="ide572a953-e977-ba98-d126-c60666b737c0" data-type="term">digital camera</span>, a 
+  <span data-role="tag" data-value="1d643dbb-28af-dbf8-2c80-8064782cf1a3" id="id2c10cc62-5af2-05ae-25fc-cb280d9bcb14" data-type="term">vehicle</span>, a 
+  <span data-role="tag" data-value="f73dbd7d-72f4-bea0-9263-d08190f248c0" id="id3a6bd820-d4a3-2e41-0213-9595483faaf2" data-type="term">head</span> mounted display, a 
+  <span data-role="tag" data-value="e8929e54-fd10-d5b4-5871-d9f5963cbc7c" id="idb1584e72-1d0f-38fa-1289-8a0a7448f9ca" data-type="term">hand-held electronic device</span>, and the like. In one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id3c4b886a-d4ba-e0d5-40cc-949ae22ba00e" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="16b5d8a5-6546-d84d-f870-6e19b3d7bc86" id="id0ef4c5e2-1d69-9e1b-cec5-a36895e30cbf" data-type="drawingObject">PPU 202</span> is embodied on a single semiconductor substrate. In another 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="id44b194a2-1c4d-fc78-adfe-629221b7b7d1" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="16b5d8a5-6546-d84d-f870-6e19b3d7bc86" id="id9087b4f1-1366-f51f-6922-6b7f2197dc57" data-type="drawingObject">PPU 202</span> is included in a 
+  <span data-role="tag" data-value="61d7a155-19f5-66f2-698a-86891581e5e9" id="id1b6c9b49-1ca1-c00c-0b47-2346ece43ee4" data-type="term">system-on-a-chip</span> (SoC) along with one or more other 
+  <span data-role="tag" data-value="02fd7012-99b2-41a1-43f5-ead166c086b5" id="id52d3c92d-6f28-5fa0-4d95-73ff0a351d8c" data-type="term">devices</span> such as additional 
+  <span data-role="tag" data-value="16b5d8a5-6546-d84d-f870-6e19b3d7bc86" id="ide26de011-f12e-8b22-e1be-2c4ec9e8544f" data-type="drawingObject">PPU 202</span> s, the 
+  <span data-role="tag" data-value="e45a81cd-8393-e8b5-54dd-f25dc8d8f372" id="id4bc48b09-7579-754d-4fe6-00ad4083b296" data-type="term">memory</span> 204, a 
+  <span data-role="tag" data-value="a43dd8cf-9aad-e252-e64c-ef16f8938dc3" id="idb8ffca7d-ce1c-5ab1-21b6-33beffd5637a" data-type="term">reduced instruction set computer</span> (
+  <span data-role="tag" data-value="0fa2af5d-9bb6-86c6-cb61-0f2e36f362e9" id="id8d168c9e-722e-7570-e05c-e39c04a48944" data-type="term">RISC</span>) 
+  <span data-role="tag" data-value="c603ffb3-a183-4f57-9720-f6a3908d4813" id="id821ded1a-b17a-a336-0bd7-a3348566682c" data-type="term">CPU</span>, a 
+  <span data-role="tag" data-value="475695a6-5308-2915-3d8f-3773d253c952" id="idc4538f81-6c09-58c4-3ac4-47f43697b3fd" data-type="term">memory management unit (MMU)</span>, a 
+  <span data-role="tag" data-value="4fb1a115-54c6-a5e9-d468-5911dd7bfe1b" id="id0d2a8b55-34d7-1521-c9e9-2dab79aa9566" data-type="term">digital-to-analog converter</span> (DAC), and the like.&nbsp;
+</p>
+<p>&nbsp;</p>
+<p>In one 
+  <span data-role="tag" data-value="d76d892e-cc7a-9e95-fff6-ff0296c94d93" id="ida88288c7-28eb-7b05-0644-a56960fa2baa" data-type="term">embodiment</span>, the 
+  <span data-role="tag" data-value="16b5d8a5-6546-d84d-f870-6e19b3d7bc86" id="id58d25794-2565-9608-cf95-fa7d868625b0" data-type="drawingObject">PPU 202</span> may be included on a 
+  <span data-role="tag" data-value="511e9892-7b54-e325-db6f-68abf7d79f88" id="id6159adfd-a728-824f-4f19-e3150679acca" data-type="term">graphics card</span> that includes one or more 
+  <span data-role="tag" data-value="dc531f89-b86b-31a5-26bd-7051731165bb" id="id193af8ee-e8ef-bff6-c3cb-54b64c671079" data-type="drawingObject">memory devicess 222</span> s. The 
+  <span data-role="tag" data-value="511e9892-7b54-e325-db6f-68abf7d79f88" id="id20ef5be4-b5a0-4666-4e16-25d9aa5a6b35" data-type="term">graphics card</span> may be configured to 
+  <span data-role="tag" data-value="668bbd7e-e5ab-a3ed-290f-0f168bf77f80" id="id5666a0a0-cf96-c26a-6df1-b64dbbd360d9" data-type="term">interface</span> with a 
+  <span data-role="tag" data-value="4b22e7b7-a73f-8ce8-78be-2da600837b0c" id="id92494cac-5668-f9bf-c49a-8d93149ce4e6" data-type="term">PCIe slot</span> on a 
+  <span data-role="tag" data-value="3f71e012-395f-31cf-842d-a615aaceb542" id="id08db002b-84dd-7deb-7a2f-799ebaede5b0" data-type="term">motherboard</span> of a 
+  <span data-role="tag" data-value="b4492d5f-d8ea-263a-49cf-c6f743815ba2" id="ida3bcfabc-102e-2b91-be2b-5316a0f15df3" data-type="term">desktop computer</span>. In 
+  <span data-role="tag" data-value="9751cb33-7e0d-24d7-0d3f-76da2902a89d" id="idc48789d4-1e54-2241-af09-d9f33d76eb7b" data-type="term">yet another embodiment</span>, the 
+  <span data-role="tag" data-value="16b5d8a5-6546-d84d-f870-6e19b3d7bc86" id="id906d67ae-ea8a-01bd-9cee-05f3f561429d" data-type="drawingObject">PPU 202</span> may be an 
+  <span data-role="tag" data-value="08cf712a-94e5-2674-8355-1c88ab13c41c" id="id4093913e-134c-d0d9-9ceb-63508314300e" data-type="term">integrated graphics processing unit</span> (
+  <span data-role="tag" data-value="c382e700-e8e1-e43d-c95c-0ba8542b3a3b" id="id8af4bc87-ce1c-148d-ca4c-b8fab71210a2" data-type="term">iGPU</span>) or 
+  <span data-role="tag" data-value="3f3b277e-efb5-4f56-a37e-4c49a70ed12d" id="ide7bd01ab-b28f-840a-be79-3016900130c5" data-type="term">parallel processor</span> included in the 
+  <span data-role="tag" data-value="b5bd2526-ff32-95a9-712c-c33d121ce75a" id="idc92ac707-27b1-0541-0efc-514f2eddbf96" data-type="term">chipset</span> of the 
+  <span data-role="tag" data-value="3f71e012-395f-31cf-842d-a615aaceb542" id="idc26171cb-4d81-914a-7abb-0b3f73389db6" data-type="term">motherboard</span>.&nbsp;
+</p>
+<p>&nbsp;</p>
+<p>
+  <span data-role="tag" data-value="e453bf10-9b51-8963-d7ee-c14d0330a91b" id="id11e71eef-7a13-e11b-2c9b-b910ed935829" data-type="term">Exemplary Computing System</span>
+</p>
+<p>&nbsp;</p>
+<p>
+  <span data-role="tag" data-value="4d3b3c49-a4c2-aba0-314e-fb2b152698bc" id="idea028c7a-b041-7b4b-9708-a768a3173bcf" data-type="term">systems</span> with 
+  <span data-role="tag" data-value="82da31a4-56d4-e8a8-df61-c258d18eb276" id="id321d91e4-b287-a50c-cb21-b5a6c529ec40" data-type="term">multiple GPUs and CPUs</span> are used in a 
+  <span data-role="tag" data-value="0576d307-662d-fdbd-9540-5e067353d7e4" id="ide08484fe-5949-ec09-d60e-3461f822cf55" data-type="term">variety</span> of 
+  <span data-role="tag" data-value="a9cf47b7-9333-4230-3e1b-e44d85929d97" id="id596a7d5b-16d2-2d5b-5e22-c1187f40ac92" data-type="term">industries</span> as 
+  <span data-role="tag" data-value="c912a73e-7748-c07e-e060-91c23df31105" id="idc39cd04e-8917-1294-b562-be0688f4cdbc" data-type="term">developers</span> expose and leverage 
+  <span data-role="tag" data-value="59e933cf-e929-7c62-5e2c-42d4f0602021" id="id0d3efc62-d5cb-79dd-d508-14055c9b6114" data-type="term">more parallelism</span> in 
+  <span data-role="tag" data-value="ce092be5-ccfc-d87d-d47b-77e6990824af" id="id77e018e1-6bb4-0231-034c-16010d640922" data-type="term">applications</span> such as 
+  <span data-role="tag" data-value="964a39c0-393e-e355-a8e3-125372e9c1e0" id="id2a57a037-550b-894a-db2f-1b524229da76" data-type="term">artificial intelligence computing</span>. 
+  <span data-role="tag" data-value="cc27ba57-b90c-987c-cfa6-2d21838f1a47" id="ide0c3dd75-b911-cde8-41de-0c5b3009044c" data-type="term">High-performance GPU-accelerated systems</span> with 
+  <span data-role="tag" data-value="83637209-e34d-10f3-1e58-cf96e5cad256" id="id334ed0e7-eda6-2440-0023-458cdccf2829" data-type="term">tens</span> to 
+  <span data-role="tag" data-value="1b02c60f-5943-3cde-df1a-3d09722f387f" id="id8fd0cd31-4b9f-0a77-a558-83f840c09820" data-type="term">many thousands</span> of 
+  <span data-role="tag" data-value="cd2cfa0a-d764-755c-dbcd-c1638cae3205" id="id6f4e7383-7fe8-865d-5e05-564fbfe56362" data-type="term">compute nodes</span> are deployed in 
+  <span data-role="tag" data-value="0cfaf573-59ce-d134-7b57-c8301d926838" id="idae7da8bb-3d7a-595f-5750-77c4c34d6132" data-type="term">data centers</span>, 
+  <span data-role="tag" data-value="65ce00e9-1804-c8cd-137f-2f5efd398839" id="id74dd4b8d-cbeb-1463-a3a3-d4417b818b5c" data-type="term">research facilities</span>, and 
+  <span data-role="tag" data-value="810f37ef-e087-4891-d4ba-0ebb75f47754" id="id316282ca-5323-a71b-8c49-c930d1613d04" data-type="term">supercomputers</span> to solve 
+  <span data-role="tag" data-value="a62706dd-72c4-f00c-e85d-b157d28c89d3" id="id3ea1f4dc-89ff-2051-d31d-f3579930a672" data-type="term">ever larger problems</span>. As the 
+  <span data-role="tag" data-value="e3e24f7a-49ae-4fe0-f060-ff725ae4dbce" id="idcbac89e3-364a-3ee9-98d6-213f0e780c13" data-type="term">number</span> of 
+  <span data-role="tag" data-value="9e4fd7ea-5f19-f7e0-9edf-8fcf32da4205" id="ida9f2cf89-8533-8e41-88c6-2e01712ddd8a" data-type="term">processing devices</span> within the 
+  <span data-role="tag" data-value="3e3d5939-bd20-2a44-663d-08ca0730b372" id="id8becb5b1-7985-1a1d-2f46-0083426f0c47" data-type="term">high-performance systems increases</span>, the 
+  <span data-role="tag" data-value="bf59da30-608f-96f7-b4f9-82a641fc5a53" id="id8ca429cd-30d9-5e3a-cdab-bb5cac2f98b4" data-type="term">communication and data transfer mechanisms</span> need to scale to 
+  <span data-role="tag" data-value="ffbdc440-696a-c09c-af15-72dcb4572df6" id="ida4157cf7-18f5-25fd-e9fc-c2aa3d5628dd" data-type="term">support</span> the 
+  <span data-role="tag" data-value="1e4885e0-8839-3e2d-042d-dd9f74299bd7" id="ide384133a-4c44-67ef-aa07-3db4a42699b6" data-type="term">increased</span>&nbsp;
+</p>

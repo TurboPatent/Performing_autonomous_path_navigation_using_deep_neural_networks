@@ -1,0 +1,761 @@
+{
+  "isLandscape": false,
+  "drawingData": {
+    "cells": [
+      {
+        "type": "tp.Element",
+        "shape": "numberLabel",
+        "labelVAlign": "center",
+        "isNumbered": true,
+        "outsideNumbers": false,
+        "displayCase": "uppercase",
+        "name": "<p><span data-role=\"tag\" data-value=\"bbe799e1-a410-7dfc-28b0-dcc39f004bcf\" id=\"id9c19797b-99f6-f68d-a6c2-2dde8b966cb1\" data-type=\"term\">exemplary system</span></p>",
+        "position": {
+          "x": 603.2785415649414,
+          "y": 17.6875
+        },
+        "size": {
+          "width": 28.346457481384277,
+          "height": 28.346457481384277
+        },
+        "angle": 0,
+        "label": "",
+        "strokeStyle": "solid",
+        "hasName": true,
+        "labelPosition": "only",
+        "id": "0e4adb34-5f51-4d00-b7c3-92f7283ae614",
+        "z": 1,
+        "objectID": "9ef85bc6-8057-2f72-80b7-a7215ac03b80",
+        "number": 0
+      },
+      {
+        "type": "tp.Element",
+        "shape": "rectangle",
+        "labelVAlign": "top",
+        "isNumbered": true,
+        "outsideNumbers": true,
+        "displayCase": "uppercase",
+        "name": "",
+        "position": {
+          "x": 18,
+          "y": 94
+        },
+        "size": {
+          "width": 614,
+          "height": 597
+        },
+        "angle": 0,
+        "label": "<p><span data-role=\"tag\" data-value=\"7027f6e3-2dd2-eb6f-db03-9b1849e7c87d\" id=\"id9a845280-4306-1349-4426-28a59da45988\" data-type=\"term\">processor</span></p>",
+        "strokeStyle": "solid",
+        "hasName": false,
+        "labelPosition": "internal",
+        "numberPosition": "position2",
+        "id": "f011772d-2861-4f0f-a9ae-8d0edd66cfbd",
+        "z": 2,
+        "labelLayout": {
+          "labelBoxWidth": 560.3328247070312,
+          "fullString": "PROCESSOR",
+          "endPad": 0,
+          "lines": [
+            {
+              "text": "PROCESSOR",
+              "width": 72.67189025878906,
+              "x": 243.8304672241211,
+              "y": 0
+            }
+          ],
+          "textWidth": 72.67189025878906,
+          "textHeight": 21.000037499999998
+        },
+        "objectID": "c6a2c276-b623-a3ad-0259-a3f47e4cb683",
+        "number": 2
+      },
+      {
+        "type": "tp.Element",
+        "shape": "rectangle",
+        "labelVAlign": "top",
+        "isNumbered": true,
+        "outsideNumbers": false,
+        "displayCase": "uppercase",
+        "name": "",
+        "position": {
+          "x": 144,
+          "y": 184
+        },
+        "size": {
+          "width": 94,
+          "height": 75
+        },
+        "angle": 0,
+        "label": "<p><span data-role=\"tag\" data-value=\"2af9c079-bd10-3497-7028-4d8a5c4d1632\" id=\"id16c152f6-b159-6270-ebe1-06e41bde5bc2\" data-type=\"term\">camera module</span></p>",
+        "strokeStyle": "solid",
+        "hasName": false,
+        "labelPosition": "internal",
+        "numberPosition": "position3",
+        "id": "93e107f0-9554-496f-af79-8f4a4f9047e7",
+        "z": 3,
+        "labelLayout": {
+          "labelBoxWidth": 85.78385162353516,
+          "fullString": "CAMERA MODULE 804",
+          "endPad": 7.4621734619140625,
+          "lines": [
+            {
+              "text": "CAMERA",
+              "width": 50.46760559082031,
+              "x": 17.658123016357422,
+              "y": 0
+            },
+            {
+              "text": "MODULE",
+              "width": 54.35813903808594,
+              "x": 15.71285629272461,
+              "y": 21.000037499999998
+            },
+            {
+              "text": "804",
+              "width": 22.386520385742188,
+              "x": 31.698665618896484,
+              "y": 42.000074999999995
+            }
+          ],
+          "textWidth": 54.35813903808594,
+          "textHeight": 63.00011249999999
+        },
+        "objectID": "9cfa5a38-d0c9-4f41-e059-0eff6804c3f4",
+        "number": 4
+      },
+      {
+        "type": "tp.Element",
+        "shape": "rectangle",
+        "labelVAlign": "top",
+        "isNumbered": true,
+        "outsideNumbers": false,
+        "displayCase": "uppercase",
+        "name": "",
+        "position": {
+          "x": 136,
+          "y": 316.51180839538574
+        },
+        "size": {
+          "width": 94.48819160461426,
+          "height": 94.48819160461426
+        },
+        "angle": 0,
+        "label": "<p><span data-role=\"tag\" data-value=\"26160da7-ed98-a2c4-e3fc-9a8afeeb33ea\" id=\"idec1ba6a4-6847-9e98-4275-0c8a9e6c4d56\" data-type=\"term\">TrailNet DNN module</span></p>",
+        "strokeStyle": "solid",
+        "hasName": false,
+        "labelPosition": "internal",
+        "numberPosition": "position4",
+        "id": "8b840148-3ddd-44bd-8e71-705127b586ff",
+        "z": 4,
+        "labelLayout": {
+          "labelBoxWidth": 86.2293701171875,
+          "fullString": "TRAILNET DNN MODULE 806",
+          "endPad": 7.4621734619140625,
+          "lines": [
+            {
+              "text": "TRAILNET",
+              "width": 55.688385009765625,
+              "x": 15.270492553710938,
+              "y": 0
+            },
+            {
+              "text": "DNN",
+              "width": 28.928436279296875,
+              "x": 28.650466918945312,
+              "y": 21.000037499999998
+            },
+            {
+              "text": "MODULE",
+              "width": 54.35813903808594,
+              "x": 15.935615539550781,
+              "y": 42.000074999999995
+            },
+            {
+              "text": "806",
+              "width": 22.386520385742188,
+              "x": 31.921424865722656,
+              "y": 63.00011249999999
+            }
+          ],
+          "textWidth": 55.688385009765625,
+          "textHeight": 84.00014999999999
+        },
+        "objectID": "60e5a232-ef97-10bf-d401-ef7270b597cc",
+        "number": 6
+      },
+      {
+        "type": "tp.Element",
+        "shape": "rectangle",
+        "labelVAlign": "top",
+        "isNumbered": true,
+        "outsideNumbers": false,
+        "displayCase": "uppercase",
+        "name": "",
+        "position": {
+          "x": 274,
+          "y": 317
+        },
+        "size": {
+          "width": 100.00784366134232,
+          "height": 94
+        },
+        "angle": 0,
+        "label": "<p><span data-role=\"tag\" data-value=\"e0e3ffc3-1576-3a38-46a0-274ea448bb76\" id=\"idb0b03831-b572-074b-2d9b-f34c7e008aef\" data-type=\"term\">object detection DNN module</span></p>",
+        "strokeStyle": "solid",
+        "hasName": false,
+        "labelPosition": "internal",
+        "numberPosition": "position4",
+        "id": "db37921b-b5e0-40ad-84c1-f45efae5daa1",
+        "z": 5,
+        "labelLayout": {
+          "labelBoxWidth": 91.26657104492188,
+          "fullString": "OBJECT DETECTION DNN MODULE 808",
+          "endPad": 7.4621734619140625,
+          "lines": [
+            {
+              "text": "OBJECT",
+              "width": 43.11476135253906,
+              "x": 24.075904846191406,
+              "y": 0
+            },
+            {
+              "text": "DETECTION",
+              "width": 67.66065979003906,
+              "x": 11.802955627441406,
+              "y": 21.000037499999998
+            },
+            {
+              "text": "DNN MODULE",
+              "width": 86.79443359375,
+              "x": 2.2360687255859375,
+              "y": 42.000074999999995
+            },
+            {
+              "text": "808",
+              "width": 22.386520385742188,
+              "x": 34.440025329589844,
+              "y": 63.00011249999999
+            }
+          ],
+          "textWidth": 86.79443359375,
+          "textHeight": 84.00014999999999
+        },
+        "objectID": "49a11268-c1f2-2dc2-1a89-ed599822f73f",
+        "number": 8
+      },
+      {
+        "type": "tp.Element",
+        "shape": "rectangle",
+        "labelVAlign": "top",
+        "isNumbered": true,
+        "outsideNumbers": false,
+        "displayCase": "uppercase",
+        "name": "",
+        "position": {
+          "x": 411,
+          "y": 316.51180839538574
+        },
+        "size": {
+          "width": 94.48819160461426,
+          "height": 94.48819160461426
+        },
+        "angle": 0,
+        "label": "<p><span data-role=\"tag\" data-value=\"3649b3be-27cd-afe2-0b11-617a6bbf2d70\" id=\"id5bd57ce9-3f19-1256-b718-b2e67fd246b1\" data-type=\"term\">obstacle detector module</span></p>",
+        "strokeStyle": "solid",
+        "hasName": false,
+        "labelPosition": "internal",
+        "numberPosition": "position4",
+        "id": "d5462d26-45a8-4ce7-a451-18fb474742a3",
+        "z": 6,
+        "labelLayout": {
+          "labelBoxWidth": 86.2293701171875,
+          "fullString": "OBSTACLE DETECTOR MODULE 810",
+          "endPad": 7.4621734619140625,
+          "lines": [
+            {
+              "text": "OBSTACLE",
+              "width": 59.041351318359375,
+              "x": 13.594009399414062,
+              "y": 0
+            },
+            {
+              "text": "DETECTOR",
+              "width": 61.47407531738281,
+              "x": 12.377647399902344,
+              "y": 21.000037499999998
+            },
+            {
+              "text": "MODULE",
+              "width": 54.35813903808594,
+              "x": 15.935615539550781,
+              "y": 42.000074999999995
+            },
+            {
+              "text": "810",
+              "width": 22.386520385742188,
+              "x": 31.921424865722656,
+              "y": 63.00011249999999
+            }
+          ],
+          "textWidth": 61.47407531738281,
+          "textHeight": 84.00014999999999
+        },
+        "objectID": "21356c3b-7e26-ba3b-ff66-a0f1fd4eac52",
+        "number": 10
+      },
+      {
+        "type": "tp.Element",
+        "shape": "rectangle",
+        "labelVAlign": "center",
+        "isNumbered": true,
+        "outsideNumbers": false,
+        "displayCase": "uppercase",
+        "name": "",
+        "position": {
+          "x": 134,
+          "y": 445.00000000000017
+        },
+        "size": {
+          "width": 369,
+          "height": 88
+        },
+        "angle": 0,
+        "label": "<p><span data-role=\"tag\" data-value=\"868b7205-27d5-e33d-5e1c-e4ab73c96b7c\" id=\"id0ba8af41-9bfb-9d0b-7803-50911702b7c7\" data-type=\"term\">controller module</span></p>",
+        "strokeStyle": "solid",
+        "hasName": false,
+        "labelPosition": "internal",
+        "numberPosition": "position4",
+        "id": "43e98b97-7b57-4984-a86d-f8a2b26ca592",
+        "z": 7,
+        "labelLayout": {
+          "labelBoxWidth": 336.7472229003906,
+          "fullString": "CONTROLLER MODULE 812",
+          "endPad": 7.4621734619140625,
+          "lines": [
+            {
+              "text": "CONTROLLER MODULE 812",
+              "width": 163.0288543701172,
+              "x": 86.85918426513672,
+              "y": 29.486954058837892
+            }
+          ],
+          "textWidth": 163.0288543701172,
+          "textHeight": 21.000037499999998
+        },
+        "objectID": "984229bd-109b-344b-559b-3843b0dbbb90",
+        "number": 12
+      },
+      {
+        "type": "tp.Element",
+        "shape": "rectangle",
+        "labelVAlign": "center",
+        "isNumbered": true,
+        "outsideNumbers": false,
+        "displayCase": "uppercase",
+        "name": "",
+        "position": {
+          "x": 132.9999999999999,
+          "y": 589.000000000001
+        },
+        "size": {
+          "width": 370,
+          "height": 59
+        },
+        "angle": 0,
+        "label": "<p><span data-role=\"tag\" data-value=\"08f40851-ea64-58c8-6c52-7ecb1781d983\" id=\"ida6fb0969-4770-80e0-7421-3f3d0fd5dba4\" data-type=\"term\">communication module</span></p>",
+        "strokeStyle": "solid",
+        "hasName": false,
+        "labelPosition": "internal",
+        "numberPosition": "position4",
+        "id": "c94f29a0-75e6-2ece-5057-a0ccf293097f",
+        "z": 8,
+        "labelLayout": {
+          "labelBoxWidth": 337.6598205566406,
+          "fullString": "COMMUNICATION MODULE 814",
+          "endPad": 7.4621734619140625,
+          "lines": [
+            {
+              "text": "COMMUNICATION MODULE 814",
+              "width": 193.1691131591797,
+              "x": 72.24535369873047,
+              "y": 16.3094294921875
+            }
+          ],
+          "textWidth": 193.1691131591797,
+          "textHeight": 21.000037499999998
+        },
+        "objectID": "452335e7-a74b-86f2-d6da-da527c4cf1a7",
+        "number": 14
+      },
+      {
+        "type": "tp.Element",
+        "shape": "rectangle",
+        "labelVAlign": "bottom",
+        "isNumbered": true,
+        "outsideNumbers": false,
+        "displayCase": "uppercase",
+        "name": "",
+        "position": {
+          "x": 20,
+          "y": 711
+        },
+        "size": {
+          "width": 612,
+          "height": 113
+        },
+        "angle": 0,
+        "label": "<p><span data-role=\"tag\" data-value=\"163a77a5-ff52-f506-844e-dee44691dcd3\" id=\"id2bdcce34-235e-2b0e-7732-a88297f43149\" data-type=\"term\">control hardware</span></p>",
+        "strokeStyle": "solid",
+        "hasName": false,
+        "labelPosition": "internal",
+        "numberPosition": "position4",
+        "id": "1ace6cb5-1455-4cc5-a94b-59b405ab9be0",
+        "z": 9,
+        "labelLayout": {
+          "labelBoxWidth": 558.5076293945312,
+          "fullString": "CONTROL HARDWARE 816",
+          "endPad": 7.4621734619140625,
+          "lines": [
+            {
+              "text": "CONTROL HARDWARE 816",
+              "width": 155.1293487548828,
+              "x": 201.68914031982422,
+              "y": 81.69377963867188
+            }
+          ],
+          "textWidth": 155.1293487548828,
+          "textHeight": 21.000037499999998
+        },
+        "objectID": "a39a6827-7e10-55c8-2e04-64c57a271acd",
+        "number": 16
+      },
+      {
+        "type": "tp.Element",
+        "shape": "rectangle",
+        "labelVAlign": "center",
+        "isNumbered": true,
+        "outsideNumbers": false,
+        "displayCase": "uppercase",
+        "name": "",
+        "position": {
+          "x": 202,
+          "y": 732
+        },
+        "size": {
+          "width": 249,
+          "height": 54
+        },
+        "angle": 0,
+        "label": "<p><span data-role=\"tag\" data-value=\"c5e578cf-df3f-ea52-fcd9-1ecc8b92db9b\" id=\"id9af8966f-8f4a-4759-7c98-919487e6b2f4\" data-type=\"term\">vehicle systems module</span></p>",
+        "strokeStyle": "solid",
+        "hasName": false,
+        "labelPosition": "internal",
+        "numberPosition": "position4",
+        "id": "8c40e953-2da3-4641-a543-3f75102b6474",
+        "z": 10,
+        "labelLayout": {
+          "labelBoxWidth": 227.23594665527344,
+          "fullString": "VEHICLE SYSTEMS MODULE 818",
+          "endPad": 7.4621734619140625,
+          "lines": [
+            {
+              "text": "VEHICLE SYSTEMS MODULE 818",
+              "width": 191.10997009277344,
+              "x": 18.06298828125,
+              "y": 14.037441577148439
+            }
+          ],
+          "textWidth": 191.10997009277344,
+          "textHeight": 21.000037499999998
+        },
+        "objectID": "f2da163d-8fb6-fe4b-8a00-3c29c01cabe8",
+        "number": 18
+      },
+      {
+        "type": "tp.Element",
+        "shape": "rectangle",
+        "labelVAlign": "top",
+        "isNumbered": true,
+        "outsideNumbers": false,
+        "displayCase": "uppercase",
+        "name": "",
+        "position": {
+          "x": 498,
+          "y": 194
+        },
+        "size": {
+          "width": 94.48819160461426,
+          "height": 94.48819160461426
+        },
+        "angle": 0,
+        "label": "<p><span data-role=\"tag\" data-value=\"f37dc0fe-6fde-2b4f-0225-1ca702fba521\" id=\"id1f08b59d-fc2a-2d0f-0f8d-7aff65e9b383\" data-type=\"term\">manual input device module</span></p>",
+        "strokeStyle": "solid",
+        "hasName": false,
+        "labelPosition": "internal",
+        "numberPosition": "position4",
+        "id": "00d662ad-f07e-4712-b611-f4d0f8452cd2",
+        "z": 11,
+        "labelLayout": {
+          "labelBoxWidth": 86.2293701171875,
+          "fullString": "MANUAL INPUT DEVICE MODULE 820",
+          "endPad": 7.4621734619140625,
+          "lines": [
+            {
+              "text": "MANUAL",
+              "width": 52.97322082519531,
+              "x": 16.628074645996094,
+              "y": 0
+            },
+            {
+              "text": "INPUT DEVICE",
+              "width": 82.94944763183594,
+              "x": 1.6399612426757812,
+              "y": 21.000037499999998
+            },
+            {
+              "text": "MODULE",
+              "width": 54.35813903808594,
+              "x": 15.935615539550781,
+              "y": 42.000074999999995
+            },
+            {
+              "text": "820",
+              "width": 22.386520385742188,
+              "x": 31.921424865722656,
+              "y": 63.00011249999999
+            }
+          ],
+          "textWidth": 82.94944763183594,
+          "textHeight": 84.00014999999999
+        },
+        "objectID": "1638a1bb-7019-9b84-6e3e-6079a2a4447b",
+        "number": 20
+      },
+      {
+        "type": "tp.Link",
+        "isNumbered": false,
+        "arrowheads": "target",
+        "strokeStyle": "solid",
+        "displayCase": "uppercase",
+        "showLabel": true,
+        "source": {
+          "id": "93e107f0-9554-496f-af79-8f4a4f9047e7"
+        },
+        "target": {
+          "id": "d5462d26-45a8-4ce7-a451-18fb474742a3"
+        },
+        "id": "e24c7622-de06-4d73-960d-db842b81b14a",
+        "embeds": "",
+        "z": 19,
+        "routing": "straight",
+        "objectID": "c25fe4b6-276a-c97c-fe31-8b6d21e9d2e4",
+        "vertices": [
+          {
+            "x": 456,
+            "y": 221
+          }
+        ]
+      },
+      {
+        "type": "tp.Link",
+        "isNumbered": false,
+        "arrowheads": "target",
+        "strokeStyle": "solid",
+        "displayCase": "uppercase",
+        "showLabel": true,
+        "source": {
+          "id": "93e107f0-9554-496f-af79-8f4a4f9047e7"
+        },
+        "target": {
+          "id": "db37921b-b5e0-40ad-84c1-f45efae5daa1"
+        },
+        "id": "fdb45c4e-c779-448b-9612-13717aadd3f4",
+        "embeds": "",
+        "z": 20,
+        "routing": "straight",
+        "objectID": "aab06cde-916f-b3a9-bd2a-25acb3dc1041",
+        "vertices": [
+          {
+            "x": 329,
+            "y": 222
+          }
+        ]
+      },
+      {
+        "type": "tp.Link",
+        "isNumbered": false,
+        "arrowheads": "target",
+        "strokeStyle": "solid",
+        "displayCase": "uppercase",
+        "showLabel": true,
+        "source": {
+          "x": 181,
+          "y": 259
+        },
+        "target": {
+          "id": "8b840148-3ddd-44bd-8e71-705127b586ff"
+        },
+        "id": "0c99935e-ed65-4650-be22-50c71537ee6c",
+        "embeds": "",
+        "z": 21,
+        "routing": "straight",
+        "objectID": "7a618621-e59d-2aff-1122-21febe807d68"
+      },
+      {
+        "type": "tp.Link",
+        "isNumbered": false,
+        "arrowheads": "target",
+        "strokeStyle": "solid",
+        "displayCase": "uppercase",
+        "showLabel": true,
+        "source": {
+          "x": 182,
+          "y": 410
+        },
+        "target": {
+          "x": 182,
+          "y": 445
+        },
+        "id": "f8a0bb13-a47b-4dc7-9c0b-c3cdc7654e4c",
+        "embeds": "",
+        "z": 22,
+        "routing": "straight",
+        "objectID": "80aad1cd-53c1-6072-47bb-6e81ea1b37d0"
+      },
+      {
+        "type": "tp.Link",
+        "isNumbered": false,
+        "arrowheads": "target",
+        "strokeStyle": "solid",
+        "displayCase": "uppercase",
+        "showLabel": true,
+        "source": {
+          "id": "db37921b-b5e0-40ad-84c1-f45efae5daa1"
+        },
+        "target": {
+          "x": 325,
+          "y": 445
+        },
+        "id": "7fb575d1-3e3a-4d4a-8ed1-82e51b926ad7",
+        "embeds": "",
+        "z": 23,
+        "routing": "straight",
+        "objectID": "3537882f-2c5e-7c3f-e108-a3a0e3534d79"
+      },
+      {
+        "type": "tp.Link",
+        "isNumbered": false,
+        "arrowheads": "target",
+        "strokeStyle": "solid",
+        "displayCase": "uppercase",
+        "showLabel": true,
+        "source": {
+          "id": "d5462d26-45a8-4ce7-a451-18fb474742a3"
+        },
+        "target": {
+          "x": 463,
+          "y": 446
+        },
+        "id": "a097c5b8-a884-47f8-ba84-4eea343f4416",
+        "embeds": "",
+        "z": 24,
+        "routing": "straight",
+        "objectID": "f2230422-661b-a75b-9a57-5c3bc4f4396f"
+      },
+      {
+        "type": "tp.Link",
+        "isNumbered": false,
+        "arrowheads": "both",
+        "strokeStyle": "solid",
+        "displayCase": "uppercase",
+        "showLabel": true,
+        "source": {
+          "id": "43e98b97-7b57-4984-a86d-f8a2b26ca592"
+        },
+        "target": {
+          "id": "c94f29a0-75e6-2ece-5057-a0ccf293097f"
+        },
+        "id": "0a6d9e33-9e0f-4c7b-944b-ea7ebd317f21",
+        "embeds": "",
+        "z": 25,
+        "routing": "straight",
+        "objectID": "a068d990-06b4-94e8-8d8e-5bf00144bd6a"
+      },
+      {
+        "type": "tp.Link",
+        "isNumbered": false,
+        "arrowheads": "both",
+        "strokeStyle": "solid",
+        "displayCase": "uppercase",
+        "showLabel": true,
+        "source": {
+          "id": "c94f29a0-75e6-2ece-5057-a0ccf293097f"
+        },
+        "target": {
+          "x": 320,
+          "y": 730
+        },
+        "id": "40c33330-ac62-4e50-a47b-09dc3951c728",
+        "embeds": "",
+        "z": 26,
+        "routing": "straight",
+        "objectID": "213ddc21-488f-b613-21f9-195ec1861f25"
+      },
+      {
+        "type": "tp.Link",
+        "isNumbered": false,
+        "arrowheads": "target",
+        "strokeStyle": "solid",
+        "displayCase": "uppercase",
+        "showLabel": true,
+        "source": {
+          "id": "c94f29a0-75e6-2ece-5057-a0ccf293097f"
+        },
+        "target": {
+          "id": "d5462d26-45a8-4ce7-a451-18fb474742a3"
+        },
+        "id": "08dc2849-2819-47b6-860a-5d9f81722a84",
+        "embeds": "",
+        "z": 27,
+        "routing": "straight",
+        "objectID": "4b1cf196-be7d-b113-c19b-8c59f9967e4c",
+        "vertices": [
+          {
+            "x": 534,
+            "y": 632
+          },
+          {
+            "x": 533,
+            "y": 364
+          }
+        ]
+      },
+      {
+        "type": "tp.Link",
+        "isNumbered": false,
+        "arrowheads": "target",
+        "strokeStyle": "solid",
+        "displayCase": "uppercase",
+        "showLabel": true,
+        "source": {
+          "id": "00d662ad-f07e-4712-b611-f4d0f8452cd2"
+        },
+        "target": {
+          "id": "43e98b97-7b57-4984-a86d-f8a2b26ca592"
+        },
+        "id": "f9a0bf7b-ff68-49f8-a979-6f681eadd4e5",
+        "embeds": "",
+        "z": 28,
+        "routing": "straight",
+        "objectID": "ee3b7ebf-6952-39f8-f1eb-70dfeb20fe39",
+        "vertices": [
+          {
+            "x": 571,
+            "y": 493
+          }
+        ]
+      }
+    ]
+  }
+}
